@@ -1,0 +1,6397 @@
+[
+  {
+    "id": "item_3FE77365BAAA",
+    "code": "3FE77365BAAA",
+    "description": "POSITIVE POWER CABLE BLACK/10M",
+    "uom": "pcs",
+    "category": "Power Cable",
+    "packageNo": "",
+    "stock": {
+      "total": 50,
+      "paranaque_mnl": 50,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_1",
+    "code": "241115.10500000001",
+    "description": "(FLATPACK2 48/2000 HE)",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 306,
+      "paranaque_mnl": 306,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_2",
+    "code": "242100.12",
+    "description": "SMARTPACK R CONTROLLER",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 75,
+      "paranaque_mnl": 62,
+      "cebu": 11,
+      "davao": 1
+    }
+  },
+  {
+    "id": "item_3",
+    "code": "3FE77365AA_20m",
+    "description": "Power Cable Blue/Black 20m",
+    "uom": "pc",
+    "category": "Power Cable",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 32,
+      "paranaque_mnl": 10,
+      "cebu": 22,
+      "davao": 0
+    },
+    "partNumber": "3FE77365AA_20m"
+  },
+  {
+    "id": "item_4",
+    "code": "811684",
+    "description": "F0ID500 CABINET OUTDOOR",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_5",
+    "code": "50084357",
+    "description": "ECHO LIFE HG8145Y5 GPON, TERMINAL SC/APC AMERICAN STANDARD ADAPTER",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_6",
+    "code": "1AB032050013",
+    "description": "LUG*RING*CRIMP_UNINSUL*9mm*8mm (Brand: LONGYI)",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_7",
+    "code": "1AB032050022",
+    "description": "LUG*RING*CRIMP*UNINSUL 5.8r",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_8",
+    "code": "1AB379580001",
+    "description": "LUG 2 HOLE CRIMP_UNINSUL 6.54mm/6.54mm",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_9",
+    "code": "1AB403410005",
+    "description": "7362 ISAM SF-8GW assumple for pole mouting kits (brand: Nokia)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_10",
+    "code": "1AC017610003",
+    "description": "Grounding kits 1-5/8 corrugated cable - 5m",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_11",
+    "code": "1AF26955ABAA",
+    "description": "Wireline Rectifier 8kW 2U,FP2(brand: Eltek)",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 97,
+      "paranaque_mnl": 64,
+      "cebu": 11,
+      "davao": 1
+    }
+  },
+  {
+    "id": "item_12",
+    "code": "1AF30686AAAA",
+    "description": "25 Ah AGM battery _12V (6-GFM-105F)",
+    "uom": "pc",
+    "category": "ODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 224,
+      "paranaque_mnl": 184,
+      "cebu": 8,
+      "davao": 32
+    }
+  },
+  {
+    "id": "item_13",
+    "code": "1AF32123AAAA",
+    "description": "DC Distribution Unit 12xPDU(brand: Eltek)",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 191,
+      "paranaque_mnl": 8,
+      "cebu": 181,
+      "davao": 1
+    }
+  },
+  {
+    "id": "item_14",
+    "code": "1AK21096AAAA",
+    "description": "HPE DL380 REDHAT OS SERVER (BRAND: NOKIA)",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_15",
+    "code": "1AK21733AAAA",
+    "description": "DL380 G10 (E52620v4 *2, 4.8TB disk, 96GB RAM) Altiplano server (brand: Nokia)",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_16",
+    "code": "1AZ2515550001",
+    "description": "AC PDU",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_17",
+    "code": "1AZ490950001",
+    "description": "19\"ETSI rack, 6620A(2000x600x600-A,42U)",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_18",
+    "code": "1AZ661980001",
+    "description": "HT RVVZ Single Ground Cable 16mm2 (Yellow/Green) (Brand: Swell)",
+    "uom": "m",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 432,
+      "paranaque_mnl": 966,
+      "cebu": 833,
+      "davao": 113
+    }
+  },
+  {
+    "id": "item_19",
+    "code": "1AZ691990001",
+    "description": "Grounding Bar, Operation environment: >5⁰c - +40⁰c (brand:Nokia)",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_20",
+    "code": "1PTBTNT010",
+    "description": "5PT SURGE PROTECTION MAGAZINE (10 PAIRS) FOR NT / MT90 DISCONNECTION MODULE",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 2227,
+      "paranaque_mnl": 1787,
+      "cebu": 418,
+      "davao": 22
+    }
+  },
+  {
+    "id": "item_21",
+    "code": "3AP67079BAAA",
+    "description": "Customerized Adaptor Aluminum Alloy 2mm (brand: Nokia)",
+    "uom": "pc",
+    "category": "Part of 94",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 28,
+      "paranaque_mnl": 5,
+      "cebu": 23,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_22",
+    "code": "3AP67079BAAA-3T",
+    "description": "Customerized TBX Adaptor (3 TYPE)",
+    "uom": "pc",
+    "category": "BLAINE ADAPTOR",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 0,
+      "paranaque_mnl": 0,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_23",
+    "code": "3AP67079BBAA",
+    "description": "TBX ADAPTOR OPAC (OPAC L Standalone/with MSAN)",
+    "uom": "pc",
+    "category": "BLAINE ADAPTOR",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 90,
+      "paranaque_mnl": 90,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_24",
+    "code": "3AP67079BCAA",
+    "description": "TBX ADAPTOR ECI (ECI Standalone/with MSAN)",
+    "uom": "pc",
+    "category": "FTTH ADPTR",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 7,
+      "paranaque_mnl": 1,
+      "cebu": 6,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_25",
+    "code": "3AP67079BDAA",
+    "description": "TBX ADAPTOR ALU (ALU Standalone/with MSAN)",
+    "uom": "pc",
+    "category": "BLAINE ADAPTOR",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 6,
+      "paranaque_mnl": 6,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_26",
+    "code": "3AP67079BEAA",
+    "description": "TBX ADAPTOR OPAC S (OPAC S Standalone/with MSAN)",
+    "uom": "pc",
+    "category": "BLAINE ADAPTOR",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 0,
+      "paranaque_mnl": 0,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_27",
+    "code": "3AP67205BAAA",
+    "description": "TBX MSAN GLOBE CCFR (Huawei Standalone)",
+    "uom": "pc",
+    "category": "BLAINE TOPBOX",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 6,
+      "paranaque_mnl": 1,
+      "cebu": 0,
+      "davao": 3
+    }
+  },
+  {
+    "id": "item_28",
+    "code": "3AP67205BCAA-ODC",
+    "description": "ODC cabinet with MDF and other accessory",
+    "uom": "pc",
+    "category": "ODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 28,
+      "paranaque_mnl": 24,
+      "cebu": 1,
+      "davao": 3
+    }
+  },
+  {
+    "id": "item_29",
+    "code": "3AP67205BCAA-RF",
+    "description": "Rectifier (FP2 2KW*1)",
+    "uom": "pc",
+    "category": "ODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_30",
+    "code": "3AP67205BDAA",
+    "description": "TBX MSAN GLOBE CCF L ((ECI,ALU,OPAC)TBX Standalone)",
+    "uom": "pc",
+    "category": "BLAINE TOPBOX",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 0,
+      "paranaque_mnl": 0,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_31",
+    "code": "3AP67205BFAA",
+    "description": "TBX NOKIA MX CCF DC L ((ECI,ALU,OPAC) TBX with MSAN)",
+    "uom": "pc",
+    "category": "BLAINE TOPBOX",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 89,
+      "paranaque_mnl": 85,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_32",
+    "code": "3AP67205BGAA",
+    "description": "TBX NOKIA MX CCF DC R (Huawei with Nokia MSAN)",
+    "uom": "pc",
+    "category": "BLAINE TOPBOX",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 60,
+      "paranaque_mnl": 37,
+      "cebu": 1,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_33",
+    "code": "3AP67210AAAA",
+    "description": "Topbox A for Small to Mid Cap 1430*700*600",
+    "uom": "pc",
+    "category": "FTTH TBX",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 28,
+      "paranaque_mnl": 6,
+      "cebu": 22,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_34",
+    "code": "3AP67210AAAA",
+    "description": "TOPBOX FIBER TO THE NODE (OLT TOPBOX GLOBE)",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 28,
+      "paranaque_mnl": 6,
+      "cebu": 22,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_35",
+    "code": "3AP67210ABAA",
+    "description": "Topbox B for Small to Mid Cap 1430*700*600",
+    "uom": "pc",
+    "category": "FTTH TBX",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 9,
+      "paranaque_mnl": 1,
+      "cebu": 8,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_36",
+    "code": "3AP67211AAAA",
+    "description": "QuickDeployment Outdoor cabin DF16/MF2 55kg (brand: Nokia)",
+    "uom": "pc",
+    "category": "QODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 170,
+      "paranaque_mnl": 54,
+      "cebu": 112,
+      "davao": 3
+    }
+  },
+  {
+    "id": "item_37",
+    "code": "3AP67213AAAA",
+    "description": "Pole Mount Mat MF2 Cab.",
+    "uom": "pc",
+    "category": "QODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 6,
+      "paranaque_mnl": 0,
+      "cebu": 6,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_38",
+    "code": "3AP67213ABAA",
+    "description": "Wall Mount Mat MF2 Cab.",
+    "uom": "pc",
+    "category": "QODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 7,
+      "paranaque_mnl": 2,
+      "cebu": 5,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_39",
+    "code": "3AP67213ACAA",
+    "description": "Base Mount Mat MF2 Cab.",
+    "uom": "pc",
+    "category": "QODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 157,
+      "paranaque_mnl": 55,
+      "cebu": 99,
+      "davao": 3
+    }
+  },
+  {
+    "id": "item_40",
+    "code": "3AT01636AA",
+    "description": "FM 5G Receiver WM(window mounting) UFC(Ultra-flat-cable) EU(brand: Nokia)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_41",
+    "code": "3AT77435AA",
+    "description": "FPBA-LMNT-B Telecom Board(brand: Nokia)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_42",
+    "code": "3FE19427AA",
+    "description": "BTS TemperatureSensor 40degC-80degC NTC(brand: Nokia)",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_43",
+    "code": "3FE19427AB",
+    "description": "Temperature sensor Temp1 130x94.2mm(brand: Nokia)",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 101,
+      "paranaque_mnl": 89,
+      "cebu": 11,
+      "davao": 1
+    }
+  },
+  {
+    "id": "item_44",
+    "code": "3FE25774AA",
+    "description": "SFP Pluggable Optical Module, GE LX SM 1310nm, -40C to +85C, Duplex LC connector, 10km (11dB)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 133,
+      "paranaque_mnl": 2,
+      "cebu": 87,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_45",
+    "code": "3FE27505DAAA",
+    "description": "7363  (ISAM) MX-6 GND Cable, 3m, 2.5mm2 (brand: Nokia)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 172,
+      "paranaque_mnl": 71,
+      "cebu": 76,
+      "davao": 25
+    }
+  },
+  {
+    "id": "item_46",
+    "code": "3FE27505EL",
+    "description": "WIRE GROUNDING CABLE YELLOW/GREEN 16MM N/A",
+    "uom": "m",
+    "category": "Power Cable",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    },
+    "partNumber": "3FE27505EL"
+  },
+  {
+    "id": "item_47",
+    "code": "3FE28521GLAA",
+    "description": "Simplex patch cord, SC/UPC - SC/UPC 15m(brand: Nokia)",
+    "uom": "m",
+    "category": "Patch Cord",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_48",
+    "code": "3FE28525HAAA",
+    "description": "Simplex patch cord, LC/UPC - SC 20m(brand: Nokia)",
+    "uom": "m",
+    "category": "Patch Cord",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 19,
+      "paranaque_mnl": 0,
+      "cebu": 19,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_49",
+    "code": "3FE29404GAAA",
+    "description": "Positive Power Cable Blue/10m(brand: Nokia)",
+    "uom": "pc",
+    "category": "FX4 & FX8",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 56,
+      "paranaque_mnl": 22,
+      "cebu": 30,
+      "davao": 4
+    }
+  },
+  {
+    "id": "item_50",
+    "code": "3FE29404HAAA",
+    "description": "Positive Power Cable Blue/10m(brand: Nokia)",
+    "uom": "pc",
+    "category": "FX4 & FX8",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 2,
+      "paranaque_mnl": 2,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_51",
+    "code": "3FE29405GAAA",
+    "description": "POSITIVE POWER CABLE BLACK/10M",
+    "uom": "pc",
+    "category": "Power Cable",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 56,
+      "paranaque_mnl": 22,
+      "cebu": 30,
+      "davao": 4
+    },
+    "partNumber": "3FE29405GAAA"
+  },
+  {
+    "id": "item_52",
+    "code": "3FE29405HAAA",
+    "description": "Positive Power Cable Black/10m(brand: Nokia)",
+    "uom": "pc",
+    "category": "FX4 & FX8",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 2,
+      "paranaque_mnl": 2,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_53",
+    "code": "3FE29431GLAA",
+    "description": "CA-Power Cable Ground Yellow/Green,M8/15m(brand: Nokia)",
+    "uom": "pc",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 379,
+      "paranaque_mnl": 205,
+      "cebu": 174,
+      "davao": 0
+    },
+    "partNumber": "3FE29431GLAA"
+  },
+  {
+    "id": "item_54",
+    "code": "3FE29432JAAA",
+    "description": "GND(Grounding cables)(15 meters)\nY/G(16mm2) (brand: Nokia)",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_55",
+    "code": "3FE47581AB",
+    "description": "Transcvr XGS-PON/GPON MPM B+(28dBm)Ctemp",
+    "uom": "PC",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 488,
+      "paranaque_mnl": 369,
+      "cebu": 31,
+      "davao": 88
+    },
+    "partNumber": "3FE47581AB"
+  },
+  {
+    "id": "item_56",
+    "code": "3FE47581AF",
+    "description": "XGS-PON/GPON MPM B+ (28 dBm), C-\ntemp(brand: Nokia)",
+    "uom": "pc",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 104,
+      "paranaque_mnl": 63,
+      "cebu": 41,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_57",
+    "code": "3FE47581BB",
+    "description": "XGS-PON/GPON MPM C+ (32 dBm), C-\ntemp(0~70oC)(brand: Nokia)",
+    "uom": "pc",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_58",
+    "code": "3FE48292AA",
+    "description": "G-2425G-A,US Plug,GPON ONT,2POTS,4xGE UNI,WIFI 5 2+2,2xUSB2.0,External 5dBi antenna(brand: Nokia)",
+    "uom": "pc",
+    "category": "ONT",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_59",
+    "code": "3FE49234AA",
+    "description": "Beacon 1.1,US Plug, 1 pack 2xGE UNI,Wifi5\n2+2 (brand: Nokia)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_60",
+    "code": "3FE49235AA",
+    "description": "Beacon 2,US Plug,1 pack,2xGE UNI,Wifi6 2+2(brand: Nokia)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_61",
+    "code": "3FE49563AC",
+    "description": "ONT G-1425G-A (brand: Nokia)",
+    "uom": "pc",
+    "category": "ONT",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_62",
+    "code": "3FE51026AA",
+    "description": "Electrical SFP",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_63",
+    "code": "3FE52344DAAA",
+    "description": "Simplex patch cord, LC/UPC – LC/UPC 3m(brand: Nokia)",
+    "uom": "PC",
+    "category": "Patch Cord",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 730,
+      "paranaque_mnl": 341,
+      "cebu": 388,
+      "davao": 1
+    },
+    "partNumber": "3FE52344DAAA"
+  },
+  {
+    "id": "item_64",
+    "code": "3FE52344EL",
+    "description": "Patch cord 5M LC-LC SM",
+    "uom": "pc",
+    "category": "Patch Cord",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_65",
+    "code": "3FE52344ELAA",
+    "description": "Simplex patch cord, LC/UPC - LC/UPC 5m(brand: Nokia)",
+    "uom": "PC",
+    "category": "Patch Cord",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 553,
+      "paranaque_mnl": 215,
+      "cebu": 328,
+      "davao": 10
+    },
+    "partNumber": "3FE52344ELAA"
+  },
+  {
+    "id": "item_66",
+    "code": "3FE52344FLAA",
+    "description": "Simplex patch cord, LC/UPC - LC/UPC 8m(brand: Nokia)",
+    "uom": "PC",
+    "category": "Patch Cord",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 404,
+      "paranaque_mnl": 28,
+      "cebu": 371,
+      "davao": 5
+    },
+    "partNumber": "3FE52344FLAA"
+  },
+  {
+    "id": "item_67",
+    "code": "3FE52344GA",
+    "description": "Patch Cord LC-LC-2S2-L10/0.3 10m",
+    "uom": "pc",
+    "category": "Patch Cord",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_68",
+    "code": "3FE52344GAAA",
+    "description": "Patch cord LC/PC-LC/PC 10m (brand:\nAVIC)",
+    "uom": "pc",
+    "category": "Patch Cord",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 540,
+      "paranaque_mnl": 10,
+      "cebu": 484,
+      "davao": 46
+    }
+  },
+  {
+    "id": "item_69",
+    "code": "3FE52344GL",
+    "description": "Patch Cord LC-LC-2S2-L15/0.3 15m",
+    "uom": "pc",
+    "category": "Patch Cord",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_70",
+    "code": "3FE52344GLAA",
+    "description": "Simplex Patch cord, LC/UPC - LC/UPC 15m(brand: Nokia)",
+    "uom": "pc",
+    "category": "Patch Cord",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 529,
+      "paranaque_mnl": 78,
+      "cebu": 442,
+      "davao": 9
+    }
+  },
+  {
+    "id": "item_71",
+    "code": "3FE52344HAAA",
+    "description": "Simplex Patch cord, LC/UPC - LC/UPC 20m(brand: Nokia)",
+    "uom": "pc",
+    "category": "Patch Cord",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 278,
+      "paranaque_mnl": 58,
+      "cebu": 214,
+      "davao": 6
+    }
+  },
+  {
+    "id": "item_72",
+    "code": "3FE52344HLAA",
+    "description": "Simplex Patch cord, LC/UPC - LC/UPC 25m(brand: Nokia)",
+    "uom": "pc",
+    "category": "Patch Cord",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 117,
+      "paranaque_mnl": 8,
+      "cebu": 107,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_73",
+    "code": "3FE52472ELAA",
+    "description": "DLCD-DSC-2S2-L5/0.3",
+    "uom": "pc",
+    "category": "Patch Cord",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_74",
+    "code": "3FE53441AA",
+    "description": "PON Transceiver20km 1310nm(Tx)1490nm(Rx) - GPON SFP B+",
+    "uom": "PC",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 488,
+      "paranaque_mnl": 224,
+      "cebu": 240,
+      "davao": 24
+    },
+    "partNumber": "3FE53441AA"
+  },
+  {
+    "id": "item_75",
+    "code": "3FE53441AC",
+    "description": "GPON Small form factor pluggable B+ (I-temp) OLT(brand: Nokia)",
+    "uom": "pc",
+    "category": "DF16",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 223,
+      "paranaque_mnl": 223,
+      "cebu": 0,
+      "davao": 0
+    },
+    "partNumber": "3FE53441AC"
+  },
+  {
+    "id": "item_76",
+    "code": "3FE53441BA",
+    "description": "GPON SFP C+ (C-temp) OLT (brand: Nokia)",
+    "uom": "pc",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_77",
+    "code": "3FE53902ACAA",
+    "description": "OEM-2U MDU assembly kit",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_78",
+    "code": "3FE56402AC",
+    "description": "ISAM Dual GPON XFP OLT (I-temp) Class\nB+(brand: Nokia)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_79",
+    "code": "3FE5774AA",
+    "description": "Optical Module TranceiverGE 10KM 1G 11dB",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_80",
+    "code": "3FE60713BLAA",
+    "description": "Simplex patch cord, SC/UPC -SC/APC 1.5m(brand: Nokia)",
+    "uom": "pc",
+    "category": "Patch Cord",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 328,
+      "paranaque_mnl": 152,
+      "cebu": 96,
+      "davao": 80
+    },
+    "partNumber": "3FE60713BLAA"
+  },
+  {
+    "id": "item_81",
+    "code": "3FE60713CAAA",
+    "description": "Simplex Patch Cord, SC/UPC - SC/APC 2m(brand: Nokia)",
+    "uom": "pc",
+    "category": "Patch Cord",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 1503,
+      "paranaque_mnl": 1204,
+      "cebu": 104,
+      "davao": 195
+    },
+    "partNumber": "3FE60713CAAA"
+  },
+  {
+    "id": "item_82",
+    "code": "3FE60713DA",
+    "description": "Simplex patch cord, SC/UPC -SC/APC 3m(brand: Nokia)",
+    "uom": "pc",
+    "category": "Patch Cord",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_83",
+    "code": "3FE60713ELAA",
+    "description": "Simplex patch cord, SC/UPC -SC/APC 5m(brand: Nokia)",
+    "uom": "pc",
+    "category": "Patch Cord",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 959,
+      "paranaque_mnl": 0,
+      "cebu": 879,
+      "davao": 80
+    },
+    "partNumber": "3FE60713ELAA"
+  },
+  {
+    "id": "item_84",
+    "code": "3FE60713FLAA",
+    "description": "Simplex patch cord, SC/UPC -SC/APC 8m(brand: Nokia)",
+    "uom": "pc",
+    "category": "Patch Cord",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 618,
+      "paranaque_mnl": 178,
+      "cebu": 440,
+      "davao": 0
+    },
+    "partNumber": "3FE60713FLAA"
+  },
+  {
+    "id": "item_85",
+    "code": "3FE60713GAAA",
+    "description": "Simplex patch cord, SC/UPC -SC/APC 10m(brand: Nokia)",
+    "uom": "pc",
+    "category": "Patch Cord",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 889,
+      "paranaque_mnl": 204,
+      "cebu": 685,
+      "davao": 0
+    },
+    "partNumber": "3FE60713GAAA"
+  },
+  {
+    "id": "item_86",
+    "code": "3FE60713GLAA",
+    "description": "Simplex patch cord, SC/UPC -SC/APC 15m(brand: Nokia)",
+    "uom": "pc",
+    "category": "Patch Cord",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 894,
+      "paranaque_mnl": 246,
+      "cebu": 577,
+      "davao": 71
+    },
+    "partNumber": "3FE60713GLAA"
+  },
+  {
+    "id": "item_87",
+    "code": "3FE61087DA",
+    "description": "Fiber Routing Kit ISAM FX-4(brand: Nokia)",
+    "uom": "pc",
+    "category": "FX4",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 15,
+      "paranaque_mnl": 9,
+      "cebu": 3,
+      "davao": 3
+    }
+  },
+  {
+    "id": "item_88",
+    "code": "3FE61087EA",
+    "description": "ISAM FX-8 Fiber Routing Kit(brand: Nokia)",
+    "uom": "pc",
+    "category": "FX8",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 1,
+      "paranaque_mnl": 1,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_89",
+    "code": "3FE61087FA",
+    "description": "ISAM FX-16 Fiber Routing Kit(brand: Nokia)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_90",
+    "code": "3FE62600AA",
+    "description": "Optical Transceiver SFP+,1310nm SM,10km(brand: Nokia) (10GBase-LR)",
+    "uom": "pc",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 553,
+      "paranaque_mnl": 234,
+      "cebu": 299,
+      "davao": 20
+    }
+  },
+  {
+    "id": "item_91",
+    "code": "3FE62600AA-S",
+    "description": "Optical Transceiver SFP+,1310nm SM,10km(brand: Nokia) (10GBase-LR)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 16,
+      "paranaque_mnl": 16,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_92",
+    "code": "3FE62600AA",
+    "description": "Optical Transceiver SFP+,1310nm SM,10km(brand: Nokia) (10GBase-LR)",
+    "uom": "PC",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 553,
+      "paranaque_mnl": 234,
+      "cebu": 299,
+      "davao": 20
+    },
+    "partNumber": "3FE62600AA"
+  },
+  {
+    "id": "item_93",
+    "code": "3FE64936AB",
+    "description": "7360 ISAM FX-8 shelf (ETSI variant), 48V only,\nincl. BFAN unit(brand: Nokia)",
+    "uom": "pc",
+    "category": "FX8",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 1,
+      "paranaque_mnl": 1,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_94",
+    "code": "3FE64991AB",
+    "description": "Shelf 7360 ISAM FX-4 48V only(brand: Nokia)",
+    "uom": "pc",
+    "category": "FX4",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 15,
+      "paranaque_mnl": 9,
+      "cebu": 3,
+      "davao": 3
+    }
+  },
+  {
+    "id": "item_95",
+    "code": "3FE65209AA",
+    "description": "7360 ISAM FX-16 shelf (ETSI variant), 48V\nonly, excl. fan unit(brand: Nokia)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_96",
+    "code": "3FE66546AA",
+    "description": "ISAM FD/FX Intelligent Fan w Dustfilter,\n48V/60V only (for FX-16)(brand: Nokia)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_97",
+    "code": "3FE68309AA",
+    "description": "7363 Intelligent Services Access Manager (ISAM) MX-6 Dummy Blank Panel(brand: Nokia)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 614,
+      "paranaque_mnl": 270,
+      "cebu": 51,
+      "davao": 23
+    }
+  },
+  {
+    "id": "item_98",
+    "code": "3FE68313AA",
+    "description": "7363 MX6 Shelf Equipment Chassis w Fan Unit",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 107,
+      "paranaque_mnl": 44,
+      "cebu": 29,
+      "davao": 1
+    }
+  },
+  {
+    "id": "item_99",
+    "code": "3FE68313AA-S",
+    "description": "7363 MX6 Shelf Equipment Chassis w Fan Unit",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 11,
+      "paranaque_mnl": 11,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_100",
+    "code": "3FE68315AB",
+    "description": "7363 Intelligent Services Access\nManager(ISAM) MX-6 Fan Unit (brand: Nokia)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 115,
+      "paranaque_mnl": 103,
+      "cebu": 10,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_101",
+    "code": "3FE68319AB",
+    "description": "7363 Intelligent Services Access Manager (ISAM) MX-6 Dust Filter Equipment Rack(brand: Nokia)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 112,
+      "paranaque_mnl": 48,
+      "cebu": 28,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_102",
+    "code": "3FE68319AB-S",
+    "description": "7363 Intelligent Services Access Manager (ISAM) MX-6 Dust Filter Equipment Rack(brand: Nokia)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 8,
+      "paranaque_mnl": 8,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_103",
+    "code": "3FE68339AB",
+    "description": "7363 Intelligent Services Access\nManager (ISAM) MX-6 NT RANT-A Control Card(brand: Nokia)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 106,
+      "paranaque_mnl": 31,
+      "cebu": 25,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_104",
+    "code": "3FE68339AB-S",
+    "description": "7363 Intelligent Services Access\nManager (ISAM) MX-6 NT RANT-A Control Card(brand: Nokia)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 22,
+      "paranaque_mnl": 22,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_105",
+    "code": "3FE68410BA",
+    "description": "7363 Intelligent Services Access\nManager (ISAM) MX-6 NTIO Control Card DC-power(brand: Nokia)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 117,
+      "paranaque_mnl": 47,
+      "cebu": 29,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_106",
+    "code": "3FE68410BA-S",
+    "description": "7363 Intelligent Services Access\nManager (ISAM) MX-6 NTIO Control Card DC-power(brand: Nokia)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 13,
+      "paranaque_mnl": 13,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_107",
+    "code": "3FE68425AA",
+    "description": "POTS LTw/splitterCARDS SubsCable 32p",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 90,
+      "paranaque_mnl": 40,
+      "cebu": 12,
+      "davao": 14
+    }
+  },
+  {
+    "id": "item_108",
+    "code": "3FE68425AA-S",
+    "description": "POTS LTw/splitterCARDS SubsCable 32p",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 35,
+      "paranaque_mnl": 35,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_109",
+    "code": "3FE68454AA",
+    "description": "BG-64 ETSI MOUNTING KIT (brand: Nokia)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 123,
+      "paranaque_mnl": 64,
+      "cebu": 23,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_110",
+    "code": "3FE68460DA",
+    "description": "32p MDF Cable SERVICECARDSSubsCable 3m(brand: Nokia)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 602,
+      "paranaque_mnl": 508,
+      "cebu": 93,
+      "davao": 1
+    }
+  },
+  {
+    "id": "item_111",
+    "code": "3FE68460EL",
+    "description": "7363 ISAM MX-6 32p MDF Cable (5m)(brand: Nokia)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 88,
+      "paranaque_mnl": 63,
+      "cebu": 0,
+      "davao": 25
+    }
+  },
+  {
+    "id": "item_112",
+    "code": "3FE68460GA",
+    "description": "7363 ISAM MX-6 MDF Cable 10m (brand: Nokia)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 260,
+      "paranaque_mnl": 252,
+      "cebu": 8,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_113",
+    "code": "3FE68460GL",
+    "description": "MDF Cable 7363 ISAM MX-6 32p\n(15m)(brand: Nokia)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 103,
+      "paranaque_mnl": 93,
+      "cebu": 0,
+      "davao": 10
+    }
+  },
+  {
+    "id": "item_114",
+    "code": "3FE68460HA",
+    "description": "7363 ISAM MX-6 32p Main Distribution Frame Cable (20m) (Brand: Nokia)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 81,
+      "paranaque_mnl": 37,
+      "cebu": 38,
+      "davao": 6
+    }
+  },
+  {
+    "id": "item_115",
+    "code": "3FE68461AA",
+    "description": "Interconnection Cable LSZH 32pair,26AWG",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 139,
+      "paranaque_mnl": 36,
+      "cebu": 46,
+      "davao": 14
+    }
+  },
+  {
+    "id": "item_116",
+    "code": "3FE68762DA",
+    "description": "7363 Intelligent Services Access Manager (ISAM) MX-6 Power Cable DC,\n3m(brand: Nokia)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 619,
+      "paranaque_mnl": 590,
+      "cebu": 25,
+      "davao": 4
+    }
+  },
+  {
+    "id": "item_117",
+    "code": "3FE68762GA",
+    "description": "7363 ISAM MX-6 POWER CABLE (10m)(brand: Nokia)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 95,
+      "paranaque_mnl": 1,
+      "cebu": 40,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_118",
+    "code": "3FE68762GL",
+    "description": "7363  MX-6 DC Power Cable (15m) (Brand: Nokia)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 146,
+      "paranaque_mnl": 127,
+      "cebu": 19,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_119",
+    "code": "3FE69465AA",
+    "description": "Universal dummy plate",
+    "uom": "pc",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 16,
+      "paranaque_mnl": 9,
+      "cebu": 0,
+      "davao": 2
+    },
+    "partNumber": "3FE69465AA"
+  },
+  {
+    "id": "item_120",
+    "code": "3FE71256AB",
+    "description": "7360 ISAM FX 1280Gbps NT with network clock synchronization capabilities, without\nSFPs (ETSI variant)(brand: Nokia)",
+    "uom": "pc",
+    "category": "FX4",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 32,
+      "paranaque_mnl": 22,
+      "cebu": 6,
+      "davao": 6
+    }
+  },
+  {
+    "id": "item_121",
+    "code": "3FE71637AA",
+    "description": "32p Vplus LT Service CARDS+SubsCablew/MELT",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 401,
+      "paranaque_mnl": 186,
+      "cebu": 73,
+      "davao": 15
+    }
+  },
+  {
+    "id": "item_122",
+    "code": "3FE71637AA-S",
+    "description": "32p Vplus LT Service CARDS+SubsCablew/MELT",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 93,
+      "paranaque_mnl": 93,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_123",
+    "code": "3FE72087AA",
+    "description": "7362/7367 ISAM SF-8GW Power Cable (5\nmeters) (brand: Nokia)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_124",
+    "code": "3FE729936AA",
+    "description": "DC POWER CABLE (10M)",
+    "uom": "pc",
+    "category": "Cables",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_125",
+    "code": "3FE73517CA",
+    "description": "7362 ISAM SF-8GW with AC/DC/RFT-V power\nsupply(brand: Nokia)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_126",
+    "code": "3FE74103BA",
+    "description": "7363 (ISAM) MX-6 NT RANT-AControl Card (brand: Nokia)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_127",
+    "code": "3FE74448AA",
+    "description": "7363  (ISAM) MX-6 NTIOControl CardDC-power (brand: Nokia)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_128",
+    "code": "3FE74482JA",
+    "description": "7362 ISAM SF-8GW Service Cable, 8xLC + 8xLC, straight angle (100ft / 30m)(brand:\nNokia)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_129",
+    "code": "3FE74828AA",
+    "description": "7360 ISAM FX 1280Gbps NT with network clock synchronization capabilities, without SFP's (ETSI variant) (brand: Nokia)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_130",
+    "code": "3FE74947AA",
+    "description": "7362 ISAM SF-8GW Wall/Pole Mounting Kit with features for single craftsperson\ninstall(brand: Nokia)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_131",
+    "code": "3FE74981AA",
+    "description": "FPBA-PWLT-C10 GPON-LT",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_132",
+    "code": "3FE75111AB",
+    "description": "FastMile ODU Compact Band 3 (Ethernet cable 3 meters\nand standard wall mounting kits) / Nokia Fastmile\nCompact Receiver 4G02-A (Brand: Nokia)",
+    "uom": "pc",
+    "category": "Fastmile",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_133",
+    "code": "3FE75111AC",
+    "description": "MODEM FastMile ODU Compact Band 41(3m)(brand:Nokia)",
+    "uom": "pc",
+    "category": "Fastmile",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_134",
+    "code": "3FE75111CC",
+    "description": "FastMile ODU Compact Band 41 (Ethernet cable 20\nmeters and standard wall mounting kits) / Nokia\nFastmile 4G Receiver 4G03-A (Brand: Nokia)",
+    "uom": "pc",
+    "category": "Fastmile",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_135",
+    "code": "3FE76353AA",
+    "description": "Lightspan MF 16port Multi-PON Line board (LWLT-C)",
+    "uom": "PC",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 64,
+      "paranaque_mnl": 25,
+      "cebu": 8,
+      "davao": 12
+    },
+    "partNumber": "3FE76353AA"
+  },
+  {
+    "id": "item_136",
+    "code": "3FE76353AA-S",
+    "description": "Lightspan MF 16port Multi-PON Line board (LWLT-C) - SW STAGED",
+    "uom": "PC",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 23,
+      "paranaque_mnl": 23,
+      "cebu": 0,
+      "davao": 0
+    },
+    "partNumber": "3FE76353AA-S"
+  },
+  {
+    "id": "item_137",
+    "code": "3FE76476AA",
+    "description": "LightspanMF-2 240Gbps NT with clock sync(brand: Nokia) (LMNT-A)",
+    "uom": "PC",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 316,
+      "paranaque_mnl": 89,
+      "cebu": 180,
+      "davao": 24
+    },
+    "partNumber": "3FE76476AA"
+  },
+  {
+    "id": "item_138",
+    "code": "3FE76559BA",
+    "description": "Lightspan MF-2 DC power module (LPWR-B DC)",
+    "uom": "PC",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 321,
+      "paranaque_mnl": 47,
+      "cebu": 229,
+      "davao": 25
+    },
+    "partNumber": "3FE76559BA"
+  },
+  {
+    "id": "item_139",
+    "code": "3FE76762AA",
+    "description": "Lightspan MF-2 shelf incl. fan unit (LMXR-A)",
+    "uom": "PC",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 151,
+      "paranaque_mnl": 25,
+      "cebu": 112,
+      "davao": 3
+    },
+    "partNumber": "3FE76762AA"
+  },
+  {
+    "id": "item_140",
+    "code": "3FE76762AA-S",
+    "description": "Lightspan MF-2 shelf incl. fan unit(brand:\nNokia)",
+    "uom": "pc",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 3,
+      "paranaque_mnl": 3,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_141",
+    "code": "3FE77035BA",
+    "description": "Lightspan MF LT dmmy plte\n(388x204x25)mm(brand: Nokia)",
+    "uom": "pc",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 266,
+      "paranaque_mnl": 128,
+      "cebu": 112,
+      "davao": 26
+    }
+  },
+  {
+    "id": "item_142",
+    "code": "3FE77365AA",
+    "description": "CA-LS-MF2 DC ETSI (15M)",
+    "uom": "pc",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_143",
+    "code": "3FE77365BA",
+    "description": "Lightspan MF-2 DC power cable ETSI (10m) (brand: Nokia",
+    "uom": "pc",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 472,
+      "paranaque_mnl": 176,
+      "cebu": 272,
+      "davao": 4
+    }
+  },
+  {
+    "id": "item_144",
+    "code": "3FE77365BAA",
+    "description": "POSITIVE POWER CABLE BLACK/10M",
+    "uom": "pc",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_145",
+    "code": "3FE77645AA",
+    "description": "Lightspan DF-16GM DC power module(brand: Nokia)",
+    "uom": "pc",
+    "category": "DF16",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 52,
+      "paranaque_mnl": 54,
+      "cebu": 0,
+      "davao": 0
+    },
+    "partNumber": "3FE77645AA"
+  },
+  {
+    "id": "item_146",
+    "code": "3FE77670AA",
+    "description": "Lightspan DF-16GM shelf incl. fan unit, w/o dust filter(brand: Nokia)",
+    "uom": "pc",
+    "category": "DF16",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 26,
+      "paranaque_mnl": 26,
+      "cebu": 0,
+      "davao": 0
+    },
+    "partNumber": "3FE77670AA"
+  },
+  {
+    "id": "item_147",
+    "code": "3FE77791AA",
+    "description": "Door alarm KBM-121 White, 2A 250VAC(brand: Nokia)",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 91,
+      "paranaque_mnl": 79,
+      "cebu": 11,
+      "davao": 1
+    }
+  },
+  {
+    "id": "item_148",
+    "code": "3FE77792AA",
+    "description": "1U chassis Sensor 480x200x44mm(brand: Nokia)",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 103,
+      "paranaque_mnl": 91,
+      "cebu": 11,
+      "davao": 1
+    }
+  },
+  {
+    "id": "item_149",
+    "code": "3FE81133AA",
+    "description": "Door Fan Cables with alarm connection(brand: Nokia)",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_150",
+    "code": "3FE82498AA",
+    "description": "Liquid sensor SC-LS-201(brand: Nokia)",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 97,
+      "paranaque_mnl": 85,
+      "cebu": 11,
+      "davao": 1
+    }
+  },
+  {
+    "id": "item_151",
+    "code": "3FE82503AA",
+    "description": "LIQUID TIGHT CONDUIT M32 PA6(brand: Nokia)",
+    "uom": "m",
+    "category": "QODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 2,
+      "paranaque_mnl": 2,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_152",
+    "code": "3FE82503AB",
+    "description": "LIQUID TIGHT CONDUIT M20 PA6(brand: Nokia)",
+    "uom": "m",
+    "category": "QODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 71,
+      "paranaque_mnl": 71,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_153",
+    "code": "3FE83118AA",
+    "description": "Smoke Sensor SD119-G-4 100mmx46mm(brand: Nokia)",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 119,
+      "paranaque_mnl": 97,
+      "cebu": 21,
+      "davao": 1
+    }
+  },
+  {
+    "id": "item_154",
+    "code": "3FE83119AA",
+    "description": "Liquid Level Sensor D18*64mm, 2700mm(brand: Nokia)",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_155",
+    "code": "3HE00028CA",
+    "description": "SFP - GIGE LX - LC ROHS 6/6 DDM -40/85C",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_156",
+    "code": "3HE00062CB",
+    "description": "Switch 1-port 10/100/1000BASE-TX SFF(Brand: Nokia)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_157",
+    "code": "3HE00271AA",
+    "description": "CBL - AC PWR CBL 110V USA",
+    "uom": "m",
+    "category": "Cables",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_158",
+    "code": "3HE00271AB",
+    "description": "CBL - AC PWR CBL 220V USA",
+    "uom": "m",
+    "category": "Cables",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_159",
+    "code": "3HE00564CA",
+    "description": "XFP - 10GE LR - LC ROHS 6/6 0/70C",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_160",
+    "code": "3HE04414AB",
+    "description": "PS-7210 SAS M/Mxp/T AC PS (NON-ETR) 200",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_161",
+    "code": "3HE08116AB",
+    "description": "SYS - 7210 SAS-T 12F 10T 4XFP",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_162",
+    "code": "3HE08364AG",
+    "description": "SYS - 7210 SAS-T 12F 10T 4XFP AC wNAR PC, including the following:",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_163",
+    "code": "3HE09507CA",
+    "description": "OS -7210 SAS-T Rel-9 or upg to Rel-9",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_164",
+    "code": "3TG00041AA",
+    "description": "PoE+ desktop (MAINS CORD type B (US)(brand: Nokia)",
+    "uom": "pc",
+    "category": "Fastmile",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_165",
+    "code": "473240A",
+    "description": "FCOB FLEX CABINET (OUTDOOR)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_166",
+    "code": "AnchorBolt",
+    "description": "Anchor Bolt 16mm w/ 2nuts , 1lock and washer",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_167",
+    "code": "Blaine-1.25mmShrinkable",
+    "description": "Shrinkable Tube 1.25mm",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_168",
+    "code": "Blaine-10mm-Shrinkable",
+    "description": "10mm Shrinkable Tube (200mm/pc)",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_169",
+    "code": "Blaine-10mmLugs",
+    "description": "Terminal lugs 10mm",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_170",
+    "code": "Blaine-12mmShrinkable",
+    "description": "Shrinkable tube 12mm x 200mm",
+    "uom": "pc",
+    "category": "Consumables",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 1521,
+      "paranaque_mnl": 834,
+      "cebu": 642,
+      "davao": 45
+    },
+    "partNumber": "Blaine-12mmShrinkable"
+  },
+  {
+    "id": "item_171",
+    "code": "Blaine-16-12ferrule cable shoe (green)",
+    "description": "Cable shoe (green) 16-12ferrule",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_172",
+    "code": "Blaine-16mm-Shrinkable-m",
+    "description": "SHRINKABLE TUBE FOR 16MM2",
+    "uom": "m",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_173",
+    "code": "Blaine-2.5mmShoe",
+    "description": "2.5mm2 Cable Shoe Blue",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 3170,
+      "paranaque_mnl": 3170,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_174",
+    "code": "Blaine-2mmLugs",
+    "description": "Terminal lugs 2mm",
+    "uom": "pc",
+    "category": "TOPBOX",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 604,
+      "paranaque_mnl": 556,
+      "cebu": 39,
+      "davao": 9
+    }
+  },
+  {
+    "id": "item_175",
+    "code": "Blaine-2mmShoe",
+    "description": "Cable shoe 2mm",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_176",
+    "code": "Blaine-3.5mm-Shrinkable-m",
+    "description": "SHRINKABLE TUBE FOR 3.5MM2",
+    "uom": "m",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_177",
+    "code": "Blaine-5.5mm-Shrinkable",
+    "description": "SHRINKABLE TUBE FOR 5.5MM2",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_178",
+    "code": "Blaine-5mm-Tie",
+    "description": "8x5MM CABLE TIE BLACK",
+    "uom": "pack",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_179",
+    "code": "Blaine-8\"Tie",
+    "description": "Cable Tie (Tie Wrap) White 8\"",
+    "uom": "pack",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 356,
+      "paranaque_mnl": 168,
+      "cebu": 185,
+      "davao": 3
+    }
+  },
+  {
+    "id": "item_180",
+    "code": "Blaine-8\"Tie-p",
+    "description": "Cable Tie (Tie Wrap) White 8\"",
+    "uom": "pcs",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_181",
+    "code": "Blaine-8\"Tie-Blk",
+    "description": "Cable Tie (Tie Wrap) Black 8\" (100pcs per pack)",
+    "uom": "pack",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 1691,
+      "paranaque_mnl": 456,
+      "cebu": 236,
+      "davao": 999
+    }
+  },
+  {
+    "id": "item_182",
+    "code": "Blaine-8mmLugs",
+    "description": "terminal lugs 8mm",
+    "uom": "pc",
+    "category": "Hardware",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    },
+    "partNumber": "Blaine-8mmLugs"
+  },
+  {
+    "id": "item_183",
+    "code": "Blaine-8mmShrinkable",
+    "description": "Shrinkable tube 8mm x 200mm",
+    "uom": "pc",
+    "category": "Consumables",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 1108,
+      "paranaque_mnl": 534,
+      "cebu": 568,
+      "davao": 6
+    },
+    "partNumber": "Blaine-8mmShrinkable"
+  },
+  {
+    "id": "item_184",
+    "code": "Blaine-ButterflyTie",
+    "description": "Butterfly Tie Wrap (MARKER TIE)",
+    "uom": "pack",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 1366,
+      "paranaque_mnl": 631,
+      "cebu": 724,
+      "davao": 11
+    }
+  },
+  {
+    "id": "item_185",
+    "code": "Blaine-ButterflyTie-p",
+    "description": "Butterfly Tie Wrap (MARKER TIE)",
+    "uom": "pc",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_186",
+    "code": "Blaine-Cartridge9mm",
+    "description": "Labeller Cartridge 9mm",
+    "uom": "pc",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 601,
+      "paranaque_mnl": 514,
+      "cebu": 76,
+      "davao": 11
+    }
+  },
+  {
+    "id": "item_187",
+    "code": "Blaine-ODC_SB01",
+    "description": "ODC Support Bar for Battery Platform",
+    "uom": "pc",
+    "category": "ODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 112,
+      "paranaque_mnl": 98,
+      "cebu": 2,
+      "davao": 12
+    }
+  },
+  {
+    "id": "item_188",
+    "code": "Blaine-Sealant White",
+    "description": "Silicon Sealant (White) (NO STOCK IN WAREHOUSE)",
+    "uom": "pc",
+    "category": "Consumables",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 0,
+      "paranaque_mnl": 0,
+      "cebu": 0,
+      "davao": 0
+    },
+    "partNumber": "Blaine-Sealant White"
+  },
+  {
+    "id": "item_189",
+    "code": "Blaine-Spiral-1/2mmx10ft",
+    "description": "1/2 x 10m SPIRAL WRAP",
+    "uom": "pack",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 591,
+      "paranaque_mnl": 293,
+      "cebu": 275,
+      "davao": 23
+    }
+  },
+  {
+    "id": "item_190",
+    "code": "Blaine-Spiral-10mmx10ft",
+    "description": "Spiral Wrap 10mmx10ft",
+    "uom": "pack",
+    "category": "Consumables",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    },
+    "partNumber": "Blaine-Spiral-10mmx10ft"
+  },
+  {
+    "id": "item_191",
+    "code": "Blaine-Spiral-10mmx5m",
+    "description": "10mm x 5m Spiral Wrap",
+    "uom": "m",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_192",
+    "code": "Blaine-Sticker(pad)",
+    "description": "Sticker Paper White (pad)",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_193",
+    "code": "Cable Ladder 3M",
+    "description": "Cable Ladder 3M",
+    "uom": "pc",
+    "category": "QODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 24,
+      "paranaque_mnl": 9,
+      "cebu": 13,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_194",
+    "code": "FS6AD290070002",
+    "description": "BUS BAR INSULATOR",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_195",
+    "code": "GND-1/2",
+    "description": "16mm 2Grounding Cable (brand: Hengtong)",
+    "uom": "m",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_196",
+    "code": "HG6245D",
+    "description": "GPON ONU",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_197",
+    "code": "L0012BU01",
+    "description": "12 Holes Busbar",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_198",
+    "code": "L0013BU01",
+    "description": "13 Holes Busbar",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_199",
+    "code": "L001X10TBMF01",
+    "description": "TUBULAR BACK MOUNT FRAME 1X10",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 141,
+      "paranaque_mnl": 133,
+      "cebu": 8,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_200",
+    "code": "L001X5TBMF01",
+    "description": "TUBULAR BACK MOUNT FRAME 1X5",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 68,
+      "paranaque_mnl": 63,
+      "cebu": 5,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_201",
+    "code": "L002LTFC",
+    "description": "2\" LTFC",
+    "uom": "pc",
+    "category": "QODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_202",
+    "code": "L002URackExt",
+    "description": "2U Rack Extension 1.7 depth",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 340,
+      "paranaque_mnl": 174,
+      "cebu": 164,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_203",
+    "code": "L004J4501",
+    "description": "RJ45 CONNECTORS (100PCS/PACK)",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 350,
+      "paranaque_mnl": 289,
+      "cebu": 47,
+      "davao": 14
+    }
+  },
+  {
+    "id": "item_204",
+    "code": "L005.5INS",
+    "description": "5.5 Fully INS",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 2586,
+      "paranaque_mnl": 2208,
+      "cebu": 378,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_205",
+    "code": "L005.5THHNWIRE-BLK",
+    "description": "5.5MM2 THHN PD Wire 150m/roll Black",
+    "uom": "m",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 657,
+      "paranaque_mnl": 480,
+      "cebu": 169,
+      "davao": 8
+    }
+  },
+  {
+    "id": "item_206",
+    "code": "L005.5THHNWIRE-RED",
+    "description": "5.5MM2 THHN PD Wire 150m/roll Red",
+    "uom": "m",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 652,
+      "paranaque_mnl": 480,
+      "cebu": 168,
+      "davao": 4
+    }
+  },
+  {
+    "id": "item_207",
+    "code": "L00CageNuts",
+    "description": "CAGE NUTS (BOLTS & NUTS)",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_208",
+    "code": "L00CB16A-N",
+    "description": "16A CIRCUIT BREAKER (NADER) 1P",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 12,
+      "paranaque_mnl": 7,
+      "cebu": 4,
+      "davao": 1
+    }
+  },
+  {
+    "id": "item_209",
+    "code": "L00CB20A-N",
+    "description": "20A CIRCUIT BREAKER (NADER) 1P",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 10,
+      "paranaque_mnl": 7,
+      "cebu": 3,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_210",
+    "code": "L00CB25A-N",
+    "description": "25A CIRCUIT BREAKER (NADER) 1P",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 7,
+      "paranaque_mnl": 5,
+      "cebu": 2,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_211",
+    "code": "L00CB32A-N",
+    "description": "32A CIRCUIT BREAKER (NADER) 1P",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 2,
+      "paranaque_mnl": 2,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_212",
+    "code": "L00CB63A-N",
+    "description": "63A CIRCUIT BREAKER (NADER) 1P",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 4,
+      "paranaque_mnl": 3,
+      "cebu": 1,
+      "davao": 0
+    },
+    "partNumber": "L00CB63A-N"
+  },
+  {
+    "id": "item_213",
+    "code": "L00CB6A-N",
+    "description": "6A CIRCUIT BREAKER (NADER) 1P",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 12,
+      "paranaque_mnl": 9,
+      "cebu": 3,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_214",
+    "code": "L00CB16A-S",
+    "description": "16A CIRCUIT BREAKER (Schneider) 1P",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 3,
+      "paranaque_mnl": 3,
+      "cebu": 0,
+      "davao": 0
+    },
+    "partNumber": "L00CB16A-S"
+  },
+  {
+    "id": "item_215",
+    "code": "L00CB20A-S",
+    "description": "20A CIRCUIT BREAKER (Schneider) 1P",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 0,
+      "paranaque_mnl": 0,
+      "cebu": 0,
+      "davao": 0
+    },
+    "partNumber": "L00CB20A-S"
+  },
+  {
+    "id": "item_216",
+    "code": "L00CB25A-S",
+    "description": "25A CIRCUIT BREAKER (Schneider) 1P",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 2,
+      "paranaque_mnl": 2,
+      "cebu": 0,
+      "davao": 0
+    },
+    "partNumber": "L00CB25A-S"
+  },
+  {
+    "id": "item_217",
+    "code": "L00CB32A-S",
+    "description": "32A CIRCUIT BREAKER (Schneider) 1P",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 8,
+      "paranaque_mnl": 5,
+      "cebu": 3,
+      "davao": 0
+    },
+    "partNumber": "L00CB32A-S"
+  },
+  {
+    "id": "item_218",
+    "code": "L00CB63A-S",
+    "description": "63A CIRCUIT BREAKER (SCHNEIDER) 1P",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 0,
+      "paranaque_mnl": 0,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_219",
+    "code": "L00CB6A-S",
+    "description": "6A CIRCUIT BREAKER (SCHNEIDER) 1P",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 0,
+      "paranaque_mnl": 0,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_220",
+    "code": "L00CS14AWG-BK",
+    "description": "cable shoe (#14 AWG)",
+    "uom": "pc",
+    "category": "Hardware",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 489,
+      "paranaque_mnl": 150,
+      "cebu": 339,
+      "davao": 0
+    },
+    "partNumber": "L00CS14AWG-BK"
+  },
+  {
+    "id": "item_221",
+    "code": "L00CS14AWG-BL",
+    "description": "CABLE SHOE #14 AWG (BLUE)",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 518,
+      "paranaque_mnl": 144,
+      "cebu": 374,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_222",
+    "code": "L00CS6AWG",
+    "description": "CABLE SHOE #6 AWG (BLACK)",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_223",
+    "code": "L00DCBLK16MM2",
+    "description": "16mm2 DC Cable Black",
+    "uom": "m",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 749,
+      "paranaque_mnl": 435,
+      "cebu": 306,
+      "davao": 8
+    }
+  },
+  {
+    "id": "item_224",
+    "code": "L00DCBLU16MM2",
+    "description": "16mm2 DC Cable Blue",
+    "uom": "m",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 745,
+      "paranaque_mnl": 435,
+      "cebu": 302,
+      "davao": 8
+    }
+  },
+  {
+    "id": "item_225",
+    "code": "L00DCC25MBLACK",
+    "description": "DC POWER CABLE 25MM BLACK (45M EACH)",
+    "uom": "pc",
+    "category": "Cables",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_226",
+    "code": "L00DCC25MBLUE",
+    "description": "DC POWER CABLE 25MM BLUE (45M EACH)",
+    "uom": "pc",
+    "category": "Cables",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_227",
+    "code": "L00DCC25MYG",
+    "description": "GROUNDING CABLE 25MM YELLOW GREEN (15M EACH)",
+    "uom": "pc",
+    "category": "Cables",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_228",
+    "code": "L00FB3/16X20FT",
+    "description": "3/16 x 1 1/4 x 20ft Flat Bar",
+    "uom": "ft",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_229",
+    "code": "L00FB32mmx3x6ft",
+    "description": "32mm x 3mm x 6ft FLAT BAR",
+    "uom": "ft",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_230",
+    "code": "L00FERS1.5MM",
+    "description": "1.5MM FERRULE RED",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_231",
+    "code": "L00FERS2.5MM",
+    "description": "2.5MM FERRULE BLUE",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_232",
+    "code": "L00FERS3.5MM",
+    "description": "3.5MM FERRULE TERMINAL LUGS",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_233",
+    "code": "L00FI3.5MM2",
+    "description": "3.5mm2 Fully-Ins",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_234",
+    "code": "L00FI5.5MM2",
+    "description": "5.5mm2 Fully-Ins",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_235",
+    "code": "L00FLHO34",
+    "description": "3/4 Flexible Hose, Orange",
+    "uom": "m",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 3627,
+      "paranaque_mnl": 1814,
+      "cebu": 1621,
+      "davao": 192
+    }
+  },
+  {
+    "id": "item_236",
+    "code": "L00FOC-LC/LC-SM-30M",
+    "description": "LC-LC Fiber Patch Cord Simplex Single Mode 30m",
+    "uom": "pc",
+    "category": "Patch Cord",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 2,
+      "paranaque_mnl": 0,
+      "cebu": 2,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_237",
+    "code": "L00FOC-SC/SC(UPC)2M",
+    "description": "Simplex patch cord, SC/UPC - SC/UPC 2m(brand: Nokia)",
+    "uom": "pc",
+    "category": "Patch Cord",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_238",
+    "code": "L00HLT_VELCRO_10M",
+    "description": "VELCRO (HOOK & LOOP TIE) BLACK 2m",
+    "uom": "m",
+    "category": "Consumables",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 4554,
+      "paranaque_mnl": 2238,
+      "cebu": 2306,
+      "davao": 10
+    },
+    "partNumber": "L00HLT_VELCRO_10M"
+  },
+  {
+    "id": "item_239",
+    "code": "L00LTFC114S",
+    "description": "1 1/4 LTFC SOFTDRAWN (50m/roll)",
+    "uom": "m",
+    "category": "QODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_240",
+    "code": "L00LTFC34S",
+    "description": "3/4 LTFC SOFTDRAWN (100m/roll)",
+    "uom": "m",
+    "category": "QODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_241",
+    "code": "L00LTFCCON114",
+    "description": "1 1/4 LTFC STRAIGHT CONNECTOR",
+    "uom": "pc",
+    "category": "QODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 221,
+      "paranaque_mnl": 83,
+      "cebu": 112,
+      "davao": 26
+    }
+  },
+  {
+    "id": "item_242",
+    "code": "L00LTFCCON34",
+    "description": "3/4 LTFC STRAIGHT CONNECTOR",
+    "uom": "pc",
+    "category": "QODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 137,
+      "paranaque_mnl": 33,
+      "cebu": 76,
+      "davao": 28
+    }
+  },
+  {
+    "id": "item_243",
+    "code": "L00Lugs10mm2",
+    "description": "10mm2 Terminal Lugs",
+    "uom": "pc",
+    "category": "Hardware",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 1219,
+      "paranaque_mnl": 679,
+      "cebu": 490,
+      "davao": 50
+    },
+    "partNumber": "L00Lugs10mm2"
+  },
+  {
+    "id": "item_244",
+    "code": "L00LUGS-16-10",
+    "description": "16-10mm2 Terminal Lugs",
+    "uom": "pc",
+    "category": "Hardware",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    },
+    "partNumber": "L00LUGS-16-10"
+  },
+  {
+    "id": "item_245",
+    "code": "L00Lugs16mm2",
+    "description": "16mm2 Terminal Lugs",
+    "uom": "pc",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 2097,
+      "paranaque_mnl": 1684,
+      "cebu": 363,
+      "davao": 50
+    }
+  },
+  {
+    "id": "item_246",
+    "code": "L00LUGS3.5MM",
+    "description": "3.5MM TERMINAL LUGS",
+    "uom": "pc",
+    "category": "QODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 0,
+      "paranaque_mnl": 0,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_247",
+    "code": "L00LUGS3.5MM_cable shoe",
+    "description": "Perrule (Cable Shoe) 3.5mm2",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 256,
+      "paranaque_mnl": 144,
+      "cebu": 112,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_248",
+    "code": "L00LUGS3.6MM",
+    "description": "Terminal Lugs 3.5-6",
+    "uom": "pc",
+    "category": "QODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 2937,
+      "paranaque_mnl": 172,
+      "cebu": 2765,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_249",
+    "code": "L00LUGS5.5MM",
+    "description": "5.5MM TERMINAL LUGS",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 2378,
+      "paranaque_mnl": 1713,
+      "cebu": 665,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_250",
+    "code": "L00Lugs8mm2",
+    "description": "8mm2 Terminal Lugs",
+    "uom": "pc",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 1927,
+      "paranaque_mnl": 1327,
+      "cebu": 600,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_251",
+    "code": "L00MDF1X10SUS",
+    "description": "MDF SUS MDF (1X10) 400MM",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_252",
+    "code": "L00OBR19",
+    "description": "L00OBR19  19\" OPEN BAY RACK",
+    "uom": "pc",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 16,
+      "paranaque_mnl": 11,
+      "cebu": 2,
+      "davao": 3
+    }
+  },
+  {
+    "id": "item_253",
+    "code": "L00ODCAP001",
+    "description": "ODC Aluminum Profile 5052-H32 (2mm)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_254",
+    "code": "L00PTM2X2",
+    "description": "2x2 PLASTIC MOULDING x 2M",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_255",
+    "code": "L00PVCYEL001",
+    "description": "Acrylic Yellow Label (Grounding Label Tag)",
+    "uom": "pc",
+    "category": "QODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 267,
+      "paranaque_mnl": 59,
+      "cebu": 208,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_256",
+    "code": "LOORB01",
+    "description": "RJ45 RUBBER BOOTS",
+    "uom": "pc",
+    "category": "TOPBOX",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 599,
+      "paranaque_mnl": 362,
+      "cebu": 237,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_257",
+    "code": "L00RC01",
+    "description": "ROYAL CORD (BLACK) LOCAL",
+    "uom": "m",
+    "category": "Cables",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_258",
+    "code": "L00RC01-3.5",
+    "description": "3.5MM x 2C PD ROYAL CORD (75m/roll)",
+    "uom": "m",
+    "category": "QODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 312,
+      "paranaque_mnl": 162,
+      "cebu": 140,
+      "davao": 10
+    }
+  },
+  {
+    "id": "item_259",
+    "code": "L00RC01ETERN",
+    "description": "Power cable WDZ-RYY-2*2.5 (Brand: ETERN) Royal Cord",
+    "uom": "m",
+    "category": "TOPBOX",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 713,
+      "paranaque_mnl": 516,
+      "cebu": 197,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_260",
+    "code": "L00SC/UPS-SC/APC-3M-1",
+    "description": "SC/UPC-SC/APC 3M SIMPLEX FIBER PATCH",
+    "uom": "pc",
+    "category": "Patch Cord",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_261",
+    "code": "L00SC/UPS-SC/APC-8M-1",
+    "description": "SC/UPC-SC/APC 8M SIMPLEX FIBER PATCH",
+    "uom": "pc",
+    "category": "Patch Cord",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_262",
+    "code": "L00SPS31A",
+    "description": "48V, 31A, 1500W Switching Power Supply",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_263",
+    "code": "L00SQN001",
+    "description": "SQUARE NUTS (CAGE NUTS)",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_264",
+    "code": "L00SSEALANT-C",
+    "description": "SILICON SEALANT (CLEAR) (NO STOCK IN WAREHOUSE)",
+    "uom": "pc",
+    "category": "QODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 0,
+      "paranaque_mnl": 0,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_265",
+    "code": "L00STP24AWG",
+    "description": "24 AWB Solid Twisted Pair Cable",
+    "uom": "m",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_266",
+    "code": "L00TL14AWG",
+    "description": "TERMINAL LUGS #14 AWG (BLUE)",
+    "uom": "pc",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 1815,
+      "paranaque_mnl": 806,
+      "cebu": 1005,
+      "davao": 4
+    }
+  },
+  {
+    "id": "item_267",
+    "code": "L00CS14AWG",
+    "description": "Cable Shoe #14 AWG (BLUE)",
+    "uom": "pc",
+    "category": "TOPBOX",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 382,
+      "paranaque_mnl": 373,
+      "cebu": 0,
+      "davao": 9
+    }
+  },
+  {
+    "id": "item_268",
+    "code": "L00TL16AWG",
+    "description": "TERMINAL LUGS #16 AWG (RED)",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_269",
+    "code": "L00TL8AWG",
+    "description": "TERMINAL LUGS #8AWG (SILVER)",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_270",
+    "code": "L00UGYCON",
+    "description": "UG Y Connector",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_271",
+    "code": "L00UTP01",
+    "description": "BELDEN CAT5 UTP CABLE",
+    "uom": "m",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 0,
+      "paranaque_mnl": 0,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_272",
+    "code": "L00YG16MM2",
+    "description": "16mm2 Grounding Cable Y/G",
+    "uom": "m",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 30,
+      "paranaque_mnl": 30,
+      "cebu": 0,
+      "davao": 0
+    },
+    "partNumber": "L00YG16MM2"
+  },
+  {
+    "id": "item_273",
+    "code": "L00YG3.5MM2",
+    "description": "3.5mm2 Grounding Cable Yellow/Green",
+    "uom": "m",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 131,
+      "paranaque_mnl": 20,
+      "cebu": 111,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_274",
+    "code": "L00YG8MM2",
+    "description": "8mm2 Grounding Cable Yellow/Green",
+    "uom": "m",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 278,
+      "paranaque_mnl": 204,
+      "cebu": 55,
+      "davao": 19
+    }
+  },
+  {
+    "id": "item_275",
+    "code": "MT90A/NT",
+    "description": "10-PAIR DISCONNECTION MODULE FOR PROFILE MOUNTING",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 1970,
+      "paranaque_mnl": 1616,
+      "cebu": 354,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_276",
+    "code": "PWR CAB-1/1",
+    "description": "Power cable WDZ-RYY-2*2.5(brand: ETERN)",
+    "uom": "m",
+    "category": "Cables",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_277",
+    "code": "SQCB40A",
+    "description": "HOM240 SQUARED PLUGIN 40A 2P",
+    "uom": "pc",
+    "category": "ODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 2,
+      "paranaque_mnl": 1,
+      "cebu": 1,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_278",
+    "code": "L0014THHNWIRE-BLK",
+    "description": "14MM THHN - Black (6 AWG)",
+    "uom": "m",
+    "category": "ODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 462,
+      "paranaque_mnl": 437,
+      "cebu": 0,
+      "davao": 25
+    }
+  },
+  {
+    "id": "item_279",
+    "code": "L0014THHNWIRE-RED",
+    "description": "14MM THHN - Red (6 AWG)",
+    "uom": "m",
+    "category": "ODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 462,
+      "paranaque_mnl": 437,
+      "cebu": 0,
+      "davao": 25
+    }
+  },
+  {
+    "id": "item_280",
+    "code": "ODC Base Frame",
+    "description": "ODC Base Frame",
+    "uom": "pc",
+    "category": "ODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 5,
+      "paranaque_mnl": 2,
+      "cebu": 1,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_281",
+    "code": "S/S M12 x 120mm",
+    "description": "S/S M12 x 120mm",
+    "uom": "pc",
+    "category": "ODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 40,
+      "paranaque_mnl": 16,
+      "cebu": 8,
+      "davao": 16
+    }
+  },
+  {
+    "id": "item_282",
+    "code": "M16 Expansion Bolt",
+    "description": "M16 Expansion Bolt",
+    "uom": "pc",
+    "category": "ODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 40,
+      "paranaque_mnl": 16,
+      "cebu": 8,
+      "davao": 16
+    }
+  },
+  {
+    "id": "item_283",
+    "code": "BLAINE-SHOE 1.25MM ( blue )",
+    "description": "BLAINE-SHOE 1.25MM ( blue )",
+    "uom": "pc",
+    "category": "TOPBOX",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_284",
+    "code": "3FE76986AA",
+    "description": "ISAM FX 16port GPON line card(brand: Nokia)",
+    "uom": "pc",
+    "category": "FX4",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 61,
+      "paranaque_mnl": 25,
+      "cebu": 25,
+      "davao": 11
+    }
+  },
+  {
+    "id": "item_285",
+    "code": "5PT12120AAAA",
+    "description": "MDF Casing",
+    "uom": "pc",
+    "category": "BLAINE TOPBOX",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_286",
+    "code": "TOPBOX ADAPTOR",
+    "description": "Generic TBX adaptor",
+    "uom": "pc",
+    "category": "BLAINE TOPBOX",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_287",
+    "code": "3AP67079BFAA",
+    "description": "Blaine Topbox",
+    "uom": "pc",
+    "category": "BLAINE TOPBOX",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_288",
+    "code": "3FE64927AB",
+    "description": "Nokia SFP OY",
+    "uom": "pc",
+    "category": "ANYHAUL Project",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_289",
+    "code": "3FE68460JA",
+    "description": "7363ISAMMX-632pMDFCable(30m)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_290",
+    "code": "3FE68762EL",
+    "description": "7363ISAMMX-6DCPowerCable(5m)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 31,
+      "paranaque_mnl": 14,
+      "cebu": 15,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_291",
+    "code": "3FE68460FJ",
+    "description": "7363ISAMMX-632pMDFCable(7m)",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 8,
+      "paranaque_mnl": 5,
+      "cebu": 0,
+      "davao": 3
+    }
+  },
+  {
+    "id": "item_292",
+    "code": "3FE48292AE",
+    "description": "ONT G-2425G-A (brand: Nokia)",
+    "uom": "pc",
+    "category": "ONT",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_293",
+    "code": "L00LTFC114",
+    "description": "1 1/4 LTFC SOFTDRAWN (50m/roll)",
+    "uom": "m",
+    "category": "QODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 1883,
+      "paranaque_mnl": 838,
+      "cebu": 867,
+      "davao": 178
+    }
+  },
+  {
+    "id": "item_294",
+    "code": "L00LTFC34",
+    "description": "3/4 LTFC SOFTDRAWN (100m/roll)",
+    "uom": "m",
+    "category": "QODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 220,
+      "paranaque_mnl": 11,
+      "cebu": 0,
+      "davao": 209
+    }
+  },
+  {
+    "id": "item_295",
+    "code": "L005.5THHNWIRE-GREEN",
+    "description": "5.5MM2 THHN PD Wire 150m/roll Green",
+    "uom": "m",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 496,
+      "paranaque_mnl": 492,
+      "cebu": 0,
+      "davao": 4
+    }
+  },
+  {
+    "id": "item_296",
+    "code": "L001LTFC",
+    "description": "1\" LTFC",
+    "uom": "m",
+    "category": "QODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_297",
+    "code": "3FE27505ELAA",
+    "description": "2.5mm Y/G Grounding Cable 5m",
+    "uom": "pc",
+    "category": "ISAM",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_298",
+    "code": "L00FOC-LC/LC-SM-2M",
+    "description": "SC-LC 2m",
+    "uom": "pc",
+    "category": "Patch Cord",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_299",
+    "code": "L00CS3.5MMBL",
+    "description": "3.5MM2 CABLE SHOE BLUE",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_300",
+    "code": "TBX Key F",
+    "description": "TBX Front Door Key",
+    "uom": "pc",
+    "category": "TOPBOX",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_301",
+    "code": "3AP67205BCAA - Key",
+    "description": "TBX All Door Key",
+    "uom": "sets",
+    "category": "TOPBOX",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_302",
+    "code": "QODC - Key",
+    "description": "QODC - Key",
+    "uom": "pc",
+    "category": "QODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_303",
+    "code": "Blaine-3\"Tie",
+    "description": "Plastic Cable Tie white",
+    "uom": "pack",
+    "category": "Consumables",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    },
+    "partNumber": "Blaine-3\"Tie"
+  },
+  {
+    "id": "item_304",
+    "code": "Blaine-4\"Tie",
+    "description": "Plastic Cable Tie white 4x200",
+    "uom": "pack",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_305",
+    "code": "L00Lugs2mm2",
+    "description": "terminal lugs 2mm red",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_306",
+    "code": "L00CS16mm",
+    "description": "Cable shoe 16mm",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_307",
+    "code": "L00CB40A",
+    "description": "QOB240 Miniature Circuit Breaker 40AT/100AF, 2P 10 KAIC 120/240V",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 1,
+      "paranaque_mnl": 1,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_308",
+    "code": "Filler Plate",
+    "description": "Filler Plate for OPAC",
+    "uom": "pc",
+    "category": "TOPBOX",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_309",
+    "code": "Mini-ODC-1/1",
+    "description": "QuickDeploymentOutdoorCabinDF16/MF2 (brand: Nokia)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_310",
+    "code": "Mini-ODC-1/2",
+    "description": "Base mounting kit for Quick ODC(brand: Nokia)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_311",
+    "code": "Filler Plate TBX",
+    "description": "Filler Plate for OPAC",
+    "uom": "pc",
+    "category": "TOPBOX",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_312",
+    "code": "3FE75113CCAC",
+    "description": "Fastmile G403-A",
+    "uom": "pc",
+    "category": "Fastmile",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_313",
+    "code": "PC LC-SC Duplex 30m",
+    "description": "LC-SC Duplex 30m Fiber Pacth Cord",
+    "uom": "pc",
+    "category": "Patch Cord",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_314",
+    "code": "LAN Cable 30m",
+    "description": "LAN Cable 30m",
+    "uom": "pc",
+    "category": "ACCESSORIES",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_315",
+    "code": "21CFR(J)",
+    "description": "SFP 10G LR Brand: Dell",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_316",
+    "code": "FCLF8522T2BTL",
+    "description": "SFP Tranceiver",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_317",
+    "code": "3FE72993GA",
+    "description": "DF 16GM POWER CABLES(10M)(BRAND: NOKIA)",
+    "uom": "pc",
+    "category": "DF16",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 59,
+      "paranaque_mnl": 57,
+      "cebu": 2,
+      "davao": 0
+    },
+    "partNumber": "3FE72993GA"
+  },
+  {
+    "id": "item_318",
+    "code": "3FE75111ACAA",
+    "description": "FastMile ODU Compact 4G03-A",
+    "uom": "pc",
+    "category": "Fastmile",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_319",
+    "code": "3FE75111CCAC",
+    "description": "FastMile ODU Compact 4G03-A",
+    "uom": "pc",
+    "category": "Fastmile",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_320",
+    "code": "3FE75111CCAB",
+    "description": "FastMile ODU Compact 4G03-A",
+    "uom": "pc",
+    "category": "Fastmile",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_321",
+    "code": "3TG00170",
+    "description": "FASTMILE 4G05-A",
+    "uom": "pc",
+    "category": "Fastmile",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_322",
+    "code": "3FE19356AAAH",
+    "description": "Cable-Power*2, 2x1.5mm^2, 30*0.26, Brown and Blue Insulation, Black Sheath, LSZH, 300/500V(Brand: Nokia)",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_323",
+    "code": "3FE19356AAAM",
+    "description": "Insulated Ferrules, Single Wire Din End Sleeve, 1.5mm^2,\n10mm Pin Length(Brand: Nokia)",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_324",
+    "code": "3FE19356AAAG",
+    "description": "Cable-Signal, 0.5mm^2, 16*0.21, Black, LSZH(Brand:\nNokia)",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_325",
+    "code": "3FE19356AAAN",
+    "description": "Insulated Ferrules, Single Wire Din End Sleeve, 0.5mm^2,\n8.0mm Pin Length(Brand: Nokia)",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_326",
+    "code": "Battery-HP",
+    "description": "Server Battery",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_327",
+    "code": "Splitter",
+    "description": "Splitter 1x8",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_328",
+    "code": "S4016067",
+    "description": "1.25G 1310NM-10KM",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_329",
+    "code": "3FE82503AD",
+    "description": "LTC Metallic 15 PA Coating（Brand: Nokia)",
+    "uom": "m",
+    "category": "QODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 3630,
+      "paranaque_mnl": 3630,
+      "cebu": 0,
+      "davao": 0
+    },
+    "partNumber": "3FE82503AD"
+  },
+  {
+    "id": "item_330",
+    "code": "3FE82509AB",
+    "description": "Conduit Coupler 1 inch M（Brand: Nokia)",
+    "uom": "pc",
+    "category": "QODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 248,
+      "paranaque_mnl": 248,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_331",
+    "code": "3FE82508AB",
+    "description": "Conduit Coupler ½ inch M（Brand: Nokia)",
+    "uom": "pc",
+    "category": "QODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 248,
+      "paranaque_mnl": 248,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_332",
+    "code": "3FE82502AD",
+    "description": "LTC Connector 15（Brand: Nokia)",
+    "uom": "pc",
+    "category": "QODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 1484,
+      "paranaque_mnl": 1484,
+      "cebu": 0,
+      "davao": 0
+    },
+    "partNumber": "3FE82502AD"
+  },
+  {
+    "id": "item_333",
+    "code": "3FE82502AC",
+    "description": "LTC Connector 25（Brand: Nokia)",
+    "uom": "pc",
+    "category": "QODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 494,
+      "paranaque_mnl": 494,
+      "cebu": 0,
+      "davao": 0
+    },
+    "partNumber": "3FE82502AC"
+  },
+  {
+    "id": "item_334",
+    "code": "3FE82503AC",
+    "description": "LTC Metallic 25 PA Coating（Brand: Nokia)",
+    "uom": "m",
+    "category": "QODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 888,
+      "paranaque_mnl": 888,
+      "cebu": 0,
+      "davao": 0
+    },
+    "partNumber": "3FE82503AC"
+  },
+  {
+    "id": "item_335",
+    "code": "3FE78433AB",
+    "description": "Nylon Nut M20（Brand: Nokia)",
+    "uom": "pc",
+    "category": "QODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 1488,
+      "paranaque_mnl": 1488,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_336",
+    "code": "3FE78433AA",
+    "description": "Nylon Nut M32（Brand: Nokia)",
+    "uom": "pc",
+    "category": "QODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 496,
+      "paranaque_mnl": 496,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_337",
+    "code": "3FE78434AB",
+    "description": "Sealing Washer M20（Brand: Nokia)",
+    "uom": "pc",
+    "category": "QODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 1488,
+      "paranaque_mnl": 1488,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_338",
+    "code": "3FE78434AA",
+    "description": "Sealing Washer M32（Brand: Nokia)",
+    "uom": "pc",
+    "category": "QODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 496,
+      "paranaque_mnl": 496,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_339",
+    "code": "3FE76518AA",
+    "description": "MF2-FAN Module",
+    "uom": "PC",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 108,
+      "paranaque_mnl": 85,
+      "cebu": 18,
+      "davao": 2
+    },
+    "partNumber": "3FE76518AA"
+  },
+  {
+    "id": "item_340",
+    "code": "Antenna 60m",
+    "description": "60m Antenna cable *1",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_341",
+    "code": "ADVA 1 Set",
+    "description": "60m Antenna cable*1 / OSA GNSS antenna/ cable / accessories *2/ OSA-5401 SFP*2/ Zaram SFP ONT*2",
+    "uom": "sets",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_342",
+    "code": "3FE77365BA-15M",
+    "description": "Power Cable Blue/Black 15m",
+    "uom": "pc",
+    "category": "Power Cable",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 50,
+      "paranaque_mnl": 15,
+      "cebu": 35,
+      "davao": 0
+    },
+    "partNumber": "3FE77365BA-15M"
+  },
+  {
+    "id": "item_343",
+    "code": "3FE60713CA",
+    "description": "Simplex Patch cord, SC/UPC - SC/APC 2m (brand: Nokia)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_344",
+    "code": "3FE60713DA",
+    "description": "Simplex Patch cord, SC/UPC - SC/APC 3m (brand : Nokia)",
+    "uom": "pc",
+    "category": "Patch Cord",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    },
+    "partNumber": "3FE60713DA"
+  },
+  {
+    "id": "item_345",
+    "code": "3FE68460HL",
+    "description": "7363 ISAM MX-6 32p MDFCable (25m) (brand : Nokia)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_346",
+    "code": "3FE60713BL",
+    "description": "Simplex patch cord SC/UPC-SC/APC 1.5m (brand: Nokia)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_347",
+    "code": "3FE53701AD",
+    "description": "FANT-F",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_348",
+    "code": "3FE28521GL",
+    "description": "Single Core Fiber (SC-SC SM) 15M",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_349",
+    "code": "1AF26955AB",
+    "description": "FP2 SMARTPACK R CONTROLLER",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_350",
+    "code": "815198",
+    "description": "RECTIFIER 3000 WATTS ELTEK HE MODULES",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_351",
+    "code": "819296",
+    "description": "MIN 2000W HE RECTIFIER MODULE",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 0,
+      "paranaque_mnl": 0,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_352",
+    "code": "L00CB32A-CHNT",
+    "description": "32A CIRCUIT BREAKER (CHNT)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 4,
+      "paranaque_mnl": 4,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_353",
+    "code": "3FE78483CAAA",
+    "description": "Alarm cable 2m for DB15 (Brand : CPE)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 26,
+      "paranaque_mnl": 23,
+      "cebu": 3,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_354",
+    "code": "3FE19430AA",
+    "description": "ODM-FAN",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_355",
+    "code": "AlcatelT20",
+    "description": "Alcatel T20 Telephone",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_356",
+    "code": "266ClamMeter",
+    "description": "266 AC/DC CALMP METER (DIGITAL)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_357",
+    "code": "S0758380",
+    "description": "Dymo Letratag 100T Label Maker with 2 tapes",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_358",
+    "code": "trap8ftx24ft",
+    "description": "Tarp 8ft x 24ft",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_359",
+    "code": "ZRMT20830842",
+    "description": "Zaram SFP module",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_360",
+    "code": "3FE49207AA",
+    "description": "XGS N1-N2 (I-t) SFP+ ONU",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 20,
+      "paranaque_mnl": 20,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_361",
+    "code": "LockforSideDoor",
+    "description": "Lock for Side Door",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_362",
+    "code": "LockforFrontDoor",
+    "description": "Lock for Front Door",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_363",
+    "code": "KeyforFrontDoor",
+    "description": "Key for Front Door",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_364",
+    "code": "QODCKey",
+    "description": "QODC Key",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_365",
+    "code": "KeyforSideDoor",
+    "description": "Key for Side Door",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_366",
+    "code": "EK308FrontDoorKey",
+    "description": "Blaine Topbox Front Door Key",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_367",
+    "code": "EK477SideDoorKey",
+    "description": "Blaine Topbox Side Door Key",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_368",
+    "code": "RCOPWR2cx1.5mm",
+    "description": "Cable-Power*2, 2x1.5mm^2, 30*0.26, Brown and Blue Insulation, Black Sheath, LSZH, 300/500V(Brand: Nokia)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 285,
+      "paranaque_mnl": 285,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_369",
+    "code": "RCOSGNL-0.5mm",
+    "description": "Cable-Signal, 0.5mm^2, 16*0.21, Black, LSZH(Brand: Nokia)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 96,
+      "paranaque_mnl": 96,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_370",
+    "code": "Ferrule-0.5mm",
+    "description": "Insulated Ferrules, Single Wire Din End Sleeve, 0.5mm^2, 8.0mm Pin Length(Brand: Nokia)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 190,
+      "paranaque_mnl": 190,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_371",
+    "code": "Ferrule-1.5mm",
+    "description": "Insulated Ferrules, Single Wire Din End Sleeve, 1.5mm^2, 10mm Pin Length(Brand: Nokia)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 380,
+      "paranaque_mnl": 380,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_372",
+    "code": "Ferrule-4mm",
+    "description": "Insulated Ferrules, Single Wire Din End Sleeve, 4mm^2, 10mm Pin Length(Brand: Nokia)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 950,
+      "paranaque_mnl": 950,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_373",
+    "code": "3TG00077ADAC",
+    "description": "NOKIA 5G GATEWAY",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_374",
+    "code": "3FE75111ABAA",
+    "description": "FastMile Band 3",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_375",
+    "code": "3TG00170AAAA",
+    "description": "FASTMILE 4G05-A",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_376",
+    "code": "3FE49220AB",
+    "description": "ONT G-2426G-A (brand: Nokia)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_377",
+    "code": "3TG00170AAAB",
+    "description": "FM 4G Receiver 1 B1/3/7/20/28/38/40/41 (brand : Nokia)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_378",
+    "code": "3TG02205AD",
+    "description": "FM 5G Gateway2 for LAT (US-Plug) (Brand : Nokia)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_379",
+    "code": "3FE75833AA",
+    "description": "FLGT-D FX 16port GPON Line Board (Brand : Nokia)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_380",
+    "code": "3FE77515AA",
+    "description": "LGLT-D Lightspan 16port GPON Line Board (Brand: Nokia)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_381",
+    "code": "ODF-Tray",
+    "description": "ODF Fan Tray",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_382",
+    "code": "5JR50010ACAA",
+    "description": "Fan LEFT Nokia Outdoor Topbox Cabinet",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_383",
+    "code": "5JR50010ADAA",
+    "description": "Fan RIGHT Nokia Outdoor Topbox Cabinet",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_384",
+    "code": "202576",
+    "description": "GPON HT HG8145X6 Modem",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_385",
+    "code": "202600",
+    "description": "GPON FH HG6145F Modem IPOE",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_386",
+    "code": "DN8245W",
+    "description": "VSDL HUAWEI MODEL",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_387",
+    "code": "AN5506-04-FA",
+    "description": "FIBERHOME ONT MODEM",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_388",
+    "code": "3FE52344JLAA",
+    "description": "Simplex Patch cord, LC/UPC - LC/UPC (40m)(brand: Nokia)",
+    "uom": "pc",
+    "category": "Patch Cord",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 4,
+      "paranaque_mnl": 0,
+      "cebu": 4,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_389",
+    "code": "3FE29337GLAA",
+    "description": "FX4 16mm2, 15m/positive power cable black(brand: Nokia)",
+    "uom": "pc",
+    "category": "Cables",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 36,
+      "paranaque_mnl": 0,
+      "cebu": 36,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_390",
+    "code": "3FE29338GLAA",
+    "description": "FX4 16mm2, 15m/positive power cable blue(brand: Nokia)",
+    "uom": "pc",
+    "category": "Cables",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 36,
+      "paranaque_mnl": 0,
+      "cebu": 36,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_391",
+    "code": "3FE29337HAAA",
+    "description": "FX4 16mm2, 20m/positive power cable blue(brand: Nokia)",
+    "uom": "pc",
+    "category": "Cables",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 10,
+      "paranaque_mnl": 0,
+      "cebu": 10,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_392",
+    "code": "3FE29338HAAA",
+    "description": "FX4 16mm2, 20m/positive power cable black(brand: Nokia)",
+    "uom": "pc",
+    "category": "Cables",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 10,
+      "paranaque_mnl": 0,
+      "cebu": 10,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_393",
+    "code": "3FE29339HAAA",
+    "description": "FX4 10mm2, 20m/positive power cable black(brand: Nokia)",
+    "uom": "pc",
+    "category": "Cables",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 6,
+      "paranaque_mnl": 0,
+      "cebu": 6,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_394",
+    "code": "3FE29340HAAA",
+    "description": "FX4 10mm2, 20m/positive power cable blue(brand: Nokia)",
+    "uom": "pc",
+    "category": "Cables",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 6,
+      "paranaque_mnl": 0,
+      "cebu": 6,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_395",
+    "code": "3FE29339HLAA",
+    "description": "FX4 10mm2, 25m/positive power cable black(brand: Nokia)",
+    "uom": "pc",
+    "category": "Cables",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 2,
+      "paranaque_mnl": 0,
+      "cebu": 2,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_396",
+    "code": "3FE29340HLAA",
+    "description": "FX4 10mm2, 25m/positive power cable blue(brand: Nokia)",
+    "uom": "pc",
+    "category": "Cables",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 2,
+      "paranaque_mnl": 0,
+      "cebu": 2,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_397",
+    "code": "3FE49220CA",
+    "description": "COVER G-2425G-A",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_398",
+    "code": "3FE48626CA",
+    "description": "XS-240W-A",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_399",
+    "code": "3FE48081AA",
+    "description": "G-140W-H",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_400",
+    "code": "3FE48081BB",
+    "description": "G-140W-H",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_401",
+    "code": "3FE48081CA",
+    "description": "G-140W-H",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_402",
+    "code": "3FE47805EA",
+    "description": "G-140W-G",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_403",
+    "code": "FDB-0316",
+    "description": "FDB-0316 -9fIBER Optic Distrubution box 16port",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_404",
+    "code": "3FE47855EA",
+    "description": "Nokia WiFI Beacon 1 - HA-020W-B",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_405",
+    "code": "3TG00926AB",
+    "description": "Nokia 5G12-13W-B (FastMile 5G Gateway 3.1)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_406",
+    "code": "3FE49220AB-C",
+    "description": "COVER CASE G-2426G-A",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_407",
+    "code": "Head-AP-1",
+    "description": "WPON - Head AP 1",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_408",
+    "code": "3FE45314AAAA",
+    "description": "Nokia VDSL modem",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_409",
+    "code": "7056047501",
+    "description": "Mounting Bracket Kit(SF-8)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_410",
+    "code": "21408550BAAA",
+    "description": "Simplex patch cord, LC/UPC -SC/UPC 10m(brand: Nokia)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_411",
+    "code": "3FE45313BAAA",
+    "description": "Nokia VDSL modem",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_412",
+    "code": "3FE56777AAAA",
+    "description": "Alcatel-Lucent F-240W-A",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_413",
+    "code": "AC/DC-INV",
+    "description": "INV-2000W AC/DCPOWER INV SINE WAVE INVERTER with power cable",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_414",
+    "code": "3FE49881BA",
+    "description": "G-1425G-B (US plug)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_415",
+    "code": "3TG02205AB",
+    "description": "FM 5G GATEWAY2 FOR EMEA+BRAZIL (EU-PLUG)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_416",
+    "code": "NSB-T14-CQ",
+    "description": "T14 - Calvin Quidato",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_417",
+    "code": "NSB-T14-GC",
+    "description": "T14 - Gilbert Catubig",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_418",
+    "code": "2306001-L",
+    "description": "Labeller tape",
+    "uom": "roll",
+    "category": "Consumables",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    },
+    "partNumber": "2306001-L"
+  },
+  {
+    "id": "item_419",
+    "code": "2306001-B",
+    "description": "Bracket",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_420",
+    "code": "3FE76559BA-SMF2",
+    "description": "Lightspan MF-2 DC power module(brand:\nNokia)",
+    "uom": "pc",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 1,
+      "paranaque_mnl": 1,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_421",
+    "code": "3FE62600AA-SMF2",
+    "description": "Optical Transceiver SFP+,1310nm SM,10km(brand: Nokia) (10GBase-LR)",
+    "uom": "pc",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 1,
+      "paranaque_mnl": 1,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_422",
+    "code": "3FE53441AA-SMF2",
+    "description": "PON Transceiver20km\n1310nm(Tx)1490nm(Rx)(brand: Nokia)",
+    "uom": "pc",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 82,
+      "paranaque_mnl": 82,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_423",
+    "code": "3FE47581AB-SMF2",
+    "description": "Transcvr XGS-PON/GPON MPM B+(28dBm)Ctemp(brand: Nokia)",
+    "uom": "pc",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 4,
+      "paranaque_mnl": 4,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_424",
+    "code": "3FE76476AA-SMF2",
+    "description": "LightspanMF-2 240Gbps NT with clock\nsync(brand: Nokia)",
+    "uom": "pc",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 0,
+      "paranaque_mnl": 0,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_425",
+    "code": "L00CB40A-N",
+    "description": "40A CIRCUIT BREAKER (NADER) 1P",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 3,
+      "paranaque_mnl": 3,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_426",
+    "code": "L00CB10A-N",
+    "description": "10A CIRCUIT BREAKER (NADER) 1P",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 8,
+      "paranaque_mnl": 4,
+      "cebu": 4,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_427",
+    "code": "2308001-B",
+    "description": "Bracket",
+    "uom": "pc",
+    "category": "QODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 147,
+      "paranaque_mnl": 147,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_428",
+    "code": "3AP67215AAAA",
+    "description": "Sealed OLT Cabinet",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_429",
+    "code": "DF-16 CBT-2/2",
+    "description": "Sealed OLT Cabinet Mounting Kit",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_430",
+    "code": "RCOALRMTBLK",
+    "description": "RCO Alarm Terminal Block",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_431",
+    "code": "472821A.101",
+    "description": "Pole Mounting Kit",
+    "uom": "pc",
+    "category": "QODC",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_432",
+    "code": "L00CB25A-CHNT",
+    "description": "25A CIRCUIT BREAKER (CHNT)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 3,
+      "paranaque_mnl": 2,
+      "cebu": 0,
+      "davao": 1
+    }
+  },
+  {
+    "id": "item_433",
+    "code": "420110-F",
+    "description": "STRAP, STAINLESS (1/2\") 1.27 CM",
+    "uom": "m",
+    "category": "ODN",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_434",
+    "code": "420110-E",
+    "description": "STRAPPING BUCKLE FOR STRAP STAINLESS (1/2\") 1.27 CM",
+    "uom": "pc",
+    "category": "ODN",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_435",
+    "code": "3FE6492727AA",
+    "description": "ELECTRICAL SFP",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_436",
+    "code": "10201097",
+    "description": "FAN CONNECTOR (CASE)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_437",
+    "code": "10201077",
+    "description": "FAN CONNECTOR (PIN)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_438",
+    "code": "1AZ662010001",
+    "description": "HT RVVZ Single Ground Cable 25mm2 (Yellow/Green) (Brand: Swell)",
+    "uom": "m",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_439",
+    "code": "3FE28525HA",
+    "description": "Single Core SC Single Module LC/20m",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_440",
+    "code": "473240A.102",
+    "description": "Fixed Out Door Cabinet",
+    "uom": "sets",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_441",
+    "code": "DH Cover-S",
+    "description": "DOOR HANDLE COVER ( SIDE )",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_442",
+    "code": "DH Cover-L",
+    "description": "Door handle cover (Left)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_443",
+    "code": "DH Cover-R",
+    "description": "Door handle cover (rigth)",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_444",
+    "code": "L00UTP01-CAT6",
+    "description": "BELDEN CAT6 UTP CABLE",
+    "uom": "m",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 1664,
+      "paranaque_mnl": 1664,
+      "cebu": 0,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_445",
+    "code": "T-Block",
+    "description": "Alarm Terminal Block",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 104,
+      "paranaque_mnl": 92,
+      "cebu": 12,
+      "davao": 0
+    }
+  },
+  {
+    "id": "item_446",
+    "code": "Blaine-16mm-Shrinkable-p",
+    "description": "SHRINKABLE TUBE FOR 16MM2 (200mm/pc)",
+    "uom": "pc",
+    "category": "MF2",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_447",
+    "code": "Blaine-3.5mm-Shrinkable-p",
+    "description": "SHRINKABLE TUBE FOR 3.5MM2 (200mm/pc)",
+    "uom": "pc",
+    "category": "RCO",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_448",
+    "code": "P29032",
+    "description": "Hitachi PCB-S w/ 3pcs pin connector",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_449",
+    "code": "RackExt-ISAM",
+    "description": "Rack Extender for ISAM",
+    "uom": "pc",
+    "category": "-",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 25,
+      "paranaque_mnl": 20,
+      "cebu": 3,
+      "davao": 2
+    }
+  },
+  {
+    "id": "item_450",
+    "code": "Blaine-16mm-Shrinkable",
+    "partNumber": "Blaine-16mm-Shrinkable",
+    "description": "Shrinkable tube 16mm x 200mm",
+    "uom": "pc",
+    "category": "Consumables",
+    "packageNo": "PKG-ACC",
+    "stock": {
+      "total": 50,
+      "paranaque_mnl": 40,
+      "cebu": 5,
+      "davao": 5
+    }
+  },
+  {
+    "id": "item_451",
+    "code": "3FE71774AA",
+    "partNumber": "3FE71774AA",
+    "description": "CFXR-H DF16",
+    "uom": "pc",
+    "category": "DF16",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 50,
+      "paranaque_mnl": 40,
+      "cebu": 5,
+      "davao": 5
+    }
+  },
+  {
+    "id": "item_452",
+    "code": "3FE72993GB",
+    "partNumber": "3FE72993GB",
+    "description": "DF 16GM POWER CABLES(20M)(BRAND: NOKIA)",
+    "uom": "pc",
+    "category": "DF16",
+    "packageNo": "PKG-01",
+    "stock": {
+      "total": 50,
+      "paranaque_mnl": 40,
+      "cebu": 5,
+      "davao": 5
+    }
+  }
+]

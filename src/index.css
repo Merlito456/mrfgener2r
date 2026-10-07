@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-slate-850: #151e32;
+  --color-slate-855: #111a2d;
+  --color-slate-750: #23314a;
+  --color-zinc-850: #1f1f23;
+}
+
+@layer base {
+  body {
+    @apply antialiased min-h-screen font-sans transition-colors duration-150;
+  }
+
+  /* Smooth scrollbars */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(150, 150, 150, 0.3);
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(150, 150, 150, 0.5);
+  }
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  header,
+  nav,
+  button,
+  .no-print {
+    display: none !important;
+  }
+
+  #mrf-printable-sheet {
+    transform: none !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  @page {
+    size: letter portrait;
+    margin: 10mm;
+  }
+}
