@@ -451,7 +451,9 @@ export async function exportMRFToExcel(
     const a = document.createElement('a');
     a.href = url;
     const fileName = doc.header.mrfNumber
-      ? `MRF_${doc.header.mrfNumber}.xlsx`
+      ? doc.header.mrfNumber.startsWith('NOKIA-') || doc.header.mrfNumber.startsWith('MRF_')
+        ? `${doc.header.mrfNumber}.xlsx`
+        : `MRF_${doc.header.mrfNumber}.xlsx`
       : `MRF_Document_${new Date().toISOString().slice(0, 10)}.xlsx`;
     a.download = fileName;
     document.body.appendChild(a);

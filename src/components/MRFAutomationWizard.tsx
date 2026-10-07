@@ -58,10 +58,10 @@ export const MRFAutomationWizard: React.FC<MRFAutomationWizardProps> = ({
     downlinkDistance: 2, // Q7
     ltCardCount: 1, // Q8
     swStaged: false, // User decides if SW STAGED (3FE76353AA-S) or standard (3FE76353AA)
-    sitePlaid: sites[0]?.plaid || 'NCR2509',
+    sitePlaid: sites[0]?.plaid || 'MIN1371',
     fromWarehouse: 'Paranaque WHS',
-    requisitionerName: '',
-    requisitionerTitle: 'Field Engineer',
+    requisitionerName: 'JOHN CARLO RABANES',
+    requisitionerTitle: 'Nokia Inhouse Engineer',
   });
 
   // Live generated BoQ based on user answers
@@ -1032,6 +1032,70 @@ export const MRFAutomationWizard: React.FC<MRFAutomationWizardProps> = ({
                 }
                 placeholder="Type PLAID (e.g. MIN1371), site name, hub, city, or address..."
               />
+
+              {/* Source Warehouse & Requisitioner Information */}
+              <div className="pt-3 border-t border-slate-100 dark:border-slate-700/80 grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                <div>
+                  <label className="block text-[11px] font-bold text-slate-700 dark:text-slate-300 mb-1">
+                    Source Warehouse (FROM)
+                  </label>
+                  <select
+                    value={formData.fromWarehouse || 'Paranaque WHS'}
+                    onChange={(e) =>
+                      setFormData((prev) => ({ ...prev, fromWarehouse: e.target.value }))
+                    }
+                    className="w-full px-3 py-1.5 border border-slate-300 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 text-xs font-semibold focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                  >
+                    <option value="Paranaque WHS">Paranaque WHS</option>
+                    <option value="Manila NP WH">Manila NP WH</option>
+                    <option value="Cebu SBF WH">Cebu SBF WH</option>
+                    <option value="Davao SBF WH">Davao SBF WH</option>
+                    <option value="Nokia WH">Nokia WH</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-[11px] font-bold text-slate-700 dark:text-slate-300 mb-1">
+                    Requested By (Engineer / Subcon)
+                  </label>
+                  <input
+                    type="text"
+                    value={formData.requisitionerName || ''}
+                    onChange={(e) =>
+                      setFormData((prev) => ({ ...prev, requisitionerName: e.target.value }))
+                    }
+                    placeholder="e.g. JOHN CARLO RABANES"
+                    className="w-full px-3 py-1.5 border border-slate-300 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 text-xs font-semibold focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                  />
+                  <div className="flex gap-1.5 mt-1.5">
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setFormData((prev) => ({
+                          ...prev,
+                          requisitionerName: 'JOHN CARLO RABANES',
+                          requisitionerTitle: 'Nokia Inhouse Engineer',
+                        }))
+                      }
+                      className="text-[10px] px-2 py-0.5 rounded bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800 hover:bg-blue-100 font-medium"
+                    >
+                      Inhouse: JOHN CARLO RABANES
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setFormData((prev) => ({
+                          ...prev,
+                          requisitionerName: 'EASTMOND MIRANDA',
+                          requisitionerTitle: 'DNA Subcon Lead',
+                        }))
+                      }
+                      className="text-[10px] px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-600 hover:bg-slate-200 font-medium"
+                    >
+                      DNA SUBCON
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
