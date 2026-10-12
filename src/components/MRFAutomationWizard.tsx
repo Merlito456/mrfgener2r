@@ -278,7 +278,11 @@ export const MRFAutomationWizard: React.FC<MRFAutomationWizardProps> = ({
                 </span>
               </div>
               <div className="p-2.5 bg-blue-50/60 dark:bg-blue-950/50 rounded-lg border border-blue-100 dark:border-blue-900/60 text-[11px] text-blue-900 dark:text-blue-200 leading-snug">
-                <strong>Purpose:</strong> To determine if the site needs to use LTC and Connectors. <strong>25 PA</strong> for power cable and <strong>15 PA</strong> for uplink cable.
+                <strong>Purpose:</strong> Determines LTC conduits, weatherproofing connectors, and cable ties:
+                <ul className="list-disc ml-4 mt-1 space-y-0.5">
+                  <li><strong>Outdoor:</strong> 25 PA for power, 15 PA for uplink &bull; <strong>Auto-detects:</strong> <code className="font-mono font-bold">Blaine-8"Tie-Blk</code> (Black) + <code className="font-mono font-bold">Blaine-8"Tie</code> (White).</li>
+                  <li><strong>Indoor:</strong> No LTC &bull; <strong>Auto-detects:</strong> <code className="font-mono font-bold">Blaine-8"Tie</code> (White) only.</li>
+                </ul>
               </div>
               <div className="grid grid-cols-2 gap-3">
                 <button
@@ -298,7 +302,7 @@ export const MRFAutomationWizard: React.FC<MRFAutomationWizardProps> = ({
                       Outdoor Site
                     </span>
                     <span className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 block leading-tight">
-                      Enables metallic LTC conduits + connectors for weather protection (No sealant used).
+                      Enables LTC conduits &amp; connectors &bull; Adds <strong>Blaine-8"Tie-Blk</strong> (Black) &amp; <strong>Blaine-8"Tie</strong> (White).
                     </span>
                   </div>
                 </button>
@@ -320,7 +324,7 @@ export const MRFAutomationWizard: React.FC<MRFAutomationWizardProps> = ({
                       Indoor Site
                     </span>
                     <span className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 block leading-tight">
-                      No LTC conduit or connectors needed &bull; Cable tray internal routing.
+                      No LTC conduit &bull; Adds <strong>Blaine-8"Tie</strong> (White) only &bull; Internal cable tray routing.
                     </span>
                   </div>
                 </button>

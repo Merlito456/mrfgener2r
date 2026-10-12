@@ -529,6 +529,7 @@ export const HowToFillGuide: React.FC<HowToFillGuideProps> = ({
                     <li>&bull; Spiral Wrap (1 pack), Velcro tie 2m (1 roll), Labeller tape (1 roll).</li>
                     <li>&bull; Heat Shrinkable tubes: 8mm, 12mm, 16mm (2 pcs each).</li>
                     <li>&bull; Terminal lugs: 10mm2 (6 pcs), 16-10mm2 (2 pcs), 8mm (6 pcs), Cable shoes (4 pcs).</li>
+                    <li>&bull; <strong>Cable Ties:</strong> Outdoor sites use UV-resistant black (<code className="font-mono">Blaine-8"Tie-Blk | Plastic Cable Tie black</code>) + white (<code className="font-mono">Blaine-8"Tie | Plastic Cable Tie white</code>). Indoor sites use white only (<code className="font-mono">Blaine-8"Tie | Plastic Cable Tie white</code>).</li>
                     <li>&bull; Silicon Sealant: <strong>Omitted</strong> (No available stock in warehouse).</li>
                   </ul>
                 </div>

@@ -2534,7 +2534,7 @@
   {
     "id": "item_179",
     "code": "Blaine-8\"Tie",
-    "description": "Cable Tie (Tie Wrap) White 8\"",
+    "description": "Plastic Cable Tie white",
     "uom": "pack",
     "category": "MF2",
     "packageNo": "PKG-01",
@@ -2548,7 +2548,7 @@
   {
     "id": "item_180",
     "code": "Blaine-8\"Tie-p",
-    "description": "Cable Tie (Tie Wrap) White 8\"",
+    "description": "Plastic Cable Tie white",
     "uom": "pcs",
     "category": "ACCESSORIES",
     "packageNo": "PKG-ACC",
@@ -2562,7 +2562,7 @@
   {
     "id": "item_181",
     "code": "Blaine-8\"Tie-Blk",
-    "description": "Cable Tie (Tie Wrap) Black 8\" (100pcs per pack)",
+    "description": "Plastic Cable Tie black",
     "uom": "pack",
     "category": "MF2",
     "packageNo": "PKG-01",

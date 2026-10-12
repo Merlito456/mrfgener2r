@@ -62,19 +62,27 @@ const DB_MAP = new Map(
   itemsDataRaw.map((it: any) => [it.code.toLowerCase(), it])
 );
 
+const PREFERRED_DESCRIPTIONS: Record<string, string> = {
+  'blaine-8"tie-blk': 'Plastic Cable Tie black',
+  'blaine-8"tie': 'Plastic Cable Tie white',
+  'blaine-8"tie-p': 'Plastic Cable Tie white',
+};
+
 function getItemDetails(code: string, fallbackDesc: string, fallbackUom = 'pc', fallbackCat = 'Equipment') {
-  const hit = DB_MAP.get(code.toLowerCase());
+  const codeKey = code.toLowerCase();
+  const hit = DB_MAP.get(codeKey);
+  const preferredDesc = PREFERRED_DESCRIPTIONS[codeKey];
   if (hit) {
     return {
       partNumber: hit.partNumber || hit.code,
-      description: hit.description,
+      description: preferredDesc || hit.description,
       uom: fallbackUom || hit.uom || 'pc',
       category: hit.category || fallbackCat,
     };
   }
   return {
     partNumber: code,
-    description: fallbackDesc,
+    description: preferredDesc || fallbackDesc,
     uom: fallbackUom,
     category: fallbackCat,
   };
@@ -356,7 +364,7 @@ export function generateAutomatedBoQ(input: MRFAutomationInput): {
   // Row 39: Downlink Patch Cord SC/UPC - SC/APC (3FE60713CAAA)
   // Row 40: Wire Grounding Cable Yellow/Green 16mm (L00YG16MM2)
   // Row 41: Dummy Plate (3FE77035BA) - if 1 LT card
-  // Row 42: Plastic Cable Tie White (Blaine-8"Tie)
+  // Cable Ties: Outdoor uses Blaine-8"Tie-Blk (Black) + Blaine-8"Tie (White); Indoor uses Blaine-8"Tie (White)
   // Rows 43–46: Conduits / connectors if outdoor, or breakers
   // NOTE: SEALANTS (Blaine-Sealant White or any silicon sealant) ARE NEVER ADDED (0 stock in warehouse).
   // --------------------------------------------------------------------------
@@ -539,8 +547,41 @@ export function generateAutomatedBoQ(input: MRFAutomationInput): {
     );
   }
 
-  // Row 42: Plastic Cable Tie White
-  addLocal('Blaine-8"Tie', 'Plastic Cable Tie white', 1, '', 'Consumables', 'pcs');
+  // Question 2 Material Detection: Cable Ties (Outdoor vs Indoor)
+  // If site is Outdoor use:
+  //   Blaine-8"Tie-Blk  |  Plastic Cable Tie black
+  //   Blaine-8"Tie      |  Plastic Cable Tie white
+  // If site is Indoor use:
+  //   Blaine-8"Tie      |  Plastic Cable Tie white
+  if (input.environment === 'Outdoor') {
+    addLocal(
+      'Blaine-8"Tie-Blk',
+      'Plastic Cable Tie black',
+      1,
+      '',
+      'Consumables',
+      'pcs'
+    );
+    addLocal(
+      'Blaine-8"Tie',
+      'Plastic Cable Tie white',
+      1,
+      '',
+      'Consumables',
+      'pcs'
+    );
+    explanations['q2_ties'] = 'Outdoor site: UV-resistant black ties (Blaine-8"Tie-Blk | Plastic Cable Tie black) + white ties (Blaine-8"Tie | Plastic Cable Tie white) added.';
+  } else {
+    addLocal(
+      'Blaine-8"Tie',
+      'Plastic Cable Tie white',
+      1,
+      '',
+      'Consumables',
+      'pcs'
+    );
+    explanations['q2_ties'] = 'Indoor site: White cable ties (Blaine-8"Tie | Plastic Cable Tie white) added.';
+  }
 
   // Rows 43–46: Optional External Conduit & Breakers
   // Outdoor Transport Conduits (15 PA LTC + Connectors)
