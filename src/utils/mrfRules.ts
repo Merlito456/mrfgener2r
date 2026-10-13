@@ -12,9 +12,10 @@ export interface MRFAutomationInput {
   environment: 'Outdoor' | 'Indoor';
 
   // Q3: For outdoor, is Transport Equipment located outside Proposed OLT Proposal? Distance?
-  // Purpose: If yes, use 15 PA LTC and 2x 15 PA Connector. If not, don't. Distance bases: 3m, 5m, 8m.
+  // Purpose: If yes, use 15 PA LTC and 2x 15 PA Connector. If not, don't.
+  // Supported lengths: 3m, 5m, 8m, 10m, 15m, 20m, 25m, 30m, 40m.
   transportOutside: boolean;
-  transportDistance: 3 | 5 | 8; // in meters
+  transportDistance: number; // in meters (all lengths: 3, 5, 8, 10, 15, 20, 25, 30, 40)
   // User specifies exactly how many patchcords are needed rather than assigning 2 directly
   patchcordCount?: number;
   // Maximum of 2 ESFPs (1 run of uplink requires 2 LC-LC cords for 1 ESFP)
@@ -86,6 +87,37 @@ function getItemDetails(code: string, fallbackDesc: string, fallbackUom = 'pc', 
     uom: fallbackUom,
     category: fallbackCat,
   };
+}
+
+export interface TransportCableSpec {
+  length: number;
+  code: string;
+  description: string;
+}
+
+/**
+ * Complete list of all official Blaine inventory LC/UPC - LC/UPC transport patch cords
+ */
+export const TRANSPORT_CABLE_OPTIONS: TransportCableSpec[] = [
+  { length: 3, code: '3FE52344DAAA', description: 'Simplex patch cord, LC/UPC – LC/UPC 3m(brand: Nokia)' },
+  { length: 5, code: '3FE52344ELAA', description: 'Simplex patch cord, LC/UPC - LC/UPC 5m(brand: Nokia)' },
+  { length: 8, code: '3FE52344FLAA', description: 'Simplex patch cord, LC/UPC - LC/UPC 8m(brand: Nokia)' },
+  { length: 10, code: '3FE52344GAAA', description: 'Patch cord LC/PC-LC/PC 10m (brand: AVIC)' },
+  { length: 15, code: '3FE52344GLAA', description: 'Simplex Patch cord, LC/UPC - LC/UPC 15m(brand: Nokia)' },
+  { length: 20, code: '3FE52344HAAA', description: 'Simplex Patch cord, LC/UPC - LC/UPC 20m(brand: Nokia)' },
+  { length: 25, code: '3FE52344HLAA', description: 'Simplex Patch cord, LC/UPC - LC/UPC 25m(brand: Nokia)' },
+  { length: 30, code: 'L00FOC-LC/LC-SM-30M', description: 'LC-LC Fiber Patch Cord Simplex Single Mode 30m' },
+  { length: 40, code: '3FE52344JLAA', description: 'Simplex Patch cord, LC/UPC - LC/UPC (40m)(brand: Nokia)' },
+];
+
+export function getTransportCableForDistance(distance: number): TransportCableSpec {
+  const d = Math.max(1, distance || 8);
+  for (const opt of TRANSPORT_CABLE_OPTIONS) {
+    if (d <= opt.length) {
+      return opt;
+    }
+  }
+  return TRANSPORT_CABLE_OPTIONS[TRANSPORT_CABLE_OPTIONS.length - 1];
 }
 
 export function generateAutomatedBoQ(input: MRFAutomationInput): {
@@ -369,42 +401,21 @@ export function generateAutomatedBoQ(input: MRFAutomationInput): {
   // NOTE: SEALANTS (Blaine-Sealant White or any silicon sealant) ARE NEVER ADDED (0 stock in warehouse).
   // --------------------------------------------------------------------------
 
-  // Row 27: Uplink Patch Cord (Question 3 & user customizable count)
+  // Row 27: Uplink Patch Cord (Question 3 & user customizable count across all available lengths)
   const uplinkDist = input.transportDistance || 8;
   const pCount = typeof input.patchcordCount === 'number' ? input.patchcordCount : 2;
 
   if (pCount > 0) {
-    if (uplinkDist === 3) {
-      addLocal(
-        '3FE52344DAAA',
-        'Patch cord 3M LC-LC SM  (brand: AVIC)',
-        pCount,
-        '',
-        'Patch Cord',
-        'pcs'
-      );
-      explanations['q3_cable'] = `${uplinkDist}m Simplex LC-LC patch cords (${pCount} pcs) selected for uplink transport.`;
-    } else if (uplinkDist === 5) {
-      addLocal(
-        '3FE52344ELAA',
-        'Patch cord 5M LC-LC SM',
-        pCount,
-        '',
-        'Patch Cord',
-        'pcs'
-      );
-      explanations['q3_cable'] = `${uplinkDist}m Simplex LC-LC patch cords (${pCount} pcs) selected for uplink transport.`;
-    } else {
-      addLocal(
-        '3FE52344FLAA',
-        'Simplex patch cord, LC/UPC - LC/UPC 8m(brand: Nokia)',
-        pCount,
-        '',
-        'Patch Cord',
-        'pcs'
-      );
-      explanations['q3_cable'] = `${uplinkDist}m Simplex LC-LC patch cords (${pCount} pcs) selected for uplink transport.`;
-    }
+    const cable = getTransportCableForDistance(uplinkDist);
+    addLocal(
+      cable.code,
+      cable.description,
+      pCount,
+      '',
+      'Patch Cord',
+      'pcs'
+    );
+    explanations['q3_cable'] = `${cable.length}m Simplex LC/UPC - LC/UPC patch cords (${pCount} pcs) selected for uplink transport (Part: ${cable.code}).`;
   } else {
     explanations['q3_cable'] = 'No uplink patch cords requested (0 pcs).';
   }
@@ -422,12 +433,15 @@ export function generateAutomatedBoQ(input: MRFAutomationInput): {
   addLocal('L00Lugs8mm2', 'terminal lugs 8mm', 6, '', 'Hardware', 'pcs');
 
   // Row 38: Power Cable (Question 4)
-  let maxPwrDist = input.distanceToRS1 || 8;
-  if (input.tappingPointConfig === 'two_separated' && input.distanceToRS2) {
-    maxPwrDist = Math.max(input.distanceToRS1, input.distanceToRS2);
-  }
+  const distMain = input.distanceToRS1 || 8;
+  const distRdnt = input.tappingPointConfig === 'two_separated' && input.distanceToRS2 !== undefined
+    ? input.distanceToRS2
+    : distMain;
+  const maxPwrDist = Math.max(distMain, distRdnt);
 
   if (input.equipmentType === 'DF16') {
+    // DF16: If length <= 10m for both main and rdnt, use standard DF16 10m cable.
+    // If length is more than 10m for even a single run (main or rdnt), use MF-02 power cable spanning 15m and 20m.
     if (maxPwrDist <= 10) {
       addLocal(
         '3FE72993GA',
@@ -437,17 +451,27 @@ export function generateAutomatedBoQ(input: MRFAutomationInput): {
         'DF16',
         'pcs'
       );
-      explanations['q4_pwr'] = 'DF16 dedicated DC power cables (10m, 2 pcs) loaded from database.';
-    } else {
+      explanations['q4_pwr'] = `DF16 dedicated DC power cables (10m, 2 pcs) loaded (Main: ${distMain}m, Rdnt: ${distRdnt}m <= 10m).`;
+    } else if (maxPwrDist <= 15) {
       addLocal(
-        '3FE72993GB',
-        'DF 16GM POWER CABLES(20M)(BRAND: NOKIA)',
+        '3FE77365BA-15M',
+        'Power Cable Blue/Black 15m',
         2,
         '',
-        'DF16',
+        'Power Cable',
         'pcs'
       );
-      explanations['q4_pwr'] = 'DF16 dedicated DC power cables (20m, 2 pcs) loaded from database.';
+      explanations['q4_pwr'] = `DF16 run exceeds 10m on single run (Main: ${distMain}m, Rdnt: ${distRdnt}m): Using MF-02 15m power cable (3FE77365BA-15M, 2 pcs).`;
+    } else {
+      addLocal(
+        '3FE77365AA_20m',
+        'Power Cable Blue/Black 20m',
+        2,
+        '',
+        'Power Cable',
+        'pcs'
+      );
+      explanations['q4_pwr'] = `DF16 run exceeds 15m on single run (Main: ${distMain}m, Rdnt: ${distRdnt}m): Using MF-02 20m power cable (3FE77365AA_20m, 2 pcs).`;
     }
   } else {
     // MF2 Power Cable logic matching sample benchmark (3FE77365BAAA)

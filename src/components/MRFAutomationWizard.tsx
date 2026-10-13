@@ -345,7 +345,7 @@ export const MRFAutomationWizard: React.FC<MRFAutomationWizardProps> = ({
                 </span>
               </div>
               <div className="p-2.5 bg-blue-50/60 dark:bg-blue-950/50 rounded-lg border border-blue-100 dark:border-blue-900/60 text-[11px] text-blue-900 dark:text-blue-200 leading-snug">
-                <strong>Purpose:</strong> For outdoor, if Transport Equipment is outside Proposed OLT Proposal, use the <strong>15 PA LTC</strong> and <strong>2x 15 PA Connectors</strong>. The distance chooses 3m, 5m, or 8m patch cords.
+                <strong>Purpose:</strong> For outdoor, if Transport Equipment is outside Proposed OLT Proposal, use the <strong>15 PA LTC</strong> and <strong>2x 15 PA Connectors</strong>. Supports all official Blaine warehouse LC/UPC - LC/UPC lengths from 3m to 40m.
               </div>
 
               <div className="space-y-3 pt-1">
@@ -382,11 +382,16 @@ export const MRFAutomationWizard: React.FC<MRFAutomationWizardProps> = ({
                 </div>
 
                 <div>
-                  <label className="block text-[11px] font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
-                    Uplink Distance to Transport Equipment:
-                  </label>
-                  <div className="grid grid-cols-3 gap-2">
-                    {([3, 5, 8] as const).map((d) => (
+                  <div className="flex items-center justify-between mb-1.5">
+                    <label className="block text-[11px] font-semibold text-slate-700 dark:text-slate-300">
+                      Uplink Distance to Transport Equipment (LC/UPC - LC/UPC):
+                    </label>
+                    <span className="text-[10px] font-mono text-blue-600 dark:text-blue-400 font-bold bg-blue-50 dark:bg-blue-950/60 px-2 py-0.5 rounded border border-blue-200 dark:border-blue-800">
+                      Selected: {formData.transportDistance}m
+                    </span>
+                  </div>
+                  <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
+                    {[3, 5, 8, 10, 15, 20, 25, 30, 40].map((d) => (
                       <button
                         key={d}
                         type="button"
@@ -396,16 +401,19 @@ export const MRFAutomationWizard: React.FC<MRFAutomationWizardProps> = ({
                             transportDistance: d,
                           }))
                         }
-                        className={`py-2 px-3 rounded-lg border text-xs font-semibold transition-all ${
+                        className={`px-3 py-1.5 rounded-lg border text-xs font-semibold transition-all ${
                           formData.transportDistance === d
-                            ? 'bg-blue-600 text-white border-blue-600 shadow-xs'
+                            ? 'bg-blue-600 text-white border-blue-600 shadow-xs ring-2 ring-blue-400/30'
                             : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700'
                         }`}
                       >
-                        {d}m LC-LC Patch Cord
+                        {d}m {d === 8 && '⭐ (Standard)'}
                       </button>
                     ))}
                   </div>
+                  <p className="text-[10px] text-slate-500 dark:text-slate-400 mt-1.5">
+                    Available Blaine warehouse stock lengths: 3m, 5m, 8m, 10m, 15m, 20m, 25m, 30m, and 40m.
+                  </p>
                 </div>
 
                 {/* Question: Uplink Patch Cords & ESFP Transceivers */}

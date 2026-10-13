@@ -504,7 +504,7 @@ export const HowToFillGuide: React.FC<HowToFillGuideProps> = ({
                     Power &amp; Grounding (<code className="font-mono">PKG-PWR</code>)
                   </h4>
                   <ul className="space-y-1 text-slate-600 dark:text-slate-300">
-                    <li>&bull; <strong className="text-slate-800 dark:text-slate-200">Positive DC Power Cable:</strong> 2 pcs (10m, 15m, or 20m).</li>
+                    <li>&bull; <strong className="text-slate-800 dark:text-slate-200">Positive DC Power Cable:</strong> 2 pcs (10m, 15m, or 20m). For DF16, if either the main or redundant (rdnt) run exceeds 10m, it automatically switches to the MF-02 power cable spanning 15m (<code className="font-mono">3FE77365BA-15M</code>) or 20m (<code className="font-mono">3FE77365AA_20m</code>).</li>
                     <li>&bull; <strong className="text-slate-800 dark:text-slate-200">Grounding Wire:</strong> 16MM Yellow/Green (5m or 10m). Never in LTC conduit!</li>
                   </ul>
                 </div>
