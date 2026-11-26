@@ -52,6 +52,7 @@ export const MRFAutomationWizard: React.FC<MRFAutomationWizardProps> = ({
     transportOutside: true, // Q3
     transportDistance: 8, // Q3
     patchcordCount: 2, // How many patch cords needed (customizable)
+    powerTappingOutside: true, // Q4: Outside cabinet uses 25 PA LTC + connectors; false omits them
     tappingPointConfig: 'two_same_rs', // Q4
     distanceToRS1: 8, // Q4
     distanceToRS2: 8, // Q4
@@ -148,6 +149,7 @@ export const MRFAutomationWizard: React.FC<MRFAutomationWizardProps> = ({
                   environment: 'Outdoor',
                   transportOutside: true,
                   transportDistance: 8,
+                  powerTappingOutside: true,
                   tappingPointConfig: 'two_same_rs',
                   distanceToRS1: 8,
                   groundingDistance: 10,
@@ -169,6 +171,7 @@ export const MRFAutomationWizard: React.FC<MRFAutomationWizardProps> = ({
                   environment: 'Indoor',
                   transportOutside: false,
                   transportDistance: 5,
+                  powerTappingOutside: false,
                   tappingPointConfig: 'two_same_rs',
                   distanceToRS1: 8,
                   groundingDistance: 5,
@@ -190,6 +193,7 @@ export const MRFAutomationWizard: React.FC<MRFAutomationWizardProps> = ({
                   environment: 'Outdoor',
                   transportOutside: true,
                   transportDistance: 8,
+                  powerTappingOutside: true,
                   tappingPointConfig: 'two_separated',
                   distanceToRS1: 12,
                   distanceToRS2: 15,
@@ -214,6 +218,7 @@ export const MRFAutomationWizard: React.FC<MRFAutomationWizardProps> = ({
                   environment: 'Outdoor',
                   transportOutside: false,
                   transportDistance: 5,
+                  powerTappingOutside: true,
                   tappingPointConfig: 'two_same_rs',
                   distanceToRS1: 8,
                   groundingDistance: 10,
@@ -575,82 +580,133 @@ export const MRFAutomationWizard: React.FC<MRFAutomationWizardProps> = ({
                 </span>
               </div>
               <div className="p-2.5 bg-blue-50/60 dark:bg-blue-950/50 rounded-lg border border-blue-100 dark:border-blue-900/60 text-[11px] text-blue-900 dark:text-blue-200 leading-snug">
-                <strong>Purpose:</strong> Is tapping point separated from OLT location? If yes both (2) or just 1?
+                <strong>Purpose:</strong> Is tapping point separated from OLT location? If just inside the same cabinet (even on Outdoor sites), 25 PA LTC and connectors are omitted.
                 <ul className="list-disc ml-4 mt-1 space-y-0.5">
-                  <li><strong>For 2:</strong> Powercable exceeds bigger distance (2x). Outdoor: 2x 25 PA LTC &amp; 4x connector.</li>
-                  <li><strong>For 1:</strong> Powercable longer than distance (10m, 15m, 20m). Outdoor: 25 PA LTC &amp; 4x connector.</li>
-                  <li><strong>For 2 (Same RS):</strong> Both cables laid together in 25 PA LTC &amp; uses 2x 25 PA Connector.</li>
+                  <li><strong>Inside Same Cabinet:</strong> Power cable only &mdash; no 25 PA LTC or connectors required.</li>
+                  <li><strong>For 2 (Outside):</strong> Powercable exceeds bigger distance (2x). Outdoor: 2x 25 PA LTC &amp; 4x connector.</li>
+                  <li><strong>For 1 (Outside):</strong> Powercable longer than distance (10m, 15m, 20m). Outdoor: 25 PA LTC &amp; 4x connector.</li>
+                  <li><strong>For 2 (Same RS Outside):</strong> Both cables laid together in 25 PA LTC &amp; uses 2x 25 PA Connector.</li>
                 </ul>
               </div>
 
-              {/* 3 Configurations */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs">
-                <button
-                  type="button"
-                  onClick={() =>
-                    setFormData((prev) => ({
-                      ...prev,
-                      tappingPointConfig: 'two_same_rs',
-                    }))
-                  }
-                  className={`p-3 rounded-lg border text-left transition-all ${
-                    formData.tappingPointConfig === 'two_same_rs'
-                      ? 'bg-blue-50/80 dark:bg-blue-950/60 border-blue-600 dark:border-blue-500 ring-1 ring-blue-500/20 font-bold text-blue-900 dark:text-blue-200'
-                      : 'bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:border-slate-300 dark:hover:border-slate-600'
-                  }`}
-                >
-                  <span className="block font-bold">Same RS (Bundled)</span>
-                  <p className="text-[10px] text-slate-500 dark:text-slate-400 font-normal mt-1 leading-tight">
-                    Cables laid together in 1x 25 PA LTC + 2x Connectors
-                  </p>
-                </button>
-
-                <button
-                  type="button"
-                  onClick={() =>
-                    setFormData((prev) => ({
-                      ...prev,
-                      tappingPointConfig: 'one_separated',
-                    }))
-                  }
-                  className={`p-3 rounded-lg border text-left transition-all ${
-                    formData.tappingPointConfig === 'one_separated'
-                      ? 'bg-blue-50/80 dark:bg-blue-950/60 border-blue-600 dark:border-blue-500 ring-1 ring-blue-500/20 font-bold text-blue-900 dark:text-blue-200'
-                      : 'bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:border-slate-300 dark:hover:border-slate-600'
-                  }`}
-                >
-                  <span className="block font-bold">1 Separated RS</span>
-                  <p className="text-[10px] text-slate-500 dark:text-slate-400 font-normal mt-1 leading-tight">
-                    Single cable run + 25 PA LTC + 4x Connectors
-                  </p>
-                </button>
-
-                <button
-                  type="button"
-                  onClick={() =>
-                    setFormData((prev) => ({
-                      ...prev,
-                      tappingPointConfig: 'two_separated',
-                    }))
-                  }
-                  className={`p-3 rounded-lg border text-left transition-all ${
-                    formData.tappingPointConfig === 'two_separated'
-                      ? 'bg-blue-50/80 dark:bg-blue-950/60 border-blue-600 dark:border-blue-500 ring-1 ring-blue-500/20 font-bold text-blue-900 dark:text-blue-200'
-                      : 'bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:border-slate-300 dark:hover:border-slate-600'
-                  }`}
-                >
-                  <span className="block font-bold">2 Separated RS</span>
-                  <p className="text-[10px] text-slate-500 dark:text-slate-400 font-normal mt-1 leading-tight">
-                    RS1 &amp; RS2 &bull; 2x 25 PA LTC + 4x Connectors
-                  </p>
-                </button>
+              {/* Outside vs Inside Cabinet Toggle */}
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs pt-1">
+                <span className="text-slate-800 dark:text-slate-200 font-semibold">
+                  Tapping point / power cable run outside OLT cabinet?
+                </span>
+                <div className="flex items-center gap-3">
+                  <label className="flex items-center gap-1.5 cursor-pointer">
+                    <input
+                      type="radio"
+                      name="powerTappingOutside"
+                      checked={formData.powerTappingOutside !== false}
+                      onChange={() =>
+                        setFormData((prev) => ({
+                          ...prev,
+                          powerTappingOutside: true,
+                        }))
+                      }
+                      className="text-blue-600 focus:ring-blue-500"
+                    />
+                    <span className="font-semibold text-slate-800 dark:text-slate-200">
+                      Yes (Outside)
+                    </span>
+                  </label>
+                  <label className="flex items-center gap-1.5 cursor-pointer">
+                    <input
+                      type="radio"
+                      name="powerTappingOutside"
+                      checked={formData.powerTappingOutside === false}
+                      onChange={() =>
+                        setFormData((prev) => ({
+                          ...prev,
+                          powerTappingOutside: false,
+                        }))
+                      }
+                      className="text-blue-600 focus:ring-blue-500"
+                    />
+                    <span className="font-semibold text-slate-600 dark:text-slate-400">
+                      No (Inside Cabinet)
+                    </span>
+                  </label>
+                </div>
               </div>
+
+              {formData.powerTappingOutside === false ? (
+                <div className="p-2.5 rounded-lg bg-amber-50/70 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-900/60 text-[11px] text-amber-900 dark:text-amber-200">
+                  <strong>Inside Cabinet Selected:</strong> Power cables remain included, while <strong>25 PA LTC</strong> and <strong>25 PA Connectors</strong> are omitted as unnecessary.
+                </div>
+              ) : (
+                /* 3 Configurations */
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs">
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setFormData((prev) => ({
+                        ...prev,
+                        tappingPointConfig: 'two_same_rs',
+                      }))
+                    }
+                    className={`p-3 rounded-lg border text-left transition-all ${
+                      formData.tappingPointConfig === 'two_same_rs'
+                        ? 'bg-blue-50/80 dark:bg-blue-950/60 border-blue-600 dark:border-blue-500 ring-1 ring-blue-500/20 font-bold text-blue-900 dark:text-blue-200'
+                        : 'bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:border-slate-300 dark:hover:border-slate-600'
+                    }`}
+                  >
+                    <span className="block font-bold">Same RS (Bundled)</span>
+                    <p className="text-[10px] text-slate-500 dark:text-slate-400 font-normal mt-1 leading-tight">
+                      Cables laid together in 1x 25 PA LTC + 2x Connectors
+                    </p>
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setFormData((prev) => ({
+                        ...prev,
+                        tappingPointConfig: 'one_separated',
+                      }))
+                    }
+                    className={`p-3 rounded-lg border text-left transition-all ${
+                      formData.tappingPointConfig === 'one_separated'
+                        ? 'bg-blue-50/80 dark:bg-blue-950/60 border-blue-600 dark:border-blue-500 ring-1 ring-blue-500/20 font-bold text-blue-900 dark:text-blue-200'
+                        : 'bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:border-slate-300 dark:hover:border-slate-600'
+                    }`}
+                  >
+                    <span className="block font-bold">1 Separated RS</span>
+                    <p className="text-[10px] text-slate-500 dark:text-slate-400 font-normal mt-1 leading-tight">
+                      Single cable run + 25 PA LTC + 4x Connectors
+                    </p>
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setFormData((prev) => ({
+                        ...prev,
+                        tappingPointConfig: 'two_separated',
+                      }))
+                    }
+                    className={`p-3 rounded-lg border text-left transition-all ${
+                      formData.tappingPointConfig === 'two_separated'
+                        ? 'bg-blue-50/80 dark:bg-blue-950/60 border-blue-600 dark:border-blue-500 ring-1 ring-blue-500/20 font-bold text-blue-900 dark:text-blue-200'
+                        : 'bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:border-slate-300 dark:hover:border-slate-600'
+                    }`}
+                  >
+                    <span className="block font-bold">2 Separated RS</span>
+                    <p className="text-[10px] text-slate-500 dark:text-slate-400 font-normal mt-1 leading-tight">
+                      RS1 &amp; RS2 &bull; 2x 25 PA LTC + 4x Connectors
+                    </p>
+                  </button>
+                </div>
+              )}
 
               {/* Distance inputs */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs pt-1">
                 <div>
                   <label className="block text-[11px] font-semibold text-slate-700 dark:text-slate-300 mb-1">
-                    {formData.tappingPointConfig === 'two_separated'
+                    {formData.powerTappingOutside !== false &&
+                    formData.tappingPointConfig === 'two_separated'
                       ? 'Distance OLT to RS1 (Meters):'
                       : 'Distance to RS Tapping Point (Meters):'}
                   </label>
@@ -688,7 +744,8 @@ export const MRFAutomationWizard: React.FC<MRFAutomationWizardProps> = ({
                   </span>
                 </div>
 
-                {formData.tappingPointConfig === 'two_separated' && (
+                {formData.powerTappingOutside !== false &&
+                  formData.tappingPointConfig === 'two_separated' && (
                   <div>
                     <label className="block text-[11px] font-semibold text-slate-700 dark:text-slate-300 mb-1">
                       Distance OLT to RS2 (Meters):

@@ -24,9 +24,11 @@ export interface MRFAutomationInput {
   esfpCount?: number;
 
   // Q4: Is the Tapping point separated from OLT location?
+  // powerTappingOutside: If false (just inside the cabinet), 25 PA LTC & Connectors are omitted even for Outdoor sites.
   // 1: single cable to separated RS -> Powercable exceeds distance, outdoor: 25 PA LTC + 4x connector
   // 2 (separated): 2 separated RS -> distance to RS1 & RS2 -> Powercable exceeds bigger distance (2x), outdoor: 2x 25 PA LTC + 4x connector
   // 2 (same RS): same RS -> both cables laid together in 25 PA LTC, outdoor: 2x connector
+  powerTappingOutside?: boolean;
   tappingPointConfig: 'two_separated' | 'one_separated' | 'two_same_rs';
   distanceToRS1: number; // in meters (to RS1 or single RS)
   distanceToRS2?: number; // in meters (to RS2 when two separated)
@@ -781,7 +783,9 @@ export function generateAutomatedBoQ(
   };
 
   // Outdoor Power Conduits (25 PA LTC & Connectors)
-  if (input.environment === 'Outdoor') {
+  // If power cable / tapping point is just inside the cabinet (powerTappingOutside === false), omit 25 PA LTC and connectors.
+  const isPowerOutside = input.powerTappingOutside !== false;
+  if (input.environment === 'Outdoor' && isPowerOutside) {
     if (input.tappingPointConfig === 'two_separated') {
       const lenRS1 = getConduitLengthForDistance(input.distanceToRS1);
       const lenRS2 = getConduitLengthForDistance(input.distanceToRS2 || input.distanceToRS1);
@@ -842,6 +846,9 @@ export function generateAutomatedBoQ(
       );
       explanations['q4_ltc'] = `Same RS: Both cables laid together in 1x 25 PA LTC (${ltcLen}m for ${input.distanceToRS1}m route) + 2x 25 PA Connectors.`;
     }
+  } else if (input.environment === 'Outdoor' && !isPowerOutside) {
+    explanations['q4_ltc'] =
+      'Power tapping point is inside the cabinet: 25 PA LTC conduit and connectors omitted.';
   }
 
   // Question 6: Breaker Replacement (if needed)
@@ -943,7 +950,7 @@ export function createAutomatedMRFDocument(
         date: dateStr,
       },
       status: 'Pending',
-      remarks: `Automated BoQ Generated for ${input.equipmentType} (${input.environment}) rollout. Tapping: ${input.tappingPointConfig}.`,
+      remarks: `Automated BoQ Generated for ${input.equipmentType} (${input.environment}) rollout. Tapping: ${input.powerTappingOutside === false ? 'Inside Cabinet (No Power LTC)' : input.tappingPointConfig}.`,
     },
   };
 }
