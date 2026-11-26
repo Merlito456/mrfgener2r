@@ -135,7 +135,7 @@ export const DataManagerModal: React.FC<DataManagerModalProps> = ({
               Directly loaded from your provided Google Drive folder. You can download the pristine copies below:
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
               <a
                 href="/MRF_template.xlsx"
                 download="MRF_template.xlsx"
@@ -143,9 +143,21 @@ export const DataManagerModal: React.FC<DataManagerModalProps> = ({
               >
                 <div className="truncate">
                   <span className="font-bold block">MRF_template.xlsx</span>
-                  <span className="text-[11px] text-slate-400">Official form template</span>
+                  <span className="text-[11px] text-slate-400">Official MRF template</span>
                 </div>
                 <Download className="w-4 h-4 text-blue-600 dark:text-blue-400 shrink-0 ml-2" />
+              </a>
+
+              <a
+                href="/MTF_template.xlsx"
+                download="MTF_template.xlsx"
+                className="p-3 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 rounded-lg flex items-center justify-between text-slate-800 dark:text-slate-100 font-medium transition-colors"
+              >
+                <div className="truncate">
+                  <span className="font-bold block">MTF_template.xlsx</span>
+                  <span className="text-[11px] text-slate-400">Official MTF template</span>
+                </div>
+                <Download className="w-4 h-4 text-indigo-600 dark:text-indigo-400 shrink-0 ml-2" />
               </a>
 
               <a

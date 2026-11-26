@@ -69,6 +69,72 @@ export interface MRFSignatures {
   remarks: string;
 }
 
+export type MTFTransferCategory =
+  | 'WHSE TO WHSE'
+  | 'WHSE TO SITE'
+  | 'WHSE TO SUPPLIER'
+  | 'SUPPLIER TO WHSE'
+  | 'SUPPLIER TO SITE'
+  | 'OTHERS'
+  | 'SITE TO WHSE'
+  | 'SITE TO SITE';
+
+export type MTFMaterialsCategory = 'New' | 'Defective' | 'Repaired';
+export type MTFActionDone = 'Processed' | 'Cancelled' | 'None';
+
+export interface MTFItemOverride {
+  itemType?: string;
+  serialNumber?: string;
+  assetTag?: string;
+  na?: string;
+  status?: string;
+}
+
+export interface MTFConfig {
+  projectName?: string;
+  mtfNumber?: string;
+  datePrepared?: string;
+  dateExpected?: string;
+  transferCategory?: MTFTransferCategory;
+  othersText?: string;
+  materialsCategory?: MTFMaterialsCategory;
+  actionDone?: MTFActionDone;
+  originSiteName?: string;
+  originAddress?: string;
+  destinationPlaid?: string;
+  destinationSiteName?: string;
+  destinationAddress?: string;
+  manualHaulingOrigin?: 'Yes' | 'No' | '';
+  manualHaulingDestination?: 'Yes' | 'No' | '';
+  remarks?: string;
+  requestedByName?: string;
+  requestedByDate?: string;
+  requestedByContact?: string;
+  releasedByName?: string;
+  releasedByDate?: string;
+  releasedByContact?: string;
+  lntpNumber?: string;
+  approvedByName?: string;
+  approvedByDate?: string;
+  approvedByContact?: string;
+  processedByName?: string;
+  processedByDate?: string;
+  processedByContact?: string;
+  acknowledgedByName?: string;
+  acknowledgedByDate?: string;
+  acknowledgedByContact?: string;
+  cancellationAdviseName?: string;
+  cancellationAdviseDate?: string;
+  cancellationAdviseContact?: string;
+  approvedForReleaseByName?: string;
+  approvedForReleaseByDate?: string;
+  approvedForReleaseByContact?: string;
+  materialsReceivedByName?: string;
+  materialsReceivedByDate?: string;
+  materialsReceivedByContact?: string;
+  itemOverrides?: Record<string, MTFItemOverride>;
+}
+
 export interface MRFDocument {
   id: string;
   createdAt: string;
@@ -77,4 +143,5 @@ export interface MRFDocument {
   mainItems: MRFLineItem[];
   localMaterials: MRFLineItem[];
   signatures: MRFSignatures;
+  mtf?: MTFConfig;
 }

@@ -45,7 +45,8 @@
     display: none !important;
   }
 
-  #mrf-printable-sheet {
+  #mrf-printable-sheet,
+  #mtf-printable-sheet {
     transform: none !important;
     width: 100% !important;
     min-width: 100% !important;

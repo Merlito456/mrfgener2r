@@ -910,14 +910,14 @@ export const MRFAutomationWizard: React.FC<MRFAutomationWizardProps> = ({
                     How many LT Cards (For MF2)?
                   </label>
                   <span className="text-[10px] text-slate-500 dark:text-slate-400 italic">
-                    Universal Dummy Plate logic
+                    Lightspan MF LT dmmy plte (3FE77035BA)
                   </span>
                 </div>
                 <div className="p-2.5 bg-blue-50/60 dark:bg-blue-950/50 rounded-lg border border-blue-100 dark:border-blue-900/60 text-[11px] text-blue-900 dark:text-blue-200 leading-snug">
                   <strong>Rule:</strong>
                   <ul className="list-disc ml-4 mt-0.5 space-y-0.5">
                     <li>If <strong>2:</strong> uses 16 GPON + 16 XGPON (32 ports total). No dummy plate.</li>
-                    <li>If <strong>1:</strong> uses 8 GPON + 8 XGPON (16 ports total) + <strong>universal dummy plate</strong>.</li>
+                    <li>If <strong>1:</strong> uses 8 GPON + 8 XGPON (16 ports total) + <strong>Lightspan MF LT dmmy plte (388x204x25)mm</strong> (<code className="font-mono font-bold">3FE77035BA</code>).</li>
                   </ul>
                 </div>
                 <div className="grid grid-cols-2 gap-3">
@@ -941,7 +941,7 @@ export const MRFAutomationWizard: React.FC<MRFAutomationWizardProps> = ({
                       )}
                     </div>
                     <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-1">
-                      Includes 8 GPON + 8 XGPON optics &bull; <strong>+ Universal dummy plate</strong> &bull; 16 downlink patch cords
+                      Includes 8 GPON + 8 XGPON optics &bull; <strong>+ Lightspan MF LT dmmy plte (388x204x25)mm</strong> &bull; 16 downlink patch cords
                     </p>
                   </button>
 

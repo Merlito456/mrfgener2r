@@ -44,7 +44,7 @@ export interface MRFAutomationInput {
   downlinkDistance: number; // in meters
 
   // Q8: How many LT Cards (For MF2)?
-  // If 2: uses 16 GPON and 16 XGPON. If 1: uses 8 GPON and 8 XGPON and a universal dummy plate.
+  // If 2: uses 16 GPON and 16 XGPON. If 1: uses 8 GPON and 8 XGPON and Lightspan MF LT dmmy plte (388x204x25)mm (3FE77035BA).
   ltCardCount: 1 | 2;
   // User decides if SW STAGED (3FE76353AA-S) or standard (3FE76353AA)
   swStaged?: boolean;
@@ -67,6 +67,7 @@ const PREFERRED_DESCRIPTIONS: Record<string, string> = {
   'blaine-8"tie-blk': 'Plastic Cable Tie black',
   'blaine-8"tie': 'Plastic Cable Tie white',
   'blaine-8"tie-p': 'Plastic Cable Tie white',
+  '3fe77035ba': 'Lightspan MF LT dmmy plte (388x204x25)mm',
 };
 
 function getItemDetails(code: string, fallbackDesc: string, fallbackUom = 'pc', fallbackCat = 'Equipment') {
@@ -274,9 +275,9 @@ export function generateAutomatedBoQ(input: MRFAutomationInput): {
     );
 
     if (input.ltCardCount === 1) {
-      explanations['q8'] = `1 LT Card selected${stagedLabel}: 1x 16-port Multi-PON board (${ltCardCode}), 8x GPON B+, 8x XGS-PON MPM, and 1x Universal dummy plate.`;
+      explanations['q8'] = `1 LT Card selected${stagedLabel}: 1x 16-port Multi-PON board (${ltCardCode}), 8x GPON B+, 8x XGS-PON MPM, and 1x Lightspan MF LT dmmy plte (388x204x25)mm (3FE77035BA).`;
     } else {
-      explanations['q8'] = `2 LT Cards selected${stagedLabel}: 2x 16-port Multi-PON boards (${ltCardCode}), 16x GPON B+, 16x XGS-PON MPM, Universal dummy plate omitted.`;
+      explanations['q8'] = `2 LT Cards selected${stagedLabel}: 2x 16-port Multi-PON boards (${ltCardCode}), 16x GPON B+, 16x XGS-PON MPM, Lightspan MF LT dmmy plte (388x204x25)mm omitted.`;
     }
   } else if (input.equipmentType === 'DF16') {
     // DF16 from user sample and Blaine database
@@ -559,7 +560,7 @@ export function generateAutomatedBoQ(input: MRFAutomationInput): {
   );
   explanations['q5_gnd'] = `Grounding distance ${gndDist}m: Selected ${gndQty}m WIRE GROUNDING CABLE YELLOW/GREEN 16MM N/A (L00YG16MM2).`;
 
-  // Row 41: Universal Dummy Plate (MF2 with 1 LT card ONLY)
+  // Row 41: Lightspan MF LT dmmy plte (388x204x25)mm (MF2 with 1 LT card ONLY, Material: 820215)
   if (input.equipmentType === 'MF2' && input.ltCardCount === 1) {
     addLocal(
       '3FE77035BA',

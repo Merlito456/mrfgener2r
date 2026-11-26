@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useTheme } from './utils/theme';
-import { Navbar } from './components/Navbar';
+import { Navbar, AppTab } from './components/Navbar';
 import { MRFFormBuilder } from './components/MRFFormBuilder';
 import { MRFSheetPreview } from './components/MRFSheetPreview';
+import { MTFSheetPreview } from './components/MTFSheetPreview';
 import { CatalogExplorer } from './components/CatalogExplorer';
 import { SitesDirectory } from './components/SitesDirectory';
 import { HistoryDrawer } from './components/HistoryDrawer';
@@ -27,6 +28,7 @@ import {
 } from './utils/storage';
 import { OFFICIAL_FILLED_MRF_BENCHMARK } from './utils/benchmarkMRF';
 import { exportMRFToExcel } from './utils/excelExport';
+import { exportMTFToExcel } from './utils/mtfExport';
 import confetti from 'canvas-confetti';
 import { CheckCircle2, AlertCircle, Info, X } from 'lucide-react';
 
@@ -46,9 +48,7 @@ export default function App() {
   });
 
   // Active view tab
-  const [activeTab, setActiveTab] = useState<
-    'builder' | 'preview' | 'guide' | 'catalog' | 'sites'
-  >('builder');
+  const [activeTab, setActiveTab] = useState<AppTab>('builder');
 
   // Modals state
   const [isWizardOpen, setIsWizardOpen] = useState(false);
@@ -149,8 +149,26 @@ export default function App() {
     }
   };
 
+  const handleExportMTF = async (docToExport = currentDoc) => {
+    try {
+      showToast('Exporting official MTF template synced from MRF...', 'info');
+      await exportMTFToExcel(docToExport);
+      showToast('Downloaded official MTF Excel (.xlsx) file!');
+      confetti({
+        particleCount: 80,
+        spread: 60,
+        origin: { y: 0.7 },
+      });
+    } catch (e: any) {
+      console.error('MTF Export failed:', e);
+      showToast(`MTF export error: ${e.message || 'Failed to generate MTF Excel'}`, 'error');
+    }
+  };
+
   const handlePrint = () => {
-    setActiveTab('preview');
+    if (activeTab !== 'preview' && activeTab !== 'mtf') {
+      setActiveTab('preview');
+    }
     setTimeout(() => {
       window.print();
     }, 300);
@@ -270,6 +288,7 @@ export default function App() {
         onOpenHistory={() => setIsHistoryDrawerOpen(true)}
         onOpenDataManager={() => setIsDataManagerOpen(true)}
         onExportExcel={() => handleExportExcel(currentDoc)}
+        onExportMTF={() => handleExportMTF(currentDoc)}
         onPrint={handlePrint}
         onLoadBenchmark={() => {
           setCurrentDoc(OFFICIAL_FILLED_MRF_BENCHMARK);
@@ -289,6 +308,7 @@ export default function App() {
             onOpenSites={() => setActiveTab('sites')}
             onOpenWizard={() => setIsWizardOpen(true)}
             onOpenGuide={() => setActiveTab('guide')}
+            onOpenMTF={() => setActiveTab('mtf')}
             onLoadSample={(sample) => {
               setCurrentDoc(sample);
               saveActiveMRF(sample);
@@ -302,6 +322,16 @@ export default function App() {
             doc={currentDoc}
             onExportExcel={() => handleExportExcel(currentDoc)}
             onPrint={handlePrint}
+          />
+        )}
+
+        {activeTab === 'mtf' && (
+          <MTFSheetPreview
+            doc={currentDoc}
+            onChange={setCurrentDoc}
+            onExportMTF={() => handleExportMTF(currentDoc)}
+            onPrint={handlePrint}
+            onGoToBuilder={() => setActiveTab('builder')}
           />
         )}
 
@@ -338,14 +368,14 @@ export default function App() {
       <footer className="bg-slate-900 border-t border-slate-800 text-slate-400 py-4 text-xs no-print">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-2">
           <div className="flex items-center gap-2">
-            <span className="font-semibold text-slate-200">MRF Generator</span>
+            <span className="font-semibold text-slate-200">MRF/MTF Generator</span>
             <span>&bull;</span>
             <span>Nokia &bull; Globe Telecom OLT Logistics Management</span>
           </div>
           <div className="flex items-center gap-4 text-slate-400">
             <span>Paranaque WHS Hub</span>
             <span>&bull;</span>
-            <span>Official Template: MRF_template.xlsx</span>
+            <span>Templates: MRF_template.xlsx &amp; MTF_template.xlsx</span>
             <span>&bull;</span>
             <span>Inventory Database: 459 verified items</span>
           </div>
@@ -362,6 +392,7 @@ export default function App() {
         onDuplicateDoc={handleDuplicateDoc}
         onDeleteDoc={handleDeleteDoc}
         onExportExcel={handleExportExcel}
+        onExportMTF={handleExportMTF}
         onLoadBenchmark={() => {
           setCurrentDoc(OFFICIAL_FILLED_MRF_BENCHMARK);
           saveActiveMRF(OFFICIAL_FILLED_MRF_BENCHMARK);

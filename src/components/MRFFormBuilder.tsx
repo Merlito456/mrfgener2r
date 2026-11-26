@@ -33,6 +33,7 @@ import {
   Copy,
   Info,
   FileSpreadsheet,
+  ArrowRightLeft,
 } from 'lucide-react';
 import { OFFICIAL_FILLED_MRF_BENCHMARK } from '../utils/benchmarkMRF';
 
@@ -44,6 +45,7 @@ interface MRFFormBuilderProps {
   onOpenSites: () => void;
   onOpenWizard?: () => void;
   onOpenGuide?: () => void;
+  onOpenMTF?: () => void;
   onLoadSample?: (sample: MRFDocument) => void;
 }
 
@@ -70,6 +72,7 @@ export const MRFFormBuilder: React.FC<MRFFormBuilderProps> = ({
   onOpenSites,
   onOpenWizard,
   onOpenGuide: _onOpenGuide,
+  onOpenMTF,
   onLoadSample,
 }) => {
   const { isDark } = useTheme();
@@ -449,6 +452,17 @@ export const MRFFormBuilder: React.FC<MRFFormBuilderProps> = ({
               <MapPin className="w-4 h-4 text-blue-300 shrink-0" />
               <span>Browse Sites ({sites.length.toLocaleString()})</span>
             </button>
+            {onOpenMTF && (
+              <button
+                type="button"
+                onClick={onOpenMTF}
+                className="inline-flex items-center gap-2 h-11 px-4.5 rounded-xl text-xs font-bold bg-indigo-500/30 text-indigo-200 border border-indigo-400/40 hover:bg-indigo-500/40 transition-all hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap shadow-sm"
+                title="Open MTF Generator synced from this MRF"
+              >
+                <ArrowRightLeft className="w-4 h-4 text-indigo-300 shrink-0" />
+                <span>Generate MTF</span>
+              </button>
+            )}
           </div>
         </div>
 

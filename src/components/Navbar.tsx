@@ -11,21 +11,25 @@ import {
   Layers,
   FileCheck,
   BookOpen,
+  ArrowRightLeft,
 } from 'lucide-react';
 import { MRFDocument } from '../types/mrf';
 import { useTheme } from '../utils/theme';
 import { ThemeSelector } from './ThemeSelector';
 
+export type AppTab = 'builder' | 'preview' | 'mtf' | 'guide' | 'catalog' | 'sites';
+
 interface NavbarProps {
   currentDoc: MRFDocument;
-  activeTab: 'builder' | 'preview' | 'guide' | 'catalog' | 'sites';
-  setActiveTab: (tab: 'builder' | 'preview' | 'guide' | 'catalog' | 'sites') => void;
+  activeTab: AppTab;
+  setActiveTab: (tab: AppTab) => void;
   onNewMRF: () => void;
   onOpenWizard: () => void;
   onSaveMRF: () => void;
   onOpenHistory: () => void;
   onOpenDataManager: () => void;
   onExportExcel: () => void;
+  onExportMTF: () => void;
   onPrint: () => void;
   onLoadBenchmark?: () => void;
   isSaving?: boolean;
@@ -41,6 +45,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   onOpenHistory,
   onOpenDataManager,
   onExportExcel,
+  onExportMTF,
   onPrint,
   onLoadBenchmark: _onLoadBenchmark,
   isSaving,
@@ -83,7 +88,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     isDark ? 'text-white' : 'text-slate-900'
                   }`}
                 >
-                  MRF Generator
+                  MRF/MTF Generator
                 </span>
                 <span className="text-[11px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-md bg-blue-500/15 text-blue-600 dark:text-blue-300 border border-blue-500/20">
                   Nokia &bull; OLT
@@ -94,7 +99,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   isDark ? 'text-slate-400' : 'text-slate-500'
                 }`}
               >
-                Material Request Form &bull; Globe Telecom Standard
+                Material Request &amp; Transfer Forms &bull; Globe Telecom Standard
               </p>
             </div>
           </div>
@@ -185,11 +190,21 @@ export const Navbar: React.FC<NavbarProps> = ({
             <button
               type="button"
               onClick={onExportExcel}
-              className="inline-flex items-center gap-2 h-10 px-4.5 text-xs font-bold rounded-xl text-white bg-emerald-600 hover:bg-emerald-500 shadow-md shadow-emerald-700/20 transition-all hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap shrink-0"
+              className="inline-flex items-center gap-1.5 h-10 px-3.5 text-xs font-bold rounded-xl text-white bg-emerald-600 hover:bg-emerald-500 shadow-md shadow-emerald-700/20 transition-all hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap shrink-0"
               title="Export genuine Excel file matching MRF_template.xlsx without XML errors"
             >
               <Download className="w-4 h-4 shrink-0" />
-              <span>Export Official .XLSX</span>
+              <span>MRF .XLSX</span>
+            </button>
+
+            <button
+              type="button"
+              onClick={onExportMTF}
+              className="inline-flex items-center gap-1.5 h-10 px-3.5 text-xs font-bold rounded-xl text-white bg-indigo-600 hover:bg-indigo-500 shadow-md shadow-indigo-700/20 transition-all hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap shrink-0"
+              title="Export Materials Transfer Form (MTF) synced from current MRF"
+            >
+              <Download className="w-4 h-4 shrink-0" />
+              <span>MTF .XLSX</span>
             </button>
           </div>
         </div>
@@ -232,7 +247,33 @@ export const Navbar: React.FC<NavbarProps> = ({
               }`}
             >
               <FileCheck className="w-4 h-4" />
-              <span>Official Sheet Preview</span>
+              <span>MRF Sheet Preview</span>
+            </button>
+
+            <button
+              type="button"
+              onClick={() => setActiveTab('mtf')}
+              className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all ${
+                activeTab === 'mtf'
+                  ? 'bg-indigo-600 text-white shadow-sm'
+                  : isDark
+                  ? 'text-indigo-300 hover:text-indigo-200 hover:bg-slate-800/60'
+                  : 'text-indigo-700 hover:text-indigo-800 hover:bg-indigo-50'
+              }`}
+            >
+              <ArrowRightLeft className="w-4 h-4" />
+              <span>MTF Generator</span>
+              <span
+                className={`text-[10px] px-1.5 py-0.5 rounded font-mono ${
+                  activeTab === 'mtf'
+                    ? 'bg-indigo-700 text-white'
+                    : isDark
+                    ? 'bg-indigo-500/20 text-indigo-300'
+                    : 'bg-indigo-100 text-indigo-800'
+                }`}
+              >
+                MRF&rarr;MTF
+              </span>
             </button>
 
             <button

@@ -1999,7 +1999,7 @@
   {
     "id": "item_141",
     "code": "3FE77035BA",
-    "description": "Lightspan MF LT dmmy plte\n(388x204x25)mm(brand: Nokia)",
+    "description": "Lightspan MF LT dmmy plte (388x204x25)mm",
     "uom": "pc",
     "category": "MF2",
     "packageNo": "PKG-01",
@@ -2008,7 +2008,8 @@
       "paranaque_mnl": 128,
       "cebu": 112,
       "davao": 26
-    }
+    },
+    "partNumber": "3FE77035BA"
   },
   {
     "id": "item_142",

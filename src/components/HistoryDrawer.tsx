@@ -23,6 +23,7 @@ interface HistoryDrawerProps {
   onDuplicateDoc: (doc: MRFDocument) => void;
   onDeleteDoc: (id: string) => void;
   onExportExcel: (doc: MRFDocument) => void;
+  onExportMTF?: (doc: MRFDocument) => void;
   onLoadBenchmark?: () => void;
 }
 
@@ -35,6 +36,7 @@ export const HistoryDrawer: React.FC<HistoryDrawerProps> = ({
   onDuplicateDoc,
   onDeleteDoc,
   onExportExcel,
+  onExportMTF,
   onLoadBenchmark,
 }) => {
   const [search, setSearch] = useState('');
@@ -167,10 +169,19 @@ export const HistoryDrawer: React.FC<HistoryDrawerProps> = ({
                       <button
                         onClick={() => onExportExcel(doc)}
                         className="p-1.5 text-slate-500 hover:text-emerald-600 rounded hover:bg-emerald-50 transition-colors"
-                        title="Quick download XLSX"
+                        title="Quick download MRF XLSX"
                       >
                         <Download className="w-3.5 h-3.5" />
                       </button>
+                      {onExportMTF && (
+                        <button
+                          onClick={() => onExportMTF(doc)}
+                          className="px-1.5 py-1 text-[10px] font-bold text-indigo-600 hover:text-indigo-700 rounded hover:bg-indigo-50 transition-colors"
+                          title="Quick download MTF XLSX"
+                        >
+                          MTF
+                        </button>
+                      )}
                       <button
                         onClick={() => onDuplicateDoc(doc)}
                         className="p-1.5 text-slate-500 hover:text-blue-600 rounded hover:bg-blue-50 transition-colors"
