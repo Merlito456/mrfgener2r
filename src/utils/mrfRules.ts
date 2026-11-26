@@ -1,7 +1,9 @@
-import { MRFLineItem, MRFDocument } from '../types/mrf';
+import { MRFLineItem, MRFDocument, CatalogItem } from '../types/mrf';
 import { generateMRFNumber, getTodayDateStr } from './storage';
 import sitesDataRaw from '../data_sites.json';
 import itemsDataRaw from '../data_items.json';
+
+export type BreakerRating = '10A' | '16A' | '20A' | '25A' | '32A' | '63A';
 
 export interface MRFAutomationInput {
   // Q1: What equipment to install? MF2, DF16, FX4, FX8 (Refer to Database)
@@ -34,10 +36,10 @@ export interface MRFAutomationInput {
   groundingDistance: number; // in meters
 
   // Q6: Does RS need change breakers? Yes or no? How many? Rating?
-  // Purpose: auto load breaker from database.
+  // Purpose: auto load breaker from database (or add regardless if not in database).
   needChangeBreakers: boolean;
   breakerCount: number; // 1, 2, ...
-  breakerRating: '16A' | '20A' | '25A' | '32A' | '63A';
+  breakerRating: BreakerRating;
 
   // Q7: How long is Downlink cable?
   // Suggestion is 2m if ODF is just below equipment. Options: 1.5m, 2m, 3m, 5m, 8m, 10m, 15m.
@@ -70,16 +72,24 @@ const PREFERRED_DESCRIPTIONS: Record<string, string> = {
   '3fe77035ba': 'Lightspan MF LT dmmy plte (388x204x25)mm',
 };
 
-function getItemDetails(code: string, fallbackDesc: string, fallbackUom = 'pc', fallbackCat = 'Equipment') {
+function getItemDetails(
+  code: string,
+  fallbackDesc: string,
+  fallbackUom = 'pc',
+  fallbackCat = 'Equipment',
+  catalogMap?: Map<string, any>
+) {
   const codeKey = code.toLowerCase();
-  const hit = DB_MAP.get(codeKey);
+  const hit = catalogMap?.get(codeKey) || DB_MAP.get(codeKey);
   const preferredDesc = PREFERRED_DESCRIPTIONS[codeKey];
   if (hit) {
+    const resolvedCategory =
+      hit.category && hit.category !== '-' ? hit.category : fallbackCat;
     return {
       partNumber: hit.partNumber || hit.code,
       description: preferredDesc || hit.description,
       uom: fallbackUom || hit.uom || 'pc',
-      category: hit.category || fallbackCat,
+      category: resolvedCategory,
     };
   }
   return {
@@ -87,6 +97,115 @@ function getItemDetails(code: string, fallbackDesc: string, fallbackUom = 'pc', 
     description: preferredDesc || fallbackDesc,
     uom: fallbackUom,
     category: fallbackCat,
+  };
+}
+
+export interface ResolvedBreakerSpec {
+  rating: BreakerRating;
+  code: string;
+  description: string;
+  uom: string;
+  category: string;
+  fromDatabase: boolean;
+  stockTotal: number;
+}
+
+const BREAKER_SPECS: Record<
+  BreakerRating,
+  { preferredCodes: string[]; fallbackCode: string; fallbackDesc: string }
+> = {
+  '10A': {
+    preferredCodes: ['L00CB10A-S', 'L00CB10A-N', 'L00CB10A'],
+    fallbackCode: 'L00CB10A-N',
+    fallbackDesc: '10A CIRCUIT BREAKER (NADER) 1P',
+  },
+  '16A': {
+    preferredCodes: ['L00CB16A-S', 'L00CB16A-N', 'L00CB16A'],
+    fallbackCode: 'L00CB16A-S',
+    fallbackDesc: '16A CIRCUIT BREAKER (SCHNEIDER) 1P',
+  },
+  '20A': {
+    preferredCodes: ['L00CB20A-S', 'L00CB20A-N', 'L00CB20A'],
+    fallbackCode: 'L00CB20A-S',
+    fallbackDesc: '20A CIRCUIT BREAKER (SCHNEIDER) 1P',
+  },
+  '25A': {
+    preferredCodes: ['L00CB25A-S', 'L00CB25A-N', 'L00CB25A'],
+    fallbackCode: 'L00CB25A-S',
+    fallbackDesc: '25A CIRCUIT BREAKER (SCHNEIDER) 1P',
+  },
+  '32A': {
+    preferredCodes: ['L00CB32A-S', 'L00CB32A-N', 'L00CB32A'],
+    fallbackCode: 'L00CB32A-S',
+    fallbackDesc: '32A CIRCUIT BREAKER (SCHNEIDER) 1P',
+  },
+  '63A': {
+    preferredCodes: ['L00CB63A-N', 'L00CB63A-S', 'L00CB63A'],
+    fallbackCode: 'L00CB63A-N',
+    fallbackDesc: '63A CIRCUIT BREAKER (NADER) 1P',
+  },
+};
+
+export function resolveCircuitBreakerFromCatalog(
+  rating: BreakerRating,
+  catalogItems?: CatalogItem[]
+): ResolvedBreakerSpec {
+  const sourceItems: any[] =
+    catalogItems && catalogItems.length > 0 ? catalogItems : (itemsDataRaw as any[]);
+  const spec = BREAKER_SPECS[rating] || BREAKER_SPECS['16A'];
+
+  // 1. Check preferred part codes in order
+  for (const preferredCode of spec.preferredCodes) {
+    const match = sourceItems.find(
+      (it) => String(it.code || '').toLowerCase() === preferredCode.toLowerCase()
+    );
+    if (match) {
+      return {
+        rating,
+        code: match.partNumber || match.code,
+        description: match.description || spec.fallbackDesc,
+        uom: match.uom || 'pc',
+        category: match.category && match.category !== '-' ? match.category : 'RCO',
+        fromDatabase: true,
+        stockTotal: Number(match.stock?.total) || 0,
+      };
+    }
+  }
+
+  // 2. Dynamic database search for any circuit breaker matching this amperage rating
+  const ratingRegex = new RegExp(`(^|[^0-9])${rating}([^0-9a-zA-Z]|$)`, 'i');
+  const dynamicMatch = sourceItems.find((it) => {
+    const desc = String(it.description || '');
+    const code = String(it.code || '');
+    const isBreaker =
+      /circuit\s*breaker/i.test(desc) || /^l00cb/i.test(code) || /^sqcb/i.test(code);
+    return isBreaker && (ratingRegex.test(desc) || ratingRegex.test(code));
+  });
+
+  if (dynamicMatch) {
+    return {
+      rating,
+      code: dynamicMatch.partNumber || dynamicMatch.code,
+      description: dynamicMatch.description || spec.fallbackDesc,
+      uom: dynamicMatch.uom || 'pc',
+      category:
+        dynamicMatch.category && dynamicMatch.category !== '-'
+          ? dynamicMatch.category
+          : 'RCO',
+      fromDatabase: true,
+      stockTotal: Number(dynamicMatch.stock?.total) || 0,
+    };
+  }
+
+  // 3. Fallback: none in database -> add it regardless
+  return {
+    rating,
+    code: spec.fallbackCode,
+    description: spec.fallbackDesc,
+    uom: 'pc',
+    category: 'RCO',
+    fromDatabase: false,
+    stockTotal: 0,
   };
 }
 
@@ -121,7 +240,10 @@ export function getTransportCableForDistance(distance: number): TransportCableSp
   return TRANSPORT_CABLE_OPTIONS[TRANSPORT_CABLE_OPTIONS.length - 1];
 }
 
-export function generateAutomatedBoQ(input: MRFAutomationInput): {
+export function generateAutomatedBoQ(
+  input: MRFAutomationInput,
+  catalogItems?: CatalogItem[]
+): {
   mainItems: MRFLineItem[];
   localMaterials: MRFLineItem[];
   explanations: Record<string, string>;
@@ -129,6 +251,10 @@ export function generateAutomatedBoQ(input: MRFAutomationInput): {
   const mainItems: MRFLineItem[] = [];
   const localMaterials: MRFLineItem[] = [];
   const explanations: Record<string, string> = {};
+  const catalogMap =
+    catalogItems && catalogItems.length > 0
+      ? new Map(catalogItems.map((it) => [it.code.toLowerCase(), it]))
+      : undefined;
 
   const addMain = (
     code: string,
@@ -138,7 +264,7 @@ export function generateAutomatedBoQ(input: MRFAutomationInput): {
     category = 'Equipment',
     uom = 'PC'
   ) => {
-    const details = getItemDetails(code, fallbackDesc, uom, category);
+    const details = getItemDetails(code, fallbackDesc, uom, category, catalogMap);
     const finalUom = details.uom || uom || 'PC';
     mainItems.push({
       id: `mi_auto_${mainItems.length + 1}`,
@@ -162,7 +288,7 @@ export function generateAutomatedBoQ(input: MRFAutomationInput): {
     category = 'Local Accessories',
     uom = 'pcs'
   ) => {
-    const details = getItemDetails(code, fallbackDesc, uom, category);
+    const details = getItemDetails(code, fallbackDesc, uom, category, catalogMap);
     const finalUom = details.uom || uom || 'pcs';
     localMaterials.push({
       id: `lm_auto_${localMaterials.length + 1}`,
@@ -720,26 +846,20 @@ export function generateAutomatedBoQ(input: MRFAutomationInput): {
 
   // Question 6: Breaker Replacement (if needed)
   if (input.needChangeBreakers && input.breakerCount > 0) {
-    const rating = input.breakerRating || '16A';
-    let breakerCode = 'L00CB16A-S';
-    let breakerDesc = '16A CIRCUIT BREAKER (SCHNEIDER) 1P';
+    const rating: BreakerRating = input.breakerRating || '16A';
+    const resolvedBreaker = resolveCircuitBreakerFromCatalog(rating, catalogItems);
 
-    if (rating === '20A') {
-      breakerCode = 'L00CB20A-S';
-      breakerDesc = '20A CIRCUIT BREAKER (SCHNEIDER) 1P';
-    } else if (rating === '25A') {
-      breakerCode = 'L00CB25A-S';
-      breakerDesc = '25A CIRCUIT BREAKER (SCHNEIDER) 1P';
-    } else if (rating === '32A') {
-      breakerCode = 'L00CB32A-S';
-      breakerDesc = '32A CIRCUIT BREAKER (SCHNEIDER) 1P';
-    } else if (rating === '63A') {
-      breakerCode = 'L00CB63A-N';
-      breakerDesc = '63A CIRCUIT BREAKER (NADER) 1P';
-    }
-
-    addLocal(breakerCode, breakerDesc, input.breakerCount, '', 'RCO', 'pc');
-    explanations['q6_breaker'] = `Loaded ${input.breakerCount}x ${rating} circuit breaker (${breakerCode}) from database.`;
+    addLocal(
+      resolvedBreaker.code,
+      resolvedBreaker.description,
+      input.breakerCount,
+      '',
+      resolvedBreaker.category,
+      resolvedBreaker.uom
+    );
+    explanations['q6_breaker'] = resolvedBreaker.fromDatabase
+      ? `Loaded ${input.breakerCount}x ${rating} circuit breaker (${resolvedBreaker.code} — ${resolvedBreaker.description}) from database (Stock: ${resolvedBreaker.stockTotal}).`
+      : `Added ${input.breakerCount}x ${rating} circuit breaker (${resolvedBreaker.code} — ${resolvedBreaker.description}) directly (not found in database).`;
   } else {
     explanations['q6_breaker'] = 'No circuit breaker replacement required on Rectifier System.';
   }
@@ -752,8 +872,11 @@ export function generateAutomatedBoQ(input: MRFAutomationInput): {
 /**
  * Creates a complete MRF Document from the automation questionnaire inputs
  */
-export function createAutomatedMRFDocument(input: MRFAutomationInput): MRFDocument {
-  const { mainItems, localMaterials } = generateAutomatedBoQ(input);
+export function createAutomatedMRFDocument(
+  input: MRFAutomationInput,
+  catalogItems?: CatalogItem[]
+): MRFDocument {
+  const { mainItems, localMaterials } = generateAutomatedBoQ(input, catalogItems);
 
   const verifiedSites = sitesDataRaw as Array<{
     plaid: string;

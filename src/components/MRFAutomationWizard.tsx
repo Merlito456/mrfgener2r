@@ -1,10 +1,12 @@
 import React, { useState, useMemo } from 'react';
 import {
   MRFAutomationInput,
+  BreakerRating,
   generateAutomatedBoQ,
   createAutomatedMRFDocument,
+  resolveCircuitBreakerFromCatalog,
 } from '../utils/mrfRules';
-import { MRFDocument, SiteRecord } from '../types/mrf';
+import { MRFDocument, SiteRecord, CatalogItem } from '../types/mrf';
 import { SiteAutocomplete } from './SiteAutocomplete';
 import { useTheme } from '../utils/theme';
 import {
@@ -30,6 +32,7 @@ interface MRFAutomationWizardProps {
   isOpen: boolean;
   onClose: () => void;
   sites: SiteRecord[];
+  catalog?: CatalogItem[];
   onGenerateMRF: (doc: MRFDocument) => void;
 }
 
@@ -37,6 +40,7 @@ export const MRFAutomationWizard: React.FC<MRFAutomationWizardProps> = ({
   isOpen,
   onClose,
   sites,
+  catalog,
   onGenerateMRF,
 }) => {
   const { theme, isDark } = useTheme();
@@ -64,10 +68,23 @@ export const MRFAutomationWizard: React.FC<MRFAutomationWizardProps> = ({
     requisitionerTitle: 'Nokia Inhouse Engineer',
   });
 
+  // Resolve circuit breaker options from database (with automatic fallback if absent)
+  const breakerOptions = useMemo(() => {
+    const ratings: BreakerRating[] = ['10A', '16A', '20A', '25A', '32A', '63A'];
+    return ratings.map((r) => resolveCircuitBreakerFromCatalog(r, catalog));
+  }, [catalog]);
+
+  const selectedBreaker = useMemo(() => {
+    return (
+      breakerOptions.find((b) => b.rating === formData.breakerRating) ||
+      resolveCircuitBreakerFromCatalog(formData.breakerRating, catalog)
+    );
+  }, [breakerOptions, formData.breakerRating, catalog]);
+
   // Live generated BoQ based on user answers
   const liveBoQ = useMemo(() => {
-    return generateAutomatedBoQ(formData);
-  }, [formData]);
+    return generateAutomatedBoQ(formData, catalog);
+  }, [formData, catalog]);
 
   if (!isOpen) return null;
 
@@ -78,7 +95,7 @@ export const MRFAutomationWizard: React.FC<MRFAutomationWizardProps> = ({
     liveBoQ.localMaterials.reduce((acc, it) => acc + (Number(it.qtyReq) || 0), 0);
 
   const handleFinish = () => {
-    const doc = createAutomatedMRFDocument(formData);
+    const doc = createAutomatedMRFDocument(formData, catalog);
     onGenerateMRF(doc);
     onClose();
   };
@@ -817,47 +834,79 @@ export const MRFAutomationWizard: React.FC<MRFAutomationWizardProps> = ({
               </div>
 
               {formData.needChangeBreakers && (
-                <div className="grid grid-cols-2 gap-3 pt-2 text-xs border-t border-slate-100 dark:border-slate-700">
-                  <div>
-                    <label className="block text-[11px] font-semibold text-slate-700 dark:text-slate-300 mb-1">
-                      How Many Breakers?
-                    </label>
-                    <select
-                      value={formData.breakerCount}
-                      onChange={(e) =>
-                        setFormData((prev) => ({
-                          ...prev,
-                          breakerCount: Number(e.target.value),
-                        }))
-                      }
-                      className="w-full px-3 py-1.5 border border-slate-300 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 text-xs font-bold focus:ring-2 focus:ring-blue-500 focus:outline-none"
-                    >
-                      <option value={1}>1 Breaker</option>
-                      <option value={2}>2 Breakers</option>
-                      <option value={3}>3 Breakers</option>
-                      <option value={4}>4 Breakers</option>
-                    </select>
+                <div className="space-y-2.5 pt-2 text-xs border-t border-slate-100 dark:border-slate-700">
+                  <div className="grid grid-cols-2 gap-3">
+                    <div>
+                      <label className="block text-[11px] font-semibold text-slate-700 dark:text-slate-300 mb-1">
+                        How Many Breakers?
+                      </label>
+                      <select
+                        value={formData.breakerCount}
+                        onChange={(e) =>
+                          setFormData((prev) => ({
+                            ...prev,
+                            breakerCount: Number(e.target.value),
+                          }))
+                        }
+                        className="w-full px-3 py-1.5 border border-slate-300 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 text-xs font-bold focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                      >
+                        <option value={1}>1 Breaker</option>
+                        <option value={2}>2 Breakers</option>
+                        <option value={3}>3 Breakers</option>
+                        <option value={4}>4 Breakers</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label className="block text-[11px] font-semibold text-slate-700 dark:text-slate-300 mb-1">
+                        Rating:
+                      </label>
+                      <select
+                        value={formData.breakerRating}
+                        onChange={(e) =>
+                          setFormData((prev) => ({
+                            ...prev,
+                            breakerRating: e.target.value as BreakerRating,
+                          }))
+                        }
+                        className="w-full px-3 py-1.5 border border-slate-300 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 text-xs font-bold focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                      >
+                        {breakerOptions.map((opt) => {
+                          const brandMatch = opt.description.match(/\(([^)]+)\)/);
+                          const brandLabel = brandMatch
+                            ? brandMatch[1].replace(/\b\w/g, (c) => c.toUpperCase()).replace(/Nader/i, 'Nader').replace(/Schneider/i, 'Schneider')
+                            : '1P';
+                          const suffix = opt.fromDatabase
+                            ? `(${brandLabel} 1P) • Stock: ${opt.stockTotal}`
+                            : `(${brandLabel} 1P) • Add Direct`;
+                          return (
+                            <option key={opt.rating} value={opt.rating}>
+                              {opt.rating} {suffix}
+                            </option>
+                          );
+                        })}
+                      </select>
+                    </div>
                   </div>
-                  <div>
-                    <label className="block text-[11px] font-semibold text-slate-700 dark:text-slate-300 mb-1">
-                      Rating:
-                    </label>
-                    <select
-                      value={formData.breakerRating}
-                      onChange={(e) =>
-                        setFormData((prev) => ({
-                          ...prev,
-                          breakerRating: e.target.value as any,
-                        }))
-                      }
-                      className="w-full px-3 py-1.5 border border-slate-300 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 text-xs font-bold focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                  <div className="p-2 rounded-lg bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-700 flex items-center justify-between gap-2 text-[11px]">
+                    <div className="min-w-0">
+                      <span className="font-mono font-bold text-slate-900 dark:text-white mr-1.5">
+                        {selectedBreaker.code}
+                      </span>
+                      <span className="text-slate-600 dark:text-slate-300 truncate">
+                        {selectedBreaker.description}
+                      </span>
+                    </div>
+                    <span
+                      className={`shrink-0 px-2 py-0.5 rounded font-semibold text-[10px] border ${
+                        selectedBreaker.fromDatabase
+                          ? 'bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800'
+                          : 'bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300 border-amber-200 dark:border-amber-800'
+                      }`}
                     >
-                      <option value="16A">16A (Schneider 1P)</option>
-                      <option value="20A">20A (Schneider 1P)</option>
-                      <option value="25A">25A (Schneider 1P)</option>
-                      <option value="32A">32A (Schneider 1P)</option>
-                      <option value="63A">63A (Nader 1P)</option>
-                    </select>
+                      {selectedBreaker.fromDatabase
+                        ? `DB Match (Stock: ${selectedBreaker.stockTotal})`
+                        : 'Added Directly (Not in DB)'}
+                    </span>
                   </div>
                 </div>
               )}

@@ -419,6 +419,7 @@ export default function App() {
         isOpen={isWizardOpen}
         onClose={() => setIsWizardOpen(false)}
         sites={sites}
+        catalog={catalog}
         onGenerateMRF={(newDoc) => {
           setCurrentDoc(newDoc);
           setSavedDocs((prev) => [newDoc, ...prev]);
