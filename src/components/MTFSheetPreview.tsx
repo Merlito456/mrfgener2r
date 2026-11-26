@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import {
   MRFDocument,
   MTFActionDone,
@@ -25,12 +25,17 @@ import {
   ArrowRightLeft,
   ChevronDown,
   ChevronUp,
+  Upload,
 } from 'lucide-react';
 
 interface MTFSheetPreviewProps {
   doc: MRFDocument;
   onChange: (updated: MRFDocument) => void;
   onExportMTF: () => void;
+  onImportMRFToMTF?: (
+    file: File,
+    options?: { autoExport?: boolean }
+  ) => Promise<void> | void;
   onPrint: () => void;
   onGoToBuilder: () => void;
 }
@@ -74,11 +79,15 @@ export const MTFSheetPreview: React.FC<MTFSheetPreviewProps> = ({
   doc,
   onChange,
   onExportMTF,
+  onImportMRFToMTF,
   onPrint,
   onGoToBuilder,
 }) => {
   const [zoom, setZoom] = useState<number>(100);
   const [showCustomize, setShowCustomize] = useState<boolean>(false);
+  const [autoExportOnImport, setAutoExportOnImport] = useState<boolean>(false);
+  const [isDraggingFile, setIsDraggingFile] = useState<boolean>(false);
+  const mrfFileInputRef = useRef<HTMLInputElement>(null);
 
   const mtf = resolveMTFData(doc);
   const hasCustomOverrides = Boolean(
@@ -227,6 +236,33 @@ export const MTFSheetPreview: React.FC<MTFSheetPreviewProps> = ({
             <span>Print / PDF</span>
           </button>
 
+          {onImportMRFToMTF && (
+            <>
+              <input
+                ref={mrfFileInputRef}
+                type="file"
+                accept=".xlsx,.xls"
+                className="hidden"
+                onChange={(e) => {
+                  const file = e.target.files?.[0];
+                  if (file) {
+                    onImportMRFToMTF(file, { autoExport: autoExportOnImport });
+                    e.target.value = '';
+                  }
+                }}
+              />
+              <button
+                type="button"
+                onClick={() => mrfFileInputRef.current?.click()}
+                className="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-bold rounded-xl text-indigo-700 dark:text-indigo-200 bg-indigo-50 dark:bg-indigo-950/60 hover:bg-indigo-100 dark:hover:bg-indigo-900/70 border border-indigo-200 dark:border-indigo-700 shadow-2xs transition-colors whitespace-nowrap"
+                title="Load an existing MRF Excel (.xlsx) file and convert it into this MTF"
+              >
+                <Upload className="w-3.5 h-3.5" />
+                <span>Load MRF .XLSX</span>
+              </button>
+            </>
+          )}
+
           <button
             type="button"
             onClick={onExportMTF}
@@ -237,6 +273,64 @@ export const MTFSheetPreview: React.FC<MTFSheetPreviewProps> = ({
           </button>
         </div>
       </div>
+
+      {/* MRF Excel -> MTF Direct Dropzone Strip */}
+      {onImportMRFToMTF && (
+        <div
+          onDragOver={(e) => {
+            e.preventDefault();
+            setIsDraggingFile(true);
+          }}
+          onDragLeave={() => setIsDraggingFile(false)}
+          onDrop={(e) => {
+            e.preventDefault();
+            setIsDraggingFile(false);
+            const file = e.dataTransfer.files?.[0];
+            if (file) {
+              onImportMRFToMTF(file, { autoExport: autoExportOnImport });
+            }
+          }}
+          className={`rounded-2xl border-2 border-dashed px-5 py-3 flex flex-wrap items-center justify-between gap-3 transition-colors no-print ${
+            isDraggingFile
+              ? 'border-indigo-500 bg-indigo-50/90 dark:bg-indigo-950/50'
+              : 'border-slate-300 dark:border-slate-700 bg-white/80 dark:bg-slate-900/80'
+          }`}
+        >
+          <div className="flex items-center gap-3 text-xs">
+            <span className="p-2 rounded-xl bg-indigo-100 dark:bg-indigo-950/80 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 shrink-0">
+              <Upload className="w-4 h-4" />
+            </span>
+            <div>
+              <div className="font-bold text-slate-800 dark:text-slate-100">
+                Convert MRF Excel (.xlsx) &rarr; Official MTF
+              </div>
+              <div className="text-[11px] text-slate-500 dark:text-slate-400">
+                Drag and drop any filled MRF spreadsheet here, or click <strong>Load MRF .XLSX</strong> to extract site details &amp; all line items into the MTF below.
+              </div>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-3 flex-wrap">
+            <label className="inline-flex items-center gap-1.5 text-[11px] font-medium text-slate-600 dark:text-slate-300 cursor-pointer select-none">
+              <input
+                type="checkbox"
+                checked={autoExportOnImport}
+                onChange={(e) => setAutoExportOnImport(e.target.checked)}
+                className="rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
+              />
+              <span>Auto-download MTF .xlsx on load</span>
+            </label>
+            <button
+              type="button"
+              onClick={() => mrfFileInputRef.current?.click()}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-xl text-white bg-slate-800 hover:bg-slate-700 dark:bg-indigo-600 dark:hover:bg-indigo-500 transition-colors whitespace-nowrap"
+            >
+              <FileSpreadsheet className="w-3.5 h-3.5" />
+              <span>Choose MRF File</span>
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* Collapsible MTF Customization & Override Drawer */}
       {showCustomize && (

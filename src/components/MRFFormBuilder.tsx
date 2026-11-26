@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
   MRFDocument,
   MRFLineItem,
@@ -34,6 +34,7 @@ import {
   Info,
   FileSpreadsheet,
   ArrowRightLeft,
+  Upload,
 } from 'lucide-react';
 import { OFFICIAL_FILLED_MRF_BENCHMARK } from '../utils/benchmarkMRF';
 
@@ -46,6 +47,7 @@ interface MRFFormBuilderProps {
   onOpenWizard?: () => void;
   onOpenGuide?: () => void;
   onOpenMTF?: () => void;
+  onImportMRFToMTF?: (file: File) => void;
   onLoadSample?: (sample: MRFDocument) => void;
 }
 
@@ -73,9 +75,11 @@ export const MRFFormBuilder: React.FC<MRFFormBuilderProps> = ({
   onOpenWizard,
   onOpenGuide: _onOpenGuide,
   onOpenMTF,
+  onImportMRFToMTF,
   onLoadSample,
 }) => {
   const { isDark } = useTheme();
+  const mrfUploadRef = useRef<HTMLInputElement>(null);
 
   const [selectedSitePlaid, setSelectedSitePlaid] = useState(
     doc.header.destinationCode || ''
@@ -452,6 +456,32 @@ export const MRFFormBuilder: React.FC<MRFFormBuilderProps> = ({
               <MapPin className="w-4 h-4 text-blue-300 shrink-0" />
               <span>Browse Sites ({sites.length.toLocaleString()})</span>
             </button>
+            {onImportMRFToMTF && (
+              <>
+                <input
+                  ref={mrfUploadRef}
+                  type="file"
+                  accept=".xlsx,.xls"
+                  className="hidden"
+                  onChange={(e) => {
+                    const file = e.target.files?.[0];
+                    if (file) {
+                      onImportMRFToMTF(file);
+                      e.target.value = '';
+                    }
+                  }}
+                />
+                <button
+                  type="button"
+                  onClick={() => mrfUploadRef.current?.click()}
+                  className="inline-flex items-center gap-2 h-11 px-4.5 rounded-xl text-xs font-bold bg-cyan-500/20 text-cyan-200 border border-cyan-400/40 hover:bg-cyan-500/30 transition-all hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap shadow-sm"
+                  title="Upload an MRF Excel (.xlsx) file to generate MTF"
+                >
+                  <Upload className="w-4 h-4 text-cyan-300 shrink-0" />
+                  <span>Load MRF .XLSX &rarr; MTF</span>
+                </button>
+              </>
+            )}
             {onOpenMTF && (
               <button
                 type="button"

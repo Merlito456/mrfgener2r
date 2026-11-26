@@ -29,6 +29,7 @@ import {
 import { OFFICIAL_FILLED_MRF_BENCHMARK } from './utils/benchmarkMRF';
 import { exportMRFToExcel } from './utils/excelExport';
 import { exportMTFToExcel } from './utils/mtfExport';
+import { parseMRFXlsxFile } from './utils/mrfImport';
 import confetti from 'canvas-confetti';
 import { CheckCircle2, AlertCircle, Info, X } from 'lucide-react';
 
@@ -165,6 +166,45 @@ export default function App() {
     }
   };
 
+  const handleImportMRFToMTF = async (
+    file: File,
+    options?: { autoExport?: boolean }
+  ) => {
+    try {
+      showToast(`Parsing MRF file "${file.name}"...`, 'info');
+      const importedDoc = await parseMRFXlsxFile(file, catalog, sites);
+      setCurrentDoc(importedDoc);
+      saveActiveMRF(importedDoc);
+      setSavedDocs(loadMRFList());
+      setActiveTab('mtf');
+
+      const totalItems =
+        importedDoc.mainItems.length + importedDoc.localMaterials.length;
+
+      if (options?.autoExport) {
+        await exportMTFToExcel(importedDoc);
+        showToast(
+          `Loaded "${file.name}" (${totalItems} items) & downloaded MTF .xlsx!`
+        );
+        confetti({
+          particleCount: 80,
+          spread: 60,
+          origin: { y: 0.7 },
+        });
+      } else {
+        showToast(
+          `Loaded MRF "${importedDoc.header.mrfNumber}" (${totalItems} items) → Generated MTF!`
+        );
+      }
+    } catch (e: any) {
+      console.error('MRF Import failed:', e);
+      showToast(
+        `Failed to load MRF Excel: ${e.message || 'Invalid MRF workbook'}`,
+        'error'
+      );
+    }
+  };
+
   const handlePrint = () => {
     if (activeTab !== 'preview' && activeTab !== 'mtf') {
       setActiveTab('preview');
@@ -289,6 +329,7 @@ export default function App() {
         onOpenDataManager={() => setIsDataManagerOpen(true)}
         onExportExcel={() => handleExportExcel(currentDoc)}
         onExportMTF={() => handleExportMTF(currentDoc)}
+        onImportMRFToMTF={(file) => handleImportMRFToMTF(file)}
         onPrint={handlePrint}
         onLoadBenchmark={() => {
           setCurrentDoc(OFFICIAL_FILLED_MRF_BENCHMARK);
@@ -309,6 +350,7 @@ export default function App() {
             onOpenWizard={() => setIsWizardOpen(true)}
             onOpenGuide={() => setActiveTab('guide')}
             onOpenMTF={() => setActiveTab('mtf')}
+            onImportMRFToMTF={(file) => handleImportMRFToMTF(file)}
             onLoadSample={(sample) => {
               setCurrentDoc(sample);
               saveActiveMRF(sample);
@@ -330,6 +372,7 @@ export default function App() {
             doc={currentDoc}
             onChange={setCurrentDoc}
             onExportMTF={() => handleExportMTF(currentDoc)}
+            onImportMRFToMTF={handleImportMRFToMTF}
             onPrint={handlePrint}
             onGoToBuilder={() => setActiveTab('builder')}
           />

@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import {
   FileSpreadsheet,
   Printer,
   Download,
+  Upload,
   Save,
   PlusCircle,
   FolderOpen,
@@ -30,6 +31,7 @@ interface NavbarProps {
   onOpenDataManager: () => void;
   onExportExcel: () => void;
   onExportMTF: () => void;
+  onImportMRFToMTF?: (file: File) => void;
   onPrint: () => void;
   onLoadBenchmark?: () => void;
   isSaving?: boolean;
@@ -46,11 +48,13 @@ export const Navbar: React.FC<NavbarProps> = ({
   onOpenDataManager,
   onExportExcel,
   onExportMTF,
+  onImportMRFToMTF,
   onPrint,
   onLoadBenchmark: _onLoadBenchmark,
   isSaving,
 }) => {
   const { isDark } = useTheme();
+  const mrfFileInputRef = useRef<HTMLInputElement>(null);
 
   const statusColor =
     currentDoc.signatures.status === 'Accepted'
@@ -334,6 +338,36 @@ export const Navbar: React.FC<NavbarProps> = ({
           </nav>
 
           <div className="flex items-center gap-2.5 py-2 shrink-0">
+            {onImportMRFToMTF && (
+              <>
+                <input
+                  ref={mrfFileInputRef}
+                  type="file"
+                  accept=".xlsx,.xls"
+                  className="hidden"
+                  onChange={(e) => {
+                    const file = e.target.files?.[0];
+                    if (file) {
+                      onImportMRFToMTF(file);
+                      e.target.value = '';
+                    }
+                  }}
+                />
+                <button
+                  type="button"
+                  onClick={() => mrfFileInputRef.current?.click()}
+                  className={`inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-lg border transition-colors whitespace-nowrap ${
+                    isDark
+                      ? 'bg-indigo-500/15 text-indigo-300 border-indigo-500/30 hover:bg-indigo-500/25'
+                      : 'bg-indigo-50 text-indigo-700 border-indigo-200 hover:bg-indigo-100'
+                  }`}
+                  title="Upload an existing MRF Excel (.xlsx) file to automatically generate an MTF"
+                >
+                  <Upload className="w-3.5 h-3.5" />
+                  <span>Load MRF &rarr; MTF</span>
+                </button>
+              </>
+            )}
             <button
               type="button"
               onClick={onOpenDataManager}
