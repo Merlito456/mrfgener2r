@@ -55,14 +55,14 @@ export const MRFSheetPreview: React.FC<MRFSheetPreviewProps> = ({
     <div className="space-y-4 max-w-6xl mx-auto pb-12">
       {/* Top Preview Controls Bar */}
       <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-xs border border-slate-200 dark:border-slate-800 px-6 py-3.5 flex flex-wrap items-center justify-between gap-3 no-print">
-        <div className="flex items-center gap-3">
+        <div className="flex flex-wrap items-center gap-3 min-w-0">
           <div className="flex items-center gap-2">
-            <FileSpreadsheet className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
+            <FileSpreadsheet className="w-5 h-5 text-emerald-600 dark:text-emerald-400 shrink-0" />
             <h3 className="font-bold text-sm text-slate-800 dark:text-white">
               Official Template Spreadsheet Preview
             </h3>
           </div>
-          <span className="text-xs px-2.5 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-mono">
+          <span className="text-xs px-2.5 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-mono max-w-full truncate">
             Sheet: {doc.header.mrfNumber || 'MRF_Form'}
           </span>
           {mrfSplit.isOverflow && (
@@ -82,7 +82,7 @@ export const MRFSheetPreview: React.FC<MRFSheetPreviewProps> = ({
           )}
         </div>
 
-        <div className="flex items-center gap-2.5">
+        <div className="flex flex-wrap items-center gap-2.5">
           {/* Zoom controls */}
           <div className="flex items-center bg-slate-100 dark:bg-slate-800 rounded-xl p-1 border border-slate-200 dark:border-slate-700">
             <button

@@ -30,7 +30,7 @@ export const ThemeSelector: React.FC = () => {
       <button
         type="button"
         onClick={toggleDarkLight}
-        className="inline-flex items-center justify-center w-10 h-10 rounded-xl text-slate-300 hover:text-white bg-slate-800/80 hover:bg-slate-700 border border-slate-700/80 transition-all hover:scale-[1.03] active:scale-[0.97] shadow-2xs"
+        className="inline-flex items-center justify-center w-9 h-9 rounded-xl text-slate-300 hover:text-white bg-slate-800/80 hover:bg-slate-700 border border-slate-700/80 transition-all hover:scale-[1.03] active:scale-[0.97] shadow-2xs"
         title={isDark ? 'Switch to Light Theme' : 'Switch to Dark Theme'}
         aria-label="Toggle Light/Dark mode"
       >
@@ -45,7 +45,7 @@ export const ThemeSelector: React.FC = () => {
       <button
         type="button"
         onClick={() => setIsOpen((prev) => !prev)}
-        className={`inline-flex items-center gap-2 h-10 px-3 rounded-xl text-xs font-semibold border transition-all hover:scale-[1.02] active:scale-[0.98] shadow-2xs whitespace-nowrap ${
+        className={`inline-flex items-center gap-2 h-9 px-2.5 rounded-xl text-xs font-semibold border transition-all hover:scale-[1.02] active:scale-[0.98] shadow-2xs whitespace-nowrap ${
           isOpen
             ? 'bg-blue-600 text-white border-blue-500 shadow-blue-500/20'
             : 'text-slate-200 bg-slate-800/80 hover:bg-slate-700 border-slate-700/80'

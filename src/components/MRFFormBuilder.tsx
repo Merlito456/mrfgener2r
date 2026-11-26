@@ -410,9 +410,9 @@ export const MRFFormBuilder: React.FC<MRFFormBuilderProps> = ({
     <div className="space-y-6 max-w-7xl mx-auto pb-16">
       {/* 1. Form Header Card (Spacious, Roomy, Anti-Cramp) */}
       <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden transition-colors">
-        <div className="bg-gradient-to-r from-slate-900 via-slate-800 to-indigo-950 px-6 sm:px-8 py-5 text-white flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <div>
-            <div className="flex items-center gap-2.5">
+        <div className="bg-gradient-to-r from-slate-900 via-slate-800 to-indigo-950 px-6 sm:px-8 py-5 text-white flex flex-col xl:flex-row xl:items-center justify-between gap-4">
+          <div className="min-w-0">
+            <div className="flex flex-wrap items-center gap-2.5">
               <span className="text-xs font-semibold px-2.5 py-0.5 rounded-md bg-blue-500/25 text-blue-300 border border-blue-400/30">
                 Official Document Parameters
               </span>
@@ -425,12 +425,12 @@ export const MRFFormBuilder: React.FC<MRFFormBuilderProps> = ({
             </h2>
           </div>
 
-          <div className="flex items-center gap-3 flex-wrap">
+          <div className="flex items-center gap-2.5 flex-wrap">
             {onLoadSample && (
               <button
                 type="button"
                 onClick={() => onLoadSample(OFFICIAL_FILLED_MRF_BENCHMARK)}
-                className="inline-flex items-center gap-2 h-11 px-4.5 rounded-xl text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 hover:bg-emerald-500/30 transition-all hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap shadow-sm"
+                className="inline-flex items-center gap-2 h-10 px-4 rounded-xl text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 hover:bg-emerald-500/30 transition-all hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap shadow-sm"
                 title="Load official template benchmark (MIN1371 MF2 John Carlo Rabanes)"
               >
                 <Sparkles className="w-4 h-4 text-amber-300 shrink-0" />
@@ -441,7 +441,7 @@ export const MRFFormBuilder: React.FC<MRFFormBuilderProps> = ({
               <button
                 type="button"
                 onClick={onOpenWizard}
-                className="inline-flex items-center gap-2 h-11 px-4.5 rounded-xl text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-400/30 hover:bg-amber-500/30 transition-all hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap shadow-sm"
+                className="inline-flex items-center gap-2 h-10 px-4 rounded-xl text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-400/30 hover:bg-amber-500/30 transition-all hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap shadow-sm"
                 title="Launch guided BoQ generator"
               >
                 <Zap className="w-4 h-4 text-amber-300 shrink-0" />
@@ -451,7 +451,7 @@ export const MRFFormBuilder: React.FC<MRFFormBuilderProps> = ({
             <button
               type="button"
               onClick={onOpenSites}
-              className="inline-flex items-center gap-2 h-11 px-4.5 rounded-xl text-xs font-semibold bg-blue-500/20 text-blue-300 border border-blue-400/30 hover:bg-blue-500/30 transition-all hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap shadow-sm"
+              className="inline-flex items-center gap-2 h-10 px-4 rounded-xl text-xs font-semibold bg-blue-500/20 text-blue-300 border border-blue-400/30 hover:bg-blue-500/30 transition-all hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap shadow-sm"
             >
               <MapPin className="w-4 h-4 text-blue-300 shrink-0" />
               <span>Browse Sites ({sites.length.toLocaleString()})</span>
@@ -474,7 +474,7 @@ export const MRFFormBuilder: React.FC<MRFFormBuilderProps> = ({
                 <button
                   type="button"
                   onClick={() => mrfUploadRef.current?.click()}
-                  className="inline-flex items-center gap-2 h-11 px-4.5 rounded-xl text-xs font-bold bg-cyan-500/20 text-cyan-200 border border-cyan-400/40 hover:bg-cyan-500/30 transition-all hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap shadow-sm"
+                  className="inline-flex items-center gap-2 h-10 px-4 rounded-xl text-xs font-bold bg-cyan-500/20 text-cyan-200 border border-cyan-400/40 hover:bg-cyan-500/30 transition-all hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap shadow-sm"
                   title="Upload an MRF Excel (.xlsx) file to generate MTF"
                 >
                   <Upload className="w-4 h-4 text-cyan-300 shrink-0" />
@@ -486,7 +486,7 @@ export const MRFFormBuilder: React.FC<MRFFormBuilderProps> = ({
               <button
                 type="button"
                 onClick={onOpenMTF}
-                className="inline-flex items-center gap-2 h-11 px-4.5 rounded-xl text-xs font-bold bg-indigo-500/30 text-indigo-200 border border-indigo-400/40 hover:bg-indigo-500/40 transition-all hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap shadow-sm"
+                className="inline-flex items-center gap-2 h-10 px-4 rounded-xl text-xs font-bold bg-indigo-500/30 text-indigo-200 border border-indigo-400/40 hover:bg-indigo-500/40 transition-all hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap shadow-sm"
                 title="Open MTF Generator synced from this MRF"
               >
                 <ArrowRightLeft className="w-4 h-4 text-indigo-300 shrink-0" />

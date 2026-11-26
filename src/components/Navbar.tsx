@@ -79,27 +79,27 @@ export const Navbar: React.FC<NavbarProps> = ({
     >
       {/* Top Utility Row */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-18 py-2 gap-4">
+        <div className="flex flex-wrap items-center justify-between min-h-16 py-2.5 gap-3">
           {/* Logo & title */}
-          <div className="flex items-center gap-3.5 shrink-0">
+          <div className="flex items-center gap-3 min-w-0 shrink-0">
             <div className="h-10 w-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center text-white shadow-md shadow-blue-500/20 ring-1 ring-white/20 shrink-0">
               <FileSpreadsheet className="w-5 h-5" />
             </div>
-            <div>
-              <div className="flex items-center gap-2.5">
+            <div className="min-w-0">
+              <div className="flex items-center gap-2">
                 <span
-                  className={`font-bold text-lg tracking-tight ${
+                  className={`font-bold text-base sm:text-lg tracking-tight whitespace-nowrap ${
                     isDark ? 'text-white' : 'text-slate-900'
                   }`}
                 >
                   MRF/MTF Generator
                 </span>
-                <span className="text-[11px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-md bg-blue-500/15 text-blue-600 dark:text-blue-300 border border-blue-500/20">
+                <span className="text-[10px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-md bg-blue-500/15 text-blue-600 dark:text-blue-300 border border-blue-500/20 whitespace-nowrap">
                   Nokia &bull; OLT
                 </span>
               </div>
               <p
-                className={`text-xs hidden sm:block ${
+                className={`text-[11px] hidden sm:block truncate ${
                   isDark ? 'text-slate-400' : 'text-slate-500'
                 }`}
               >
@@ -108,9 +108,9 @@ export const Navbar: React.FC<NavbarProps> = ({
             </div>
           </div>
 
-          {/* Current MRF ID pill and status (Desktop) */}
+          {/* Current MRF ID pill and status (Wide Desktop) */}
           <div
-            className={`hidden xl:flex items-center gap-3 px-3.5 py-2 rounded-xl text-xs whitespace-nowrap border shrink-0 ${
+            className={`hidden 2xl:flex items-center gap-2.5 px-3 py-1.5 rounded-xl text-xs whitespace-nowrap border min-w-0 ${
               isDark
                 ? 'bg-slate-800/90 border-slate-700/80 text-slate-200'
                 : 'bg-slate-50 border-slate-200 text-slate-700'
@@ -120,7 +120,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             <span className={isDark ? 'text-slate-400' : 'text-slate-500'}>
               Active MRF:
             </span>
-            <span className="font-mono font-bold max-w-[200px] truncate block">
+            <span className="font-mono font-bold max-w-[180px] truncate block">
               {currentDoc.header.mrfNumber || 'Untitled Form'}
             </span>
             <span
@@ -130,84 +130,84 @@ export const Navbar: React.FC<NavbarProps> = ({
             </span>
           </div>
 
-          {/* Action Buttons Toolbar with Theme Switcher (Roomy, spaced, never cramped) */}
-          <div className="flex items-center gap-2.5 sm:gap-3 shrink-0">
+          {/* Action Buttons Toolbar with Theme Switcher */}
+          <div className="flex flex-wrap items-center gap-2">
             {/* Colorway & Theme Switcher (Light / Dark palettes) */}
             <ThemeSelector />
 
             <button
               type="button"
               onClick={onNewMRF}
-              className={`hidden md:inline-flex items-center gap-2 h-10 px-3.5 text-xs font-semibold rounded-xl border transition-all hover:scale-[1.01] active:scale-[0.99] whitespace-nowrap shrink-0 shadow-2xs ${
+              className={`hidden md:inline-flex items-center gap-1.5 h-9 px-3 text-xs font-semibold rounded-xl border transition-all hover:scale-[1.01] active:scale-[0.99] whitespace-nowrap shadow-2xs ${
                 isDark
                   ? 'text-slate-200 bg-slate-800/90 hover:bg-slate-700 border-slate-700/80'
                   : 'text-slate-700 bg-white hover:bg-slate-100 border-slate-200'
               }`}
               title="Create new blank MRF"
             >
-              <PlusCircle className="w-4 h-4 text-blue-500 shrink-0" />
+              <PlusCircle className="w-3.5 h-3.5 text-blue-500 shrink-0" />
               <span>New MRF</span>
             </button>
 
             <button
               type="button"
               onClick={onOpenHistory}
-              className={`inline-flex items-center gap-2 h-10 px-3.5 text-xs font-semibold rounded-xl border transition-all hover:scale-[1.01] active:scale-[0.99] whitespace-nowrap shrink-0 shadow-2xs ${
+              className={`inline-flex items-center gap-1.5 h-9 px-3 text-xs font-semibold rounded-xl border transition-all hover:scale-[1.01] active:scale-[0.99] whitespace-nowrap shadow-2xs ${
                 isDark
                   ? 'text-slate-200 bg-slate-800/90 hover:bg-slate-700 border-slate-700/80'
                   : 'text-slate-700 bg-white hover:bg-slate-100 border-slate-200'
               }`}
               title="View saved drafts"
             >
-              <FolderOpen className="w-4 h-4 text-amber-500 shrink-0" />
+              <FolderOpen className="w-3.5 h-3.5 text-amber-500 shrink-0" />
               <span className="hidden sm:inline">Saved MRFs</span>
             </button>
 
             <button
               type="button"
               onClick={onSaveMRF}
-              className={`inline-flex items-center gap-2 h-10 px-3.5 text-xs font-semibold rounded-xl border transition-all hover:scale-[1.01] active:scale-[0.99] whitespace-nowrap shrink-0 shadow-2xs ${
+              className={`inline-flex items-center gap-1.5 h-9 px-3 text-xs font-semibold rounded-xl border transition-all hover:scale-[1.01] active:scale-[0.99] whitespace-nowrap shadow-2xs ${
                 isDark
                   ? 'text-slate-200 bg-slate-800/90 hover:bg-slate-700 border-slate-700/80'
                   : 'text-slate-700 bg-white hover:bg-slate-100 border-slate-200'
               }`}
               title="Save current changes to local draft"
             >
-              <Save className="w-4 h-4 text-emerald-500 shrink-0" />
+              <Save className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
               <span>{isSaving ? 'Saving...' : 'Save Draft'}</span>
             </button>
 
             <button
               type="button"
               onClick={onPrint}
-              className={`hidden sm:inline-flex items-center gap-2 h-10 px-3.5 text-xs font-semibold rounded-xl border transition-all hover:scale-[1.01] active:scale-[0.99] whitespace-nowrap shrink-0 shadow-2xs ${
+              className={`hidden sm:inline-flex items-center gap-1.5 h-9 px-3 text-xs font-semibold rounded-xl border transition-all hover:scale-[1.01] active:scale-[0.99] whitespace-nowrap shadow-2xs ${
                 isDark
                   ? 'text-slate-200 bg-slate-800/90 hover:bg-slate-700 border-slate-700/80'
                   : 'text-slate-700 bg-white hover:bg-slate-100 border-slate-200'
               }`}
               title="Print official form or export to PDF"
             >
-              <Printer className="w-4 h-4 text-purple-500 shrink-0" />
+              <Printer className="w-3.5 h-3.5 text-purple-500 shrink-0" />
               <span>Print / PDF</span>
             </button>
 
             <button
               type="button"
               onClick={onExportExcel}
-              className="inline-flex items-center gap-1.5 h-10 px-3.5 text-xs font-bold rounded-xl text-white bg-emerald-600 hover:bg-emerald-500 shadow-md shadow-emerald-700/20 transition-all hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap shrink-0"
+              className="inline-flex items-center gap-1.5 h-9 px-3 text-xs font-bold rounded-xl text-white bg-emerald-600 hover:bg-emerald-500 shadow-md shadow-emerald-700/20 transition-all hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap"
               title="Export genuine Excel file matching MRF_template.xlsx without XML errors"
             >
-              <Download className="w-4 h-4 shrink-0" />
+              <Download className="w-3.5 h-3.5 shrink-0" />
               <span>MRF .XLSX</span>
             </button>
 
             <button
               type="button"
               onClick={onExportMTF}
-              className="inline-flex items-center gap-1.5 h-10 px-3.5 text-xs font-bold rounded-xl text-white bg-indigo-600 hover:bg-indigo-500 shadow-md shadow-indigo-700/20 transition-all hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap shrink-0"
+              className="inline-flex items-center gap-1.5 h-9 px-3 text-xs font-bold rounded-xl text-white bg-indigo-600 hover:bg-indigo-500 shadow-md shadow-indigo-700/20 transition-all hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap"
               title="Export Materials Transfer Form (MTF) synced from current MRF"
             >
-              <Download className="w-4 h-4 shrink-0" />
+              <Download className="w-3.5 h-3.5 shrink-0" />
               <span>MTF .XLSX</span>
             </button>
           </div>
@@ -222,12 +222,12 @@ export const Navbar: React.FC<NavbarProps> = ({
             : 'bg-slate-50/80 border-slate-200/80'
         }`}
       >
-        <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
-          <nav className="flex items-center gap-2 py-2 overflow-x-auto scrollbar-none">
+        <div className="max-w-7xl mx-auto flex flex-wrap md:flex-nowrap items-center justify-between gap-2 sm:gap-4">
+          <nav className="flex items-center gap-1.5 py-2 min-w-0 flex-1 overflow-x-auto scrollbar-none">
             <button
               type="button"
               onClick={() => setActiveTab('builder')}
-              className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all ${
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap shrink-0 transition-all ${
                 activeTab === 'builder'
                   ? 'bg-blue-600 text-white shadow-sm'
                   : isDark
@@ -235,14 +235,14 @@ export const Navbar: React.FC<NavbarProps> = ({
                   : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/60'
               }`}
             >
-              <Layers className="w-4 h-4" />
+              <Layers className="w-3.5 h-3.5" />
               <span>MRF Form Builder</span>
             </button>
 
             <button
               type="button"
               onClick={() => setActiveTab('preview')}
-              className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all ${
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap shrink-0 transition-all ${
                 activeTab === 'preview'
                   ? 'bg-blue-600 text-white shadow-sm'
                   : isDark
@@ -250,14 +250,14 @@ export const Navbar: React.FC<NavbarProps> = ({
                   : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/60'
               }`}
             >
-              <FileCheck className="w-4 h-4" />
+              <FileCheck className="w-3.5 h-3.5" />
               <span>MRF Sheet Preview</span>
             </button>
 
             <button
               type="button"
               onClick={() => setActiveTab('mtf')}
-              className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all ${
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap shrink-0 transition-all ${
                 activeTab === 'mtf'
                   ? 'bg-indigo-600 text-white shadow-sm'
                   : isDark
@@ -265,7 +265,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   : 'text-indigo-700 hover:text-indigo-800 hover:bg-indigo-50'
               }`}
             >
-              <ArrowRightLeft className="w-4 h-4" />
+              <ArrowRightLeft className="w-3.5 h-3.5" />
               <span>MTF Generator</span>
               <span
                 className={`text-[10px] px-1.5 py-0.5 rounded font-mono ${
@@ -283,7 +283,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             <button
               type="button"
               onClick={() => setActiveTab('guide')}
-              className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all ${
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap shrink-0 transition-all ${
                 activeTab === 'guide'
                   ? 'bg-emerald-600 text-white shadow-sm'
                   : isDark
@@ -291,25 +291,14 @@ export const Navbar: React.FC<NavbarProps> = ({
                   : 'text-emerald-700 hover:text-emerald-800 hover:bg-emerald-50'
               }`}
             >
-              <BookOpen className="w-4 h-4 text-emerald-500" />
+              <BookOpen className="w-3.5 h-3.5 text-emerald-500" />
               <span>How To Fill MRF</span>
-              <span
-                className={`text-[10px] px-2 py-0.5 rounded-full font-mono ${
-                  activeTab === 'guide'
-                    ? 'bg-emerald-700 text-white'
-                    : isDark
-                    ? 'bg-emerald-500/20 text-emerald-300'
-                    : 'bg-emerald-100 text-emerald-800'
-                }`}
-              >
-                Guide &amp; Benchmark
-              </span>
             </button>
 
             <button
               type="button"
               onClick={() => setActiveTab('catalog')}
-              className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all ${
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap shrink-0 transition-all ${
                 activeTab === 'catalog'
                   ? 'bg-blue-600 text-white shadow-sm'
                   : isDark
@@ -317,14 +306,14 @@ export const Navbar: React.FC<NavbarProps> = ({
                   : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/60'
               }`}
             >
-              <Boxes className="w-4 h-4" />
-              <span>Items Catalog (459 items)</span>
+              <Boxes className="w-3.5 h-3.5" />
+              <span>Items Catalog (459)</span>
             </button>
 
             <button
               type="button"
               onClick={() => setActiveTab('sites')}
-              className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all ${
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap shrink-0 transition-all ${
                 activeTab === 'sites'
                   ? 'bg-blue-600 text-white shadow-sm'
                   : isDark
@@ -332,7 +321,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/60'
               }`}
             >
-              <MapPin className="w-4 h-4" />
+              <MapPin className="w-3.5 h-3.5" />
               <span>Mindanao Sites (3,459)</span>
             </button>
           </nav>
